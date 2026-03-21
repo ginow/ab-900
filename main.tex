@@ -2,26 +2,36 @@
 \usepackage[top=0.75in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage{titlesec}
 
 \title{AB-900: Copilot and Agent Administration Fundamentals}
 \author{}
 \date{}
 
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\titleformat{\section}[display]{\normalfont\Huge\bfseries\centering}{\thesection}{0.5em}{\vspace*{\fill}}[\vspace*{\fill}]
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titleformat{\subsection}[display]{\normalfont\LARGE\bfseries\centering}{\thesubsection}{0.5em}{\vspace*{1.25cm}}[\vspace{0.6em}\titlerule]
+\titlespacing*{\subsection}{0pt}{0pt}{1.5em}
+
 \begin{document}
-\maketitle
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+{\LARGE\bfseries AB-900: Copilot and Agent Administration Fundamentals\par}
+\end{center}
+\vspace*{\fill}
+\end{titlepage}
 \tableofcontents
 \newpage
 
-\clearpage
-\thispagestyle{empty}
-\begin{center}
-\vspace*{\fill}
-{\LARGE\bfseries Microsoft 365 Security Foundations\par}
-\vspace*{\fill}
-\end{center}
-\addcontentsline{toc}{section}{Microsoft 365 Security Foundations}
-\clearpage
-
+\setcounter{section}{0}
+\section{Microsoft 365 Security Foundations}
+\setcounter{subsection}{0}
 \clearpage
 \subsection{Security Foundations Review}
 \begin{enumerate}[leftmargin=*]
@@ -250,7 +260,7 @@
 \textbf{Answer: B}\\
 \textbf{Explanation:} Microsoft Purview sensitivity labels classify data by context/content and can persist protections across Exchange, SharePoint, OneDrive, and Teams.
 
-\item \textbf{What is the primary goal of Data Loss Prevention (DLP) policies in this module?}
+\item \textbf{What is the primary goal of Data Loss Prevention (DLP) policies?}
 \begin{enumerate}[label=\Alph*.]
   \item Prevent unauthorized sharing of sensitive information
   \item Increase mailbox quota limits
@@ -450,7 +460,7 @@
   \item Local-only Kerberos trust
 \end{enumerate}
 \textbf{Answer: B}\\
-\textbf{Explanation:} The module highlights PHS as commonly recommended in hybrid scenarios unless real-time on-prem validation is specifically required.
+\textbf{Explanation:} PHS is commonly recommended in hybrid scenarios unless real-time on-prem validation is specifically required.
 
 \item \textbf{When is Pass-through Authentication (PTA) often preferred over PHS?}
 \begin{enumerate}[label=\Alph*.]
