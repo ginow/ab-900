@@ -2176,4 +2176,212 @@
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Explore Data Protection in Microsoft 365 Copilot}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which statement best describes how Microsoft 365 Copilot accesses organizational data?}
+\begin{enumerate}[label=\Alph*.]
+  \item It uses a separate unrestricted data channel outside Microsoft 365
+  \item It accesses data through Microsoft Graph using the signed-in user context
+  \item It pulls data from public internet sources by default
+  \item It bypasses tenant-level controls for faster responses
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot retrieval is mediated by Microsoft Graph and constrained by the authenticated user’s permissions.
+
+\item \textbf{What is the most accurate response to the claim that ``Copilot sees everything''?}
+\begin{enumerate}[label=\Alph*.]
+  \item It is true for all Global Administrators only
+  \item It is true when using Teams and Outlook together
+  \item It is false because Copilot inherits existing access controls
+  \item It is true whenever semantic search is enabled
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Copilot can only access data the requesting user is already authorized to access.
+
+\item \textbf{If a Marketing user asks Copilot to summarize a Finance-only SharePoint report, what should happen?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot returns a full summary from Finance data
+  \item Copilot requests temporary elevation automatically
+  \item Copilot extracts only table headers from the report
+  \item Copilot cannot retrieve the report due to permission boundaries
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} No direct user access means no Copilot access, even if the prompt explicitly asks for the file.
+
+\item \textbf{Which Microsoft 365 workloads are commonly used by Copilot as data sources?}
+\begin{enumerate}[label=\Alph*.]
+  \item Outlook, Teams, SharePoint, OneDrive, and Microsoft 365 apps
+  \item Only Word and PowerPoint local files
+  \item Only Exchange Online admin logs
+  \item Only Purview case exports
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot works across core Microsoft 365 services while respecting each workload’s access model.
+
+\item \textbf{What is Microsoft Graph’s primary security role in Copilot retrieval?}
+\begin{enumerate}[label=\Alph*.]
+  \item Replacing OAuth with anonymous tokens
+  \item Enforcing authentication and authorization on each query
+  \item Disabling tenant audit logs for privacy
+  \item Mirroring data into a separate unrestricted index
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Graph acts as a secure gateway that evaluates identity and permissions before returning data.
+
+\item \textbf{In this context, what does ``semantic'' retrieval in Graph primarily mean?}
+\begin{enumerate}[label=\Alph*.]
+  \item Matching only exact file names
+  \item Searching only document metadata tags
+  \item Interpreting meaning and intent beyond exact keywords
+  \item Ignoring user context to maximize recall
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Semantic retrieval uses conceptual relationships so relevant content can be found even with different wording.
+
+\item \textbf{Which mechanism allows Graph to represent conceptual similarity between content items?}
+\begin{enumerate}[label=\Alph*.]
+  \item Vector embeddings in a semantic index
+  \item Static CSV mappings maintained weekly
+  \item DNS-based link classification
+  \item NTFS inheritance snapshots
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Embeddings encode meaning mathematically, helping Copilot retrieve contextually relevant results.
+
+\item \textbf{Which signal can increase ranking priority in Copilot responses?}
+\begin{enumerate}[label=\Alph*.]
+  \item Unrelated BIOS firmware version
+  \item Recently accessed or edited files
+  \item Printer queue status
+  \item Local browser cache age
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Recent file activity is a relevance signal that can influence result ordering.
+
+\item \textbf{How should admins interpret Copilot and existing Microsoft 365 security architecture?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot requires a completely separate enterprise security model
+  \item Copilot ignores SharePoint and OneDrive permissions by design
+  \item Copilot uses existing controls, so governance quality directly affects output safety
+  \item Copilot can always access executive channels for summarization
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Strong permissions, labeling, and sharing hygiene improve both Copilot relevance and protection outcomes.
+
+\item \textbf{What happens if an ``Anyone with the link'' permission is revoked?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot retains permanent cached access indefinitely
+  \item Copilot loses access through that link once it is invalid
+  \item Copilot clones the file into the user mailbox
+  \item Copilot escalates to admin APIs to keep access
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot access tracks current permissions; once access is revoked, the data is no longer available through that path.
+
+\item \textbf{Which policy stack is explicitly relevant to Copilot data protection?}
+\begin{enumerate}[label=\Alph*.]
+  \item Sensitivity labels, DLP, Information Protection, and Conditional Access
+  \item DHCP reservations, BIOS controls, and VLAN templates
+  \item Exchange transport rules only
+  \item Local endpoint wallpapers and kiosk mode
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot respects the same Microsoft 365 security and compliance controls applied to user data access.
+
+\item \textbf{How does DLP influence Copilot behavior with sensitive information?}
+\begin{enumerate}[label=\Alph*.]
+  \item DLP has no effect on Copilot-generated responses
+  \item DLP can restrict exposure of sensitive data in prompts and outputs
+  \item DLP applies only to deleted files
+  \item DLP is replaced by semantic search when Copilot is enabled
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} DLP policies continue to enforce controls on protected content and reduce leakage risk.
+
+\item \textbf{Which scenario best illustrates conditional access impact on Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item A blocked unmanaged device also cannot use Copilot to access restricted SharePoint data
+  \item Copilot bypasses device compliance because prompts are text only
+  \item Copilot can open blocked files if a Teams meeting references them
+  \item Conditional access applies only to Exchange, not Copilot-related retrieval
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} If policy blocks resource access from a device, Copilot on that device can’t process that blocked content.
+
+\item \textbf{What is the main objective of data minimization in Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item Search all tenant files to maximize answer volume
+  \item Retrieve only data required for the specific task
+  \item Copy all source files into temporary chat storage
+  \item Disable source references to reduce clutter
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Data minimization reduces unnecessary exposure by limiting retrieval scope to what the request needs.
+
+\item \textbf{Why are source references in Copilot responses important for governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They provide transparency and enable user verification
+  \item They replace audit logs and legal holds
+  \item They guarantee all responses are complete
+  \item They disable content filtering checks
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Source links improve trust and traceability by showing where response content came from.
+
+\item \textbf{How does responsible AI address uncertain or unsupported answers?}
+\begin{enumerate}[label=\Alph*.]
+  \item It always generates a confident answer to preserve productivity
+  \item It can indicate no relevant accessible data was found
+  \item It requests tenant-wide admin permissions automatically
+  \item It publishes a public web fallback answer
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Responsible AI behavior avoids fabricated certainty and communicates when evidence is unavailable.
+
+\item \textbf{Which capability helps reduce legal and reputational risk from harmful output?}
+\begin{enumerate}[label=\Alph*.]
+  \item Content filtering and safety guardrails
+  \item Turning off all policy alerts
+  \item Expanding anonymous sharing links globally
+  \item Disabling label-based access controls
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Filtering can block or suppress inappropriate or policy-violating content in responses.
+
+\item \textbf{What is the best description of Copilot auditability for admins?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot interactions are not logged for privacy reasons
+  \item Only successful prompts are logged, failed ones are discarded
+  \item Logging is available only for global admins in Word
+  \item Prompt and data access events can be audited via Microsoft 365 and Purview logs
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Audit trails support investigations, compliance evidence, and verification of policy enforcement.
+
+\item \textbf{Which admin action most improves Copilot response quality and security together?}
+\begin{enumerate}[label=\Alph*.]
+  \item Structuring content, tightening permissions, and applying metadata and labels consistently
+  \item Disabling all Teams collaboration channels
+  \item Moving files to unmanaged local devices
+  \item Replacing Graph-based retrieval with manual exports
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Good information architecture and governance improve relevance while reducing oversharing and data exposure.
+
+\item \textbf{Which statement best captures Copilot’s tenant boundary behavior?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot sends tenant content to non-Microsoft services by default
+  \item Copilot can freely merge data across unrelated tenants
+  \item Copilot operates within Microsoft 365 and Purview compliance boundaries
+  \item Copilot bypasses compliance boundaries for semantic indexing
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Copilot is designed to function within enterprise compliance and data protection boundaries of the tenant.
+
+\end{enumerate}
+
+
 \end{document}
