@@ -1168,4 +1168,89 @@
 \textbf{Explanation:} Setting secure defaults early helps avoid policy drift and reduces remediation effort after users and workloads scale.
 
 \end{enumerate}
+\clearpage
+\subsection{Assign Admin Roles Using Role-Based Access Control}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What is the main purpose of role-based access control (RBAC) in Microsoft 365 administration?}
+\begin{enumerate}[label=\Alph*.]
+  \item To provide temporary anonymous access for admin tasks
+  \item To assign all administrators identical permissions
+  \item To restrict permissions so users get only the access needed for their responsibilities
+  \item To eliminate the need for auditing and change tracking
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} RBAC applies least-privilege principles by granting only the permissions required for a specific administrative function.
+
+\item \textbf{Which approach is most secure when delegating administrative duties?}
+\begin{enumerate}[label=\Alph*.]
+  \item Grant Global Administrator to all support engineers
+  \item Use predefined or custom roles mapped to job duties
+  \item Share one admin account across the whole IT team
+  \item Disable MFA for role-assignment workflows
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Delegating by role reduces over-privileged access and improves accountability across operations.
+
+\item \textbf{Why should Global Administrator assignments be limited?}
+\begin{enumerate}[label=\Alph*.]
+  \item Global admins cannot access most tenant settings
+  \item Global admin is intended only for license management tasks
+  \item Broad privilege increases impact if an account is compromised
+  \item Global admins cannot be audited in Microsoft 365
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} High-privilege roles should be tightly controlled because compromise of those accounts can affect the entire tenant.
+
+\item \textbf{Which scenario best reflects proper role delegation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Helpdesk staff are assigned Exchange Administrator to reset all passwords
+  \item Security analysts are assigned Billing Administrator to review incidents
+  \item Finance users are assigned Global Reader to manage Teams policies
+  \item Service desk users are assigned Helpdesk/Password roles for account support tasks
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Assigning narrowly scoped support roles for account lifecycle tasks aligns permissions to real job needs.
+
+\item \textbf{What is a key benefit of using custom admin roles when predefined roles are too broad?}
+\begin{enumerate}[label=\Alph*.]
+  \item They allow organizations to tailor permissions more precisely
+  \item They remove all need for role reviews
+  \item They automatically bypass Conditional Access policies
+  \item They convert every user into a workload admin
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Custom roles can reduce excess permissions by aligning access to exact operational requirements.
+
+\item \textbf{Why are periodic access reviews important for admin role assignments?}
+\begin{enumerate}[label=\Alph*.]
+  \item They ensure privileged access remains appropriate as responsibilities change
+  \item They replace activity logs and alerting
+  \item They prevent all phishing attacks automatically
+  \item They remove the need for role documentation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Regular reviews help remove unnecessary privileged access and keep assignments aligned to current duties.
+
+\item \textbf{What combination best strengthens role assignment security in Microsoft 365?}
+\begin{enumerate}[label=\Alph*.]
+  \item Shared admin credentials and permanent role membership
+  \item MFA enforcement, least privilege, and auditable role changes
+  \item Disabled sign-in logs with broad role grants
+  \item Role assignment only during outages with no approvals
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Strong identity protections plus traceable role governance reduce privilege abuse risk.
+
+\item \textbf{Which statement best describes secure delegation outcomes in Microsoft 365?}
+\begin{enumerate}[label=\Alph*.]
+  \item Delegation reduces security because more people get global admin
+  \item Delegation is only relevant to billing operations
+  \item Delegation is unnecessary in small organizations
+  \item Delegation improves operational efficiency while maintaining control and accountability
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Well-designed delegation balances productivity with governance by granting scoped access and preserving oversight.
+
+\end{enumerate}
 \end{document}
