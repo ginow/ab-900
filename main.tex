@@ -1966,6 +1966,214 @@
 \textbf{Answer: A}\\
 \textbf{Explanation:} Export capability helps move scoped evidence into formal legal/compliance review and retention processes.
 
+
+\item \textbf{What is the full form of DSPM in Microsoft Purview?}
+\begin{enumerate}[label=\Alph*.]
+  \item Data Security Policy Management
+  \item Digital Security Posture Monitoring
+  \item Data Security Posture Management
+  \item Distributed Security Permission Model
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} DSPM stands for Data Security Posture Management, which focuses on discovering, monitoring, and reducing data security risks.
+
+\end{enumerate}
+
+
+\clearpage
+\subsection{Explore Oversharing and Data Access Governance in SharePoint}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What best defines oversharing in SharePoint Online?}
+\begin{enumerate}[label=\Alph*.]
+  \item Encrypting every file before upload
+  \item Granting broader access than intended to content
+  \item Limiting external sharing by policy
+  \item Requiring owners to review permissions quarterly
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Oversharing occurs when permissions exceed business need, exposing data to unintended audiences.
+
+\item \textbf{Which sharing option creates the highest anonymous exposure risk?}
+\begin{enumerate}[label=\Alph*.]
+  \item Specific people
+  \item People in your organization
+  \item Existing access
+  \item Anyone with the link
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} ``Anyone with the link'' can allow access without authenticated identity verification, increasing leakage risk.
+
+\item \textbf{Why is giving Edit permission when View is enough a governance problem?}
+\begin{enumerate}[label=\Alph*.]
+  \item It can allow unauthorized content modification
+  \item It disables audit logging automatically
+  \item It applies retention labels by default
+  \item It removes all guest access immediately
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Excessive privileges violate least privilege and increase integrity and compliance risk.
+
+\item \textbf{What is a key risk of granting a guest full site access for single-file collaboration?}
+\begin{enumerate}[label=\Alph*.]
+  \item Improved data classification quality
+  \item Lower storage consumption
+  \item Accidental access to unrelated sensitive content
+  \item Automatic legal hold enforcement
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Site-level permissions can expose far more data than the collaboration scenario requires.
+
+\item \textbf{Which admin portals provide built-in visibility for SharePoint sharing activity?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 Admin Center and SharePoint Admin Center
+  \item Microsoft Intune and Defender for Endpoint only
+  \item Exchange Admin Center and Entra Connect only
+  \item Power Apps maker portal only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} These admin centers expose sharing-related reporting and governance controls across sites and content.
+
+\item \textbf{Which report question is most useful for oversharing investigation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Which users changed their Teams status today?
+  \item Who shared what content and with whom?
+  \item Which devices need BIOS updates?
+  \item Which mailboxes have archive enabled?
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Oversharing analysis depends on mapping shared items, recipients, and access scope.
+
+\item \textbf{What is the main value of using PowerShell or Microsoft Graph API for governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They replace all human review workflows
+  \item They disable external collaboration automatically
+  \item They enable scalable auditing and automation across large environments
+  \item They enforce MFA on unmanaged devices by default
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Scripting and APIs support recurring checks, targeted queries, and large-scale remediation.
+
+\item \textbf{Which automated control is most proactive for high-risk oversharing events?}
+\begin{enumerate}[label=\Alph*.]
+  \item Weekly manual screenshot reviews
+  \item Alerts triggered by sensitive files shared externally
+  \item Disabling all internal sharing permanently
+  \item Renaming every site owner group monthly
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Event-driven alerts reduce response time when risky sharing patterns are detected.
+
+\item \textbf{How do sensitivity labels with encryption reduce oversharing impact?}
+\begin{enumerate}[label=\Alph*.]
+  \item They only improve document search ranking
+  \item They remove the need for permissions management
+  \item They restrict file access to authorized users even after sharing
+  \item They convert all links into intranet-only URLs
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Encryption tied to policy and identity helps keep protected content inaccessible to unauthorized recipients.
+
+\item \textbf{What is the governance benefit of disabling anonymous links organization-wide?}
+\begin{enumerate}[label=\Alph*.]
+  \item It requires authenticated access for shared content
+  \item It prevents site owners from using version history
+  \item It turns off external collaboration entirely
+  \item It removes the need for DLP policies
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Authenticated sharing improves accountability and reduces uncontrolled link circulation.
+
+\item \textbf{Which user enablement approach most directly helps prevent accidental oversharing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Replacing all prompts with hidden defaults
+  \item In-product tooltips and prompts reminding users to verify permissions
+  \item Blocking document sharing during business hours
+  \item Limiting SharePoint use to administrators
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Contextual guidance nudges secure behavior at the moment users make sharing decisions.
+
+\item \textbf{What do Data Access Governance (DAG) reports primarily help admins do?}
+\begin{enumerate}[label=\Alph*.]
+  \item Manage endpoint anti-malware signatures
+  \item Forecast cloud compute usage
+  \item Identify high-risk SharePoint sites and prioritize remediation
+  \item Replace all retention and eDiscovery workflows
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} DAG reports surface risky sharing and data posture conditions so teams can act where impact is highest.
+
+\item \textbf{Which DAG finding signals a governance accountability gap?}
+\begin{enumerate}[label=\Alph*.]
+  \item Sites with active owners and reviewed permissions
+  \item Sites using sensitivity labels correctly
+  \item Sites with audited external sharing exceptions
+  \item Sites with inactive or missing owners
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Without active ownership, access reviews and remediation actions can stall.
+
+\item \textbf{After finding a high-risk site in a DAG report, what is the best first remediation pattern?}
+\begin{enumerate}[label=\Alph*.]
+  \item Targeted actions like revoking guest access and tightening sharing settings
+  \item Deleting the entire tenant policy configuration
+  \item Removing all internal users from the site
+  \item Migrating the site to Exchange Online
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Focused remediation reduces risk quickly while preserving necessary collaboration.
+
+\item \textbf{What is SharePoint Advanced Management (SAM) in governance strategy?}
+\begin{enumerate}[label=\Alph*.]
+  \item A free OneDrive backup utility
+  \item A paid add-on with advanced monitoring and access governance controls
+  \item A replacement for SharePoint Online licensing
+  \item A plugin that only manages page templates
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} SAM extends native controls with advanced governance capabilities for sensitive environments.
+
+\item \textbf{Which SAM capability best limits data exposure from abandoned collaboration spaces?}
+\begin{enumerate}[label=\Alph*.]
+  \item Legacy file format conversion
+  \item Public RSS feed generation
+  \item Anonymous link auto-expansion
+  \item Inactivity alerts and follow-up actions
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Dormant sites often become blind spots; inactivity-based controls reduce stale-access risk.
+
+\item \textbf{How do site access reviews strengthen long-term governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They periodically validate whether permissions are still appropriate
+  \item They permanently lock all site memberships
+  \item They remove the need for sensitivity labeling
+  \item They disable collaboration with internal teams
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Regular recertification catches outdated access and supports least-privilege maintenance.
+
+\item \textbf{What is a strong conditional access use case with SharePoint sensitive sites?}
+\begin{enumerate}[label=\Alph*.]
+  \item Allow every sign-in from unmanaged devices
+  \item Require MFA and device compliance before granting access
+  \item Bypass all user risk conditions for executives
+  \item Disable sign-in logging for confidential libraries
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Combining identity assurance and device posture reduces unauthorized access to high-value data.
+
+\item \textbf{Which sequence best reflects a proactive oversharing governance lifecycle?}
+\begin{enumerate}[label=\Alph*.]
+  \item Ignore reports, wait for incidents, then archive evidence
+  \item Detect risks, remediate targeted sites, and continuously monitor for recurrence
+  \item Enable external sharing globally and trust user judgment only
+  \item Audit once per year without policy updates
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Effective governance is continuous: detect, respond, and improve controls over time.
+
 \end{enumerate}
 
 \end{document}
