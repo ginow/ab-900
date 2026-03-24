@@ -2384,4 +2384,253 @@
 \end{enumerate}
 
 
+
+\clearpage
+\section{Explore Microsoft 365 Copilot and Agents}
+\setcounter{subsection}{0}
+\clearpage
+\subsection{Introduction}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What best describes Microsoft 365 Copilot in enterprise environments?}
+\begin{enumerate}[label=\Alph*.]
+  \item A standalone public chatbot disconnected from Microsoft 365 apps
+  \item A generative AI assistant integrated into Microsoft 365 apps with permission-aware access
+  \item A replacement for all Microsoft 365 admin centers
+  \item A legacy scripting engine for SharePoint workflows only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot is embedded in Microsoft 365 applications and works within existing identity and permission boundaries.
+
+\item \textbf{Which set of apps is explicitly associated with Microsoft 365 Copilot experiences?}
+\begin{enumerate}[label=\Alph*.]
+  \item Word, Excel, PowerPoint, Outlook, and Teams
+  \item Visio, Project, Paint, and Notepad only
+  \item Azure Portal, Entra Connect, and Device Manager
+  \item Exchange transport pipeline components only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot is designed to enhance productivity directly in core Microsoft 365 collaboration and productivity apps.
+
+\item \textbf{Why is Copilot often differentiated from consumer AI tools?}
+\begin{enumerate}[label=\Alph*.]
+  \item It is limited to offline desktop-only data
+  \item It automatically exposes all tenant files to all users
+  \item It operates within Microsoft 365 security, compliance, and access controls
+  \item It disables organization-specific governance policies
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Enterprise Copilot is built to honor tenant security controls and user authorization boundaries.
+
+\item \textbf{Which component serves as Copilot’s primary organizational data access layer?}
+\begin{enumerate}[label=\Alph*.]
+  \item DNS resolver cache
+  \item Microsoft Graph
+  \item Local browser history
+  \item External internet search index
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Microsoft Graph connects services, permissions, and signals used during Copilot retrieval and reasoning.
+
+\item \textbf{What is the role of orchestration services in Copilot architecture?}
+\begin{enumerate}[label=\Alph*.]
+  \item They route prompts, gather relevant context, and coordinate model interactions
+  \item They replace identity providers and MFA workflows
+  \item They disable semantic ranking to improve speed
+  \item They perform only static keyword matching without context
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Orchestration coordinates retrieval and generation steps so outputs are relevant and policy-aligned.
+
+\item \textbf{What is a key practical difference when comparing Copilot and agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot and agents are identical in all operational scenarios
+  \item Agents are typically designed for focused workflows; Copilot is broadly assistive across apps
+  \item Copilot is only for developers, while agents are only for executives
+  \item Agents cannot use organizational context
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot provides broad productivity support, while agents can be tailored to targeted business processes.
+
+\item \textbf{Which option is an example of context-aware assistance expected from Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item Drafting and summarizing work artifacts based on accessible organizational context
+  \item Creating unrestricted access tokens for all team members
+  \item Deleting tenant compliance policies to improve response speed
+  \item Exporting all private chats by default
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot focuses on relevant assistance grounded in user-accessible enterprise content and signals.
+
+\end{enumerate}
+
+
+\clearpage
+\subsection{Introduction to Microsoft 365 Copilot}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Why is tenant context important for Microsoft 365 Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item It allows Copilot to bypass all sharing restrictions
+  \item It ensures Copilot uses organizational data within user permission boundaries
+  \item It disables compliance controls to improve speed
+  \item It makes Graph optional for data retrieval
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot operates inside the Microsoft 365 tenant and can only access data the signed-in user is authorized to access.
+
+\item \textbf{Which source provides Copilot with connected data such as files, chats, emails, and calendars?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft Sentinel playbooks
+  \item Local browser cache
+  \item Microsoft Graph
+  \item Endpoint registry hives
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Microsoft Graph is the central data access layer connecting Microsoft 365 workloads.
+
+\item \textbf{What are the three core building blocks most associated with Copilot response generation?}
+\begin{enumerate}[label=\Alph*.]
+  \item VPN, SIEM, and IDS
+  \item SharePoint lists, Power BI, and PowerShell
+  \item Microsoft Graph, orchestration service, and large language models
+  \item DNS, DHCP, and Active Directory Federation Services
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} These components work together to retrieve context, apply rules, and generate natural language output.
+
+\item \textbf{In Copilot architecture, what role does Work IQ primarily play?}
+\begin{enumerate}[label=\Alph*.]
+  \item It performs public web crawling for all prompts
+  \item It strengthens contextual understanding by learning work patterns and relationships
+  \item It replaces encryption and DLP controls
+  \item It blocks all cross-app orchestration
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Work IQ adds organizational work context so Copilot can provide more personalized and relevant assistance.
+
+\item \textbf{How does semantic understanding improve Copilot search and retrieval quality?}
+\begin{enumerate}[label=\Alph*.]
+  \item It matches only exact phrases in file names
+  \item It ignores context and prioritizes oldest documents
+  \item It maps meaning and related concepts rather than only literal keywords
+  \item It disables relationship mapping to reduce noise
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Semantic indexing helps Copilot find relevant content even when prompt wording differs from source wording.
+
+\item \textbf{Which example best demonstrates relationship mapping in Microsoft Graph?}
+\begin{enumerate}[label=\Alph*.]
+  \item Identifying coauthors, linked meetings, and related Teams discussions for a document
+  \item Listing only file extensions by folder
+  \item Measuring endpoint battery state for mobile devices
+  \item Exporting all tenant users into a static CSV nightly
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Relationship mapping captures how people, files, meetings, and conversations connect in real work scenarios.
+
+\item \textbf{What does dynamic context mean in Copilot responses?}
+\begin{enumerate}[label=\Alph*.]
+  \item Responses are generated from a fixed annual snapshot only
+  \item Information is filtered by current user activity, role context, and permissions
+  \item Only keyword frequency determines final output
+  \item Direct reports are ignored during manager queries
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Dynamic context keeps outputs relevant to the user’s active work and authorized scope.
+
+\item \textbf{What is grounded prompting in Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item Sending raw prompts directly to a model without context
+  \item Enriching prompts with relevant Graph data and instructions before generation
+  \item Restricting prompts to fewer than 20 words
+  \item Translating every prompt into SQL queries
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Grounding gives the LLM organizational context and structure, improving relevance and reliability.
+
+\item \textbf{Which statement about Copilot data privacy is most accurate?}
+\begin{enumerate}[label=\Alph*.]
+  \item Tenant data in prompts is used to retrain public GPT models
+  \item Copilot stores all prompts permanently in public datasets
+  \item Tenant data remains isolated and is not used to train public foundation models
+  \item Copilot responses are always shared across tenants
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Copilot is designed with enterprise isolation so organizational data remains protected.
+
+
+\item \textbf{What is the first step in the Copilot orchestration service lifecycle?}
+\begin{enumerate}[label=\Alph*.]
+  \item Formatting final output for app rendering
+  \item Prompt intake and initial request classification
+  \item Applying post-response legal hold
+  \item Publishing response to external social platforms
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The orchestration flow begins by capturing and classifying the user’s request.
+
+\item \textbf{Which stage determines relevant data sources and plugins for a prompt?}
+\begin{enumerate}[label=\Alph*.]
+  \item Evaluation stage
+  \item Final rendering stage
+  \item Local cache stage
+  \item Offline archive stage
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Evaluation decides what signals and connectors are needed to answer efficiently and safely.
+
+
+\item \textbf{Which stage ensures responses are properly shaped for Word, Excel, PowerPoint, or Teams?}
+\begin{enumerate}[label=\Alph*.]
+  \item Execution stage only
+  \item Formatting stage with policy checks before display
+  \item Intake stage only
+  \item Indexing stage only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Formatting adapts content to app-specific presentation while enforcing governance controls.
+
+\item \textbf{In the Copilot prompt lifecycle, which order is most accurate at a high level?}
+\begin{enumerate}[label=\Alph*.]
+  \item User prompt, grounding, response generation, app delivery
+  \item Response generation, user prompt, grounding, archive
+  \item App delivery, grounding, user prompt, indexing
+  \item Archive, formatting, user prompt, retraining
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot starts with user intent, grounds context, generates output, and then returns it to the app.
+
+\item \textbf{Which scenario best demonstrates Work IQ-enabled personalization?}
+\begin{enumerate}[label=\Alph*.]
+  \item Anticipating relevant project updates based on collaboration patterns and recent work signals
+  \item Returning random historical documents to encourage discovery
+  \item Ignoring team structure when managers request updates
+  \item Requiring users to restate all context in every prompt
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Work IQ helps Copilot learn work context and provide smarter, proactive assistance.
+
+\item \textbf{Which option best summarizes the value of grounding plus orchestration?}
+\begin{enumerate}[label=\Alph*.]
+  \item Faster but less relevant responses from generic prompts only
+  \item Context-rich, policy-aware outputs aligned to user intent and authorized data
+  \item Automatic disablement of compliance monitoring
+  \item Mandatory manual data gathering before every prompt
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Grounding and orchestration together improve relevance, structure, and governance alignment.
+
+\item \textbf{Which stage is directly responsible for natural-language response creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item LLM execution after grounded context is prepared
+  \item Intake logging only
+  \item App theme rendering
+  \item Static file indexing only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The LLM produces the textual output once orchestration has prepared a context-rich prompt.
+
+\end{enumerate}
+
 \end{document}
