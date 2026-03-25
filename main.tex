@@ -2885,4 +2885,131 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Compare Microsoft 365 Copilot and Agents}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{At a high level, how should admins compare Microsoft 365 Copilot and agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot is embedded and assistive; agents are customizable and can automate workflows
+  \item Copilot and agents are architecturally identical in all scenarios
+  \item Agents are only UI themes for Copilot
+  \item Copilot can only run on a schedule
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot is typically real-time and user-interactive, while agents are more workflow-oriented and customizable.
+
+\item \textbf{Which interaction pattern best matches Microsoft 365 Copilot?}
+\begin{enumerate}[label=\Alph*.]
+  \item Triggered nightly batch execution without user input
+  \item Real-time, in-app conversational assistance in tools like Word or Teams
+  \item API-only backend orchestration with no UI
+  \item Event-driven server daemon mode
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot is optimized for interactive productivity tasks within Microsoft 365 apps.
+
+\item \textbf{Which interaction pattern best matches agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Always embedded directly in a document canvas
+  \item Requires a user prompt for every microstep
+  \item Can run by trigger or schedule and execute multi-step logic
+  \item Limited to passive summarization only
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Agents can operate in the background and execute process logic with less continuous user interaction.
+
+\item \textbf{Which statement best distinguishes data access design between Copilot and many agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Both always run with a single end-user token only
+  \item Copilot ignores user permissions while agents enforce them
+  \item Agents always have broader admin rights by default
+  \item Copilot is user-scoped; agents often use managed identities or service accounts
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Copilot typically follows end-user permissions, while agents can be configured with non-user identities for workflow scope.
+
+\item \textbf{Which criterion is critical when deciding between Copilot and agents for a use case?}
+\begin{enumerate}[label=\Alph*.]
+  \item How users interact with the tool
+  \item Data and permission requirements
+  \item Action model and customization needs
+  \item All of the above
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} Selection should account for interaction style, security model, automation behavior, and lifecycle governance.
+
+\item \textbf{Why is Copilot often described as context-aware and reactive?}
+\begin{enumerate}[label=\Alph*.]
+  \item It continuously executes background jobs with no user input
+  \item It responds to prompts using current app context like documents or threads
+  \item It only processes API webhooks
+  \item It can’t access Microsoft Graph signals
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot draws context from active user work to generate immediate, relevant assistance.
+
+\item \textbf{Which statement best describes customization depth?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot usually emphasizes tenant-level configuration; agents can support deeper workflow customization
+  \item Copilot is always code-heavy and agents are never customizable
+  \item Neither supports governance controls
+  \item Agents cannot integrate with external systems
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot tuning/configuration differs from building agent workflows that can include connectors and logic.
+
+\item \textbf{How should admins treat advanced agents in production?}
+\begin{enumerate}[label=\Alph*.]
+  \item As temporary experiments with no testing
+  \item As software assets with lifecycle controls (test, deploy, version, rollback)
+  \item As ungoverned user macros
+  \item As tools that don’t require monitoring
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Agents that can take actions should be managed with software engineering and change control practices.
+
+\item \textbf{Which scenario best fits agents’ strength?}
+\begin{enumerate}[label=\Alph*.]
+  \item Scheduled invoice triage and multi-step approvals across systems
+  \item One-off slide rewrite inside PowerPoint only
+  \item Ad hoc inline proofreading with manual prompting only
+  \item Purely local spell-checking
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Agents excel at repeatable, structured process automation and orchestration.
+
+\item \textbf{What is a practical Copilot+agent hybrid pattern?}
+\begin{enumerate}[label=\Alph*.]
+  \item Agent handles workflow; Copilot summarizes exceptions for human approval
+  \item Copilot runs all unattended jobs while agents draft emails only
+  \item Agents disable review steps and auto-approve sensitive actions
+  \item Copilot replaces all connectors in background orchestration
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Hybrid design combines automation throughput with faster human decision support.
+
+\item \textbf{How should admins handle eDiscovery and retention implications?}
+\begin{enumerate}[label=\Alph*.]
+  \item Store transcripts/logs in ways aligned with retention and investigation requirements
+  \item Delete all telemetry daily to save storage
+  \item Keep only success events and drop failures
+  \item Track nothing for privacy simplicity
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Proper record handling supports legal, compliance, and incident response needs.
+
+\item \textbf{Which statement best captures ``how they work behind the scenes'' differences?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot is tightly integrated and managed via settings, and is less customisable; agents require more setup and testing
+  \item Both are unmanaged black boxes with identical internals
+  \item Agents cannot call APIs or connect external systems
+  \item Copilot requires custom app code for basic usage
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot usage is configuration-led, while agents can be built as workflow-centric mini applications.
+
+\end{enumerate}
+
 \end{document}
