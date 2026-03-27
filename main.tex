@@ -3012,4 +3012,568 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Compare Microsoft 365 Copilot Licensing Models}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What is the key difference between a Copilot plan and a Copilot licensing model?}
+\begin{enumerate}[label=\Alph*.]
+  \item Plan defines tenant region; licensing model defines data residency
+  \item Plan defines capabilities; licensing model defines payment approach
+  \item Plan defines encryption; licensing model defines app support only
+  \item Plan defines prompts; licensing model defines response quality only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The plan determines feature access, while the licensing model determines how costs are billed.
+
+\item \textbf{Which option best describes the free Copilot chat experience?}
+\begin{enumerate}[label=\Alph*.]
+  \item Full Microsoft Graph grounding across tenant data
+  \item Basic conversational AI primarily grounded on web context
+  \item Enterprise-only advanced compliance analytics
+  \item Built-in custom agent publishing at scale
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Free chat provides basic AI assistance but does not unlock full organization-grounded Copilot value.
+
+\item \textbf{What is a defining capability of the paid Microsoft 365 Copilot plan?}
+\begin{enumerate}[label=\Alph*.]
+  \item It only runs outside Microsoft 365 apps
+  \item It grounds responses in Microsoft Graph work data across apps
+  \item It disables Teams and Outlook integration
+  \item It replaces Microsoft 365 licensing requirements
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Paid Copilot integrates with Microsoft 365 apps and organizational signals such as files, chats, and emails.
+
+\item \textbf{Which statement best describes Copilot Studio in licensing discussions?}
+\begin{enumerate}[label=\Alph*.]
+  \item It is only for consumer Family plans
+  \item It supports agent creation and may involve capacity or metered usage
+  \item It is included at unlimited no-cost usage in all plans
+  \item It can’t connect to external systems
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot Studio enables custom agent development and often introduces usage-based capacity considerations.
+
+\item \textbf{Which two licensing models are highlighted for Copilot economics?}
+\begin{enumerate}[label=\Alph*.]
+  \item Annual device-based and perpetual license
+  \item User seat + hardware token license
+  \item Monthly per-user and pay-as-you-go consumption
+  \item One-time purchase and partner-funded usage
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Organizations generally choose between fixed per-user pricing and variable usage-based billing.
+
+\item \textbf{When is monthly per-user licensing usually most attractive?}
+\begin{enumerate}[label=\Alph*.]
+  \item Highly volatile usage with unpredictable spikes
+  \item Stable user populations needing predictable budgeting
+  \item Anonymous external workloads only
+  \item Scenarios with no governance requirements
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Fixed monthly licensing provides cost predictability for consistent usage patterns.
+
+\item \textbf{Which is a common risk of monthly per-user licensing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Under-metering caused by missing API counters
+  \item Over-licensing inactive or low-usage users
+  \item Inability to assign licenses in Microsoft 365 admin tools
+  \item No support for group-based assignment
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Without regular audits, organizations may continue paying for users who rarely use Copilot.
+
+\item \textbf{What is the biggest benefit of pay-as-you-go licensing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Unlimited usage at fixed monthly cost
+  \item Pay aligned to actual consumption patterns
+  \item Elimination of all monitoring needs
+  \item Automatic enterprise compliance enablement
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Consumption billing reduces waste when usage is intermittent or uncertain.
+
+\item \textbf{Which operational challenge is most associated with pay-as-you-go?}
+\begin{enumerate}[label=\Alph*.]
+  \item Complete inability to create cost alerts
+  \item Budget volatility during high-demand periods
+  \item Incompatibility with Azure billing systems
+  \item No support for departmental tagging
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Usage spikes can materially increase monthly spend without strong governance controls.
+
+\item \textbf{Which management capability is especially important under pay-as-you-go?}
+\begin{enumerate}[label=\Alph*.]
+  \item Azure Cost Management budgets, alerts, and tags
+  \item Local spreadsheet tracking only
+  \item Manual yearly invoices without telemetry
+  \item Disabling logs to reduce cost noise
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Continuous cloud cost monitoring is essential to manage variable consumption-based billing.
+
+\item \textbf{What is true about Business vs Enterprise Copilot eligibility in general guidance?}
+\begin{enumerate}[label=\Alph*.]
+  \item Business and Enterprise can both be eligible, but Business has a 300-user cap
+  \item Enterprise cannot use Copilot add-ons
+  \item Business always includes all advanced Purview features by default
+  \item Business supports unlimited user scale by design
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Business plans often have user caps, while Enterprise is designed for larger-scale deployments.
+
+\item \textbf{Which statement best captures Business vs Enterprise Copilot feature reality?}
+\begin{enumerate}[label=\Alph*.]
+  \item App experiences may be similar, but Enterprise governance/compliance depth is broader
+  \item Business always has stronger compliance than Enterprise
+  \item Enterprise excludes DLP and audit controls
+  \item Both always include identical advanced Purview capabilities
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Enterprise environments generally provide richer governance toolsets for risk-sensitive workloads.
+
+\item \textbf{Why aren’t Office Apps-only subscriptions typically sufficient for full Copilot value?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot requires graph-connected services like Exchange and SharePoint for grounding
+  \item Office apps block AI prompts by policy
+  \item Copilot can only run in Azure Virtual Desktop
+  \item Office apps disable Entra authentication
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Work-grounded Copilot relies on cross-service Microsoft Graph signals, not just local app binaries.
+
+\item \textbf{Which plan type is intended for consumer/home scenarios rather than enterprise tenant governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 Personal/Family
+  \item Microsoft 365 E5 with add-on controls
+  \item Microsoft 365 Business Premium tenant governance stack
+  \item Copilot Studio enterprise capacity packs only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Personal/Family supports home users and lacks enterprise-grade admin and compliance architecture.
+
+\item \textbf{Which statement about agent creation is most accurate for licensing conversations?}
+\begin{enumerate}[label=\Alph*.]
+  \item Agent creation at scale often requires eligible business/enterprise context and Copilot Studio capacity
+  \item Personal accounts always include enterprise connector publishing
+  \item Free chat includes unlimited agent lifecycle controls
+  \item Agent costs can never be metered
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Building and operating custom agents typically requires appropriate tenant eligibility and capacity planning.
+
+\item \textbf{What is the best strategy for an organization unsure about long-term Copilot demand?}
+\begin{enumerate}[label=\Alph*.]
+  \item Start with a measured pilot, collect usage data, then choose or blend models
+  \item License all users permanently on day one
+  \item Disable all tracking to reduce deployment friction
+  \item Avoid any budgeting process during rollout
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Pilot-led evidence improves licensing fit and reduces financial surprises.
+
+\item \textbf{Which scenario best fits pay-as-you-go adoption?}
+\begin{enumerate}[label=\Alph*.]
+  \item Intermittent research teams with fluctuating AI usage
+  \item Large stable workforce with uniform daily use
+  \item Highly regulated always-on production without monitoring
+  \item Tenants requiring fixed monthly budgeting only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Variable-demand groups can benefit from consumption-based flexibility.
+
+\item \textbf{Which scenario best fits monthly per-user licensing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Seasonal short bursts with uncertain demand
+  \item Consistent daily usage across a stable knowledge-worker cohort
+  \item Low-frequency occasional usage for thousands of users
+  \item Projects with unknown adoption and no budget owner
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Stable utilization profiles usually align with fixed seat-based licensing economics.
+
+\item \textbf{What is a primary SharePoint-related risk when expanding paid Copilot access broadly?}
+\begin{enumerate}[label=\Alph*.]
+  \item Increased query reach can expose governance gaps if permissions and labels are weak
+  \item SharePoint automatically disables Copilot search
+  \item Copilot bypasses all SharePoint ACLs by design
+  \item Licensing has no effect on query patterns
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot respects permissions, but broader licensed adoption increases query surface and policy pressure.
+
+\item \textbf{Which SharePoint billing behavior is most relevant under pay-as-you-go?}
+\begin{enumerate}[label=\Alph*.]
+  \item Heavy document-library querying can drive consumption spikes
+  \item SharePoint queries are always free
+  \item Usage is fixed regardless of query volume
+  \item Billing is disconnected from Azure reporting
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Document-intensive periods can materially increase metered usage costs.
+
+\item \textbf{Which hybrid strategy is often practical in large organizations?}
+\begin{enumerate}[label=\Alph*.]
+  \item Monthly licenses for core teams, pay-as-you-go for occasional or pilot groups
+  \item Pay-as-you-go for every user with no monitoring
+  \item Monthly for everyone including inactive users forever
+  \item Disable Copilot in SharePoint to avoid governance
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} A blended approach can balance predictable baseline costs and flexible edge demand.
+
+\item \textbf{Which governance action most improves monthly license efficiency?}
+\begin{enumerate}[label=\Alph*.]
+  \item Quarterly audits to reclaim inactive seats
+  \item Assigning permanent seats to all contractors
+  \item Avoiding usage analytics to reduce effort
+  \item Deleting all service usage logs
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Periodic true-up reduces wasted spend from low-value assignments.
+
+\item \textbf{Which governance action most improves pay-as-you-go control?}
+\begin{enumerate}[label=\Alph*.]
+  \item Configure budgets, threshold alerts, and chargeback tags in Azure
+  \item Disable departmental visibility into costs
+  \item Ignore spikes until fiscal year close
+  \item Rely on manual memory of usage trends
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Proactive telemetry and ownership models are critical for variable-spend governance.
+
+\item \textbf{Which statement best reflects security and licensing interplay?}
+\begin{enumerate}[label=\Alph*.]
+  \item Licensing choices affect who can use features; governance controls still determine safe access behavior
+  \item Licensing alone replaces all compliance policies
+  \item Governance is optional when licenses are paid
+  \item Security controls only apply to free plans
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Licensing unlocks capability, but secure outcomes depend on policy, identity, and monitoring.
+
+\item \textbf{What is a strong budgeting best practice before broad Copilot rollout?}
+\begin{enumerate}[label=\Alph*.]
+  \item Build adoption forecasts using pilot metrics and departmental workload profiles
+  \item Assume identical usage across all roles
+  \item Ignore seasonal workload variation
+  \item Skip financial ownership mapping
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Evidence-based forecasting improves model selection and reduces budget variance.
+
+\item \textbf{Which choice is the most accurate summary of monthly vs pay-as-you-go trade-offs?}
+\begin{enumerate}[label=\Alph*.]
+  \item Monthly favors predictability; pay-as-you-go favors flexibility with higher monitoring demands
+  \item Monthly and pay-as-you-go are financially identical in all conditions
+  \item Pay-as-you-go removes the need for governance
+  \item Monthly cannot be managed in Microsoft 365 admin tools
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The best model depends on demand stability, governance maturity, and cost-control capabilities.
+
+\item \textbf{Which statement is the best final recommendation for admins comparing Copilot licensing models?}
+\begin{enumerate}[label=\Alph*.]
+  \item Choose licensing by combining feature-fit, governance readiness, and cost behavior analysis
+  \item Decide by unit price only
+  \item Avoid pilot testing and adopt the largest plan immediately
+  \item Separate licensing decisions from security/compliance planning
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Effective licensing decisions require balancing functionality, risk controls, and financial strategy.
+
+\end{enumerate}
+
+
+\clearpage
+\subsection{Plan and Deploy Microsoft 365 Copilot and Agents}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Why does Microsoft 365 Copilot require careful deployment planning in enterprises?}
+\begin{enumerate}[label=\Alph*.]
+  \item It operates independently from Microsoft 365 data and governance
+  \item It is tightly integrated with Microsoft 365 apps and Microsoft Graph context
+  \item It can’t be controlled by administrators
+  \item It only supports consumer workloads
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Copilot is deeply connected to organizational content and workflows, so planning must address both value and risk.
+
+\item \textbf{Which statement best reflects Copilot feature control strategy?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot is only an all-or-nothing tenant switch
+  \item Features can be managed with tenant-wide and granular controls
+  \item Controls are available only through external tools
+  \item App-level controls are unsupported
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Organizations can control Copilot globally and at finer scopes by app, feature, or user group.
+
+\item \textbf{What is a common advantage of tenant-wide controls?}
+\begin{enumerate}[label=\Alph*.]
+  \item Fast, simple governance during early readiness phases
+  \item Department-level precision by default
+  \item Built-in pilot segmentation across all groups
+  \item Automatic role-based delegation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Tenant-wide settings are straightforward to apply quickly, especially before full governance is finalized.
+
+\item \textbf{What is a key limitation of tenant-wide controls?}
+\begin{enumerate}[label=\Alph*.]
+  \item They are too granular for enterprise rollout
+  \item They don’t support any Microsoft 365 workloads
+  \item They can lack flexibility for departments with different readiness levels
+  \item They always require custom code
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} A global setting can block or enable everyone, even when only some teams are prepared.
+
+\item \textbf{Which example best illustrates granular Copilot control?}
+\begin{enumerate}[label=\Alph*.]
+  \item Enabling Excel Copilot for Finance while keeping Word Copilot restricted for Legal
+  \item Enabling all Copilot features tenant-wide permanently
+  \item Disabling Microsoft Graph across the tenant
+  \item Replacing Microsoft Entra groups with manual spreadsheets
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Granular controls allow targeted rollout by app and department to align with governance maturity.
+
+\item \textbf{How are Teams meeting recaps commonly governed in Copilot rollout?}
+\begin{enumerate}[label=\Alph*.]
+  \item They are unrelated to transcription settings
+  \item They are available only in external meetings
+  \item They depend on transcription policies and can be scoped by department
+  \item They bypass privacy requirements by default
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Recaps often rely on transcripts, so transcript policy and departmental sensitivity both matter.
+
+\item \textbf{What is a practical way to control feature availability during phased rollout?}
+\begin{enumerate}[label=\Alph*.]
+  \item Group-based licensing and policy assignment via Microsoft Entra groups
+  \item Single global admin account for all workloads
+  \item Disabling all logs until rollout finishes
+  \item Only manual mailbox-level changes
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Group targeting enables controlled pilots and staged expansion with less operational overhead.
+
+\item \textbf{Why are structured pilot programs valuable for Copilot deployment?}
+\begin{enumerate}[label=\Alph*.]
+  \item They eliminate all compliance responsibilities
+  \item They provide technical and governance feedback before broad rollout
+  \item They guarantee identical adoption across departments
+  \item They replace training and change management
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Pilots surface real-world usage patterns, policy gaps, and user readiness insights.
+
+\item \textbf{Which governance prerequisite is most important before broad summarization enablement?}
+\begin{enumerate}[label=\Alph*.]
+  \item Strong data classification and sensitivity labeling practices
+  \item Removing all SharePoint permissions inheritance
+  \item Disabling audit logs for privacy
+  \item Enforcing one license type for all users
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Proper classification reduces risk of unintended exposure in AI-assisted summaries.
+
+\item \textbf{What is the purpose of continuous monitoring and auditing after Copilot rollout?}
+\begin{enumerate}[label=\Alph*.]
+  \item To detect risky patterns and refine policy controls over time
+  \item To disable all adoption metrics
+  \item To avoid feedback from departments
+  \item To replace access controls entirely
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Ongoing monitoring supports governance tuning, incident response, and compliance assurance.
+
+\item \textbf{Why do many organizations form cross-functional Copilot governance committees?}
+\begin{enumerate}[label=\Alph*.]
+  \item To centralize all decisions in a single technical role
+  \item To balance productivity goals with legal, compliance, and security requirements
+  \item To bypass business stakeholder input
+  \item To avoid documenting rollout decisions
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Committee models help ensure feature decisions reflect risk, policy, and operational realities.
+
+\item \textbf{Which role model best supports scalable Copilot administration?}
+\begin{enumerate}[label=\Alph*.]
+  \item Workload-specific role delegation (for example, Exchange and Teams admins)
+  \item Only global admins managing every setting
+  \item Any user changing tenant policy settings
+  \item No delegation or role governance
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Delegation to subject matter admins reduces bottlenecks and improves control quality.
+
+\item \textbf{What does Microsoft Entra Privileged Identity Management (PIM) help enforce?}
+\begin{enumerate}[label=\Alph*.]
+  \item Permanent standing high privileges for convenience
+  \item Just-in-time elevation for sensitive admin roles
+  \item Automatic disablement of all Copilot features
+  \item Mandatory global admin assignment to all makers
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} PIM reduces risk by limiting duration and scope of privileged role activation.
+
+\item \textbf{Why is separation of duties important in Copilot and agent governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item It allows one person to approve and publish all high-risk changes
+  \item It creates checks and balances for sensitive actions
+  \item It removes need for audit trails
+  \item It prevents phased rollout strategies
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Splitting critical responsibilities reduces misuse risk and strengthens accountability.
+
+\item \textbf{Which rollout sequence most closely reflects best practice?}
+\begin{enumerate}[label=\Alph*.]
+  \item Pilot, training, feedback loop, iterative policy adjustment, then scale
+  \item Global enablement with no governance baseline
+  \item Disable monitoring after launch
+  \item Skip user education to speed adoption
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Incremental rollout with training and feedback improves outcomes and reduces compliance surprises.
+
+\item \textbf{What is the primary purpose of the Microsoft 365 Copilot Adoption site?}
+\begin{enumerate}[label=\Alph*.]
+  \item Provide a centralized rollout resource for licensing, setup, and adoption guidance
+  \item Replace Microsoft 365 admin center controls
+  \item Publish ungoverned custom connectors
+  \item Disable change management requirements
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Adoption site helps organizations move from planning and readiness to enablement and scale.
+
+\item \textbf{Which Adoption site activity directly supports technical readiness?}
+\begin{enumerate}[label=\Alph*.]
+  \item Environment preparation across apps, SharePoint, OneDrive, and governance settings
+  \item Disabling all compliance policies before pilot
+  \item Limiting rollout to consumer accounts
+  \item Avoiding license assignment checks
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Readiness work ensures infrastructure and controls are aligned before broad usage.
+
+\item \textbf{Which Adoption site resource helps user enablement and change management?}
+\begin{enumerate}[label=\Alph*.]
+  \item Success kits, scenario libraries, and communication templates
+  \item BIOS inventory exports
+  \item DNS zone hardening scripts
+  \item Endpoint firmware rollback plans
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Adoption depends on clear onboarding, role-based scenarios, and communication support materials.
+
+\item \textbf{What does Agent 365 primarily provide administrators?}
+\begin{enumerate}[label=\Alph*.]
+  \item Centralized visibility and governance over AI agents across Microsoft 365
+  \item A consumer-only chat interface
+  \item Replacement for Microsoft Entra identity
+  \item Unmanaged agent creation without oversight
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Agent 365 helps manage lifecycle, identity, access, activity, and policy compliance at scale.
+
+\item \textbf{Which Agent 365 capability most directly supports least-privilege agent operations?}
+\begin{enumerate}[label=\Alph*.]
+  \item Assigning trusted identities and scoped access controls per agent
+  \item Publishing all agents with tenant-wide read/write access
+  \item Disabling ownership metadata
+  \item Avoiding policy templates for new agents
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Identity-based scoping helps ensure agents only access the data and actions they require.
+
+\item \textbf{How can Agent 365 help during a security investigation?}
+\begin{enumerate}[label=\Alph*.]
+  \item By providing audit trails of what the agent did and what data it accessed
+  \item By automatically deleting all logs
+  \item By disabling incident response playbooks
+  \item By bypassing Microsoft Defender and Purview integration
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Detailed run history and traceability are essential for defensible incident analysis.
+
+\item \textbf{Which scenario best demonstrates controlled agent onboarding with Agent 365?}
+\begin{enumerate}[label=\Alph*.]
+  \item Assigning owners, requiring approvals, and applying policy templates before production use
+  \item Allowing anonymous agent publishing for speed
+  \item Skipping permissions review for department agents
+  \item Disabling monitoring during experimentation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Governance-first onboarding reduces shadow-agent risk and improves operational stability.
+
+\item \textbf{Which deployment decision best balances productivity and risk tolerance?}
+\begin{enumerate}[label=\Alph*.]
+  \item Enable low-risk drafting first, then phase in higher-risk summarization/recaps with controls
+  \item Enable every feature for all users immediately
+  \item Block all Copilot features indefinitely
+  \item Allow unrestricted agent publishing without ownership
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Sequenced rollout lets organizations capture value while validating controls incrementally.
+
+\item \textbf{Which role assignment pattern helps avoid global-admin bottlenecks?}
+\begin{enumerate}[label=\Alph*.]
+  \item Delegating feature ownership to workload admins with policy oversight
+  \item Granting every manager global admin rights
+  \item Centralizing all permissions in a single intern account
+  \item Removing all role scoping
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Managed delegation increases execution speed without sacrificing governance accountability.
+
+\item \textbf{Which control is best for validating feature impact before broad exposure?}
+\begin{enumerate}[label=\Alph*.]
+  \item Staged pilots with representative departments and measurable outcomes
+  \item Tenant-wide permanent enablement without review
+  \item Random untracked experimentation
+  \item Disabling feedback channels
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Evidence-driven pilots provide actionable data on usability, risk, and policy fitness.
+
+\item \textbf{Which statement best captures the admin challenge introduced by agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Agents require decisions on creation rights, governance scope, and lifecycle controls
+  \item Agents remove need for role and policy design
+  \item Agents cannot integrate with external systems
+  \item Agents are always low risk and need no oversight
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Agent adoption expands governance responsibilities beyond core Copilot feature toggles.
+
+\item \textbf{If Legal reports Copilot summarizing sensitive threads too broadly, what is the best immediate response?}
+\begin{enumerate}[label=\Alph*.]
+  \item Tighten summarization scope via granular controls and review data classification/policies
+  \item Disable all Microsoft 365 services permanently
+  \item Grant wider access to all legal content for consistency
+  \item Ignore until the next annual audit
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Immediate scoped restrictions plus governance remediation reduce risk while preserving controlled adoption.
+
+\item \textbf{Which statement best summarizes successful Copilot and agent deployment?}
+\begin{enumerate}[label=\Alph*.]
+  \item Combine phased feature enablement, role governance, monitoring, and user enablement
+  \item Prioritize speed by removing controls
+  \item Focus only on licensing and skip change management
+  \item Rely only on tenant-wide toggles forever
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Sustainable success requires technical readiness, governance discipline, and adoption support together.
+
+\end{enumerate}
+
 \end{document}
