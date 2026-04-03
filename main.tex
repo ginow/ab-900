@@ -4180,4 +4180,201 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Monitor Microsoft 365 Copilot Usage and Adoption}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which two baseline counters should admins track first when measuring adoption?}
+\begin{enumerate}[label=\Alph*.]
+  \item Enabled users and active users
+  \item Total tenants and guest domains
+  \item Device uptime and battery health
+  \item Email size and mailbox quotas
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Enabled vs active is the fastest way to identify adoption gaps and entitlement inefficiencies.
+
+\item \textbf{What usually indicates a problem when enabled users are high but active users remain low?}
+\begin{enumerate}[label=\Alph*.]
+  \item Potential communication, training, service-plan, or workflow-fit issues
+  \item Guaranteed successful adoption
+  \item Mandatory pay-as-you-go conversion
+  \item Strong feature saturation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} A low active-rate for an enabled population suggests either a rollout/communication gap, a permissions/service-plan issue, or an applicability mismatch between Copilot capabilities and the target workflows
+
+\item \textbf{Which additional dimensions should follow enabled/active counts for actionable triage?}
+\begin{enumerate}[label=\Alph*.]
+  \item Who, where (app breakdown), and when (trend over time)
+  \item Theme settings and font preferences
+  \item CPU clock speed and RAM type
+  \item Printer queue depth only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} These finer data points let you build simple operational playbooks, such as:\\
+Reassign licenses.\\
+Run targeted training for consumers of a particular app.\\
+Create a small group of enthusiastic, early-adopter users who are proficient with Copilot and can help promote adoption across the organization.
+
+\item \textbf{What is a practical limitation to account for in built-in admin usage reporting?}
+\begin{enumerate}[label=\Alph*.]
+  \item Potential 24-48 hour ingestion lag and privacy-driven small-group anonymization
+  \item Guaranteed real-time per-second telemetry
+  \item Unlimited historical retention by default
+  \item No role requirements for report access
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Microsoft’s admin usage reports and dashboards can exhibit a 24–48 hour ingestion delay and might intentionally anonymize small groups to protect privacy. As such, plan your cadence (daily/weekly) and thresholds accordingly so you don’t chase noise. When you need more granular or near-real-time signals, use the Graph reporting endpoints (where available) or scheduled CSV/Power BI exports to store a longer and more queryable history for cohort or trend analysis.
+
+\item \textbf{Where is the quickest operational UI path for Copilot usage checks?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 admin center: Reports > Usage > Microsoft 365 Copilot/Copilot Chat
+  \item Exchange transport rules wizard
+  \item Entra branding settings
+  \item SharePoint term store
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The usage report is the primary triage surface for enabled/active trends and app activity snapshots.
+
+\item \textbf{Which check helps reconcile adoption gaps between entitlement and usage?}
+\begin{enumerate}[label=\Alph*.]
+  \item Compare usage report activity with Billing > Licenses assignment state
+  \item Compare wallpaper themes by department
+  \item Compare Teams avatars only
+  \item Compare mailbox signatures
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Reconciling assignment and activity clarifies whether issues are access-related or adoption-related.
+
+\item \textbf{When should admins consider programmatic extraction via Microsoft Graph reports?}
+\begin{enumerate}[label=\Alph*.]
+  \item When needing automation, scheduled ingestion, and longer historical trend stores
+  \item Only for one-time ad hoc screenshots
+  \item Only when no dashboards exist
+  \item Never, because UI reports are always sufficient
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} APIs support repeatable pipelines and richer longitudinal analysis beyond UI retention windows.
+
+\item \textbf{Which adoption playbook best fits this scenario: 150 enabled users, 22 active users in Marketing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Run targeted app-specific training, reassess activity, then reclaim persistently unused licenses
+  \item Immediately disable all Copilot services tenant-wide
+  \item Grant every user global admin rights
+  \item Ignore until annual budgeting
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Targeted enablement plus measured license hygiene is more effective than broad disruptive actions.
+
+\item \textbf{What does Copilot Analytics in Viva Insights add beyond simple active-user counts?}
+\begin{enumerate}[label=\Alph*.]
+  \item Feature-level and impact-oriented signals for deeper adoption analysis
+  \item Only invoice export functionality
+  \item Device compliance baselines only
+  \item Exchange transport logs only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Viva Insights helps evaluate behavioral and outcome patterns, not just raw participation totals.
+
+\item \textbf{Which role/setting combination is important before publishing deeper analytics dashboards?}
+\begin{enumerate}[label=\Alph*.]
+  \item Insights role assignments plus privacy controls like minimum group size and exclusion list
+  \item Disabling all privacy thresholds for maximum detail
+  \item Global admin access for every viewer
+  \item Removing all tenant guardrails
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} There are also admin-side analytics settings and privacy controls that you must configure before publishing dashboards. Settings like minimum group size, exclusion lists (to remove specific accounts from dashboards), and role assignments (Insights Administrator and Insights Analyst) determine who can see which level of detail and protect personal information. You must configure these settings first and then run the Copilot Analytics templates so that your analysts are working within the tenant’s privacy guardrails.
+
+\item \textbf{Which analyst workflow aligns with Viva Insights Power BI templates?}
+\begin{enumerate}[label=\Alph*.]
+  \item Run predefined Viva query, then connect/refresh template in Power BI
+  \item Export license keys and paste into Word
+  \item Disable template sections to reduce context
+  \item Use only manual screenshots
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The query-plus-template flow standardizes repeatable adoption and impact reporting.
+
+\item \textbf{What is the core purpose of trend analysis versus one-day snapshots?}
+\begin{enumerate}[label=\Alph*.]
+  \item Determine growth, plateau, or decline and relate changes to interventions
+  \item Replace historical reporting completely
+  \item Prove causality from one data point
+  \item Avoid cohort segmentation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Trends enable before/after evaluation of workshops, product updates, and policy changes.
+
+\item \textbf{Which funnel model is most useful for Copilot adoption tracking?}
+\begin{enumerate}[label=\Alph*.]
+  \item Enabled -> Tried -> Frequent user
+  \item Installed -> Rebooted -> Archived
+  \item Online -> Offline -> Deleted
+  \item Drafted -> Printed -> Scanned
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Funnel transitions reveal where adoption drops and where enablement effort should focus.
+
+\item \textbf{What does feature diffusion analysis help identify?}
+\begin{enumerate}[label=\Alph*.]
+  \item Which specific capabilities spread from pilot groups and where targeted training is needed
+  \item Which departments have newest laptops
+  \item Which users changed passwords
+  \item Which teams prefer dark mode
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Adoption is often feature-specific, so diffusion gaps guide focused communications.
+
+\item \textbf{Which reporting surface is best suited for fast operational triage?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 admin center usage reports
+  \item Full custom data lake modeling only
+  \item Annual invoice archive
+  \item One-time email summaries
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Admin reports are built for quick checks on adoption, assignments, and immediate actions.
+
+\end{enumerate}
+
+
+\clearpage
+\subsection{Manage and Govern Microsoft 365 Copilot Prompts}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which admin area governs tenant-wide Copilot behavior relevant to prompt safety?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 admin center > Settings > Copilot
+  \item Teams emoji settings
+  \item PowerPoint template library only
+  \item Outlook signature settings
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Tenant-level Copilot settings shape availability and policy boundaries that affect prompt usage outcomes.
+
+\item \textbf{Which naming convention practice best supports scalable prompt libraries?}
+\begin{enumerate}[label=\Alph*.]
+  \item Prefix prompts with department/purpose (for example, ``Finance - Monthly Summary'')
+  \item Name all prompts ``My Prompt''
+  \item Use random labels to avoid bias
+  \item Omit descriptions to reduce overhead
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Structured naming improves discoverability, ownership clarity, and auditability.
+
+\item \textbf{Which combination best reflects prompt governance dimensions?}
+\begin{enumerate}[label=\Alph*.]
+  \item Naming, sharing permissions, documentation, auditing, and lifecycle review
+  \item Keyboard shortcuts, fonts, and avatars
+  \item BIOS policy and disk firmware only
+  \item Mailbox storage quotas only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Prompt governance spans discoverability, control, observability, and long-term maintainability.
+
+\end{enumerate}
+
 \end{document}
