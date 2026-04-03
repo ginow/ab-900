@@ -4003,4 +4003,181 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Monitor and Adjust Pay-As-You-Go Copilot Usage}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which portal is best for quick checks on invoices, license counts, and assignments?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 admin center
+  \item Azure API Management developer portal
+  \item Local endpoint Event Viewer
+  \item SharePoint Site contents page
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Microsoft 365 admin center is optimized for subscription-level license and invoice visibility.
+
+\item \textbf{Which portal provides deeper cost analytics, forecasting, and budget alerts for pay-as-you-go?}
+\begin{enumerate}[label=\Alph*.]
+  \item Azure portal (Cost Management + Billing)
+  \item Outlook desktop settings
+  \item Teams meeting options
+  \item Word review pane
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Azure cost dashboards support granular trend analysis, budgets, and threshold notifications.
+
+\item \textbf{In Microsoft 365 admin center, where do admins review current and past invoice details?}
+\begin{enumerate}[label=\Alph*.]
+  \item Billing > Bills \& payments
+  \item Users > Active users
+  \item Settings > Org settings > Services
+  \item Marketplace > Purchases only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Bills \& payments is the standard location for invoice history and payment review.
+
+\item \textbf{In Microsoft 365 admin center, which path helps verify Copilot license inventory and assignment state?}
+\begin{enumerate}[label=\Alph*.]
+  \item Billing > Licenses
+  \item Copilot > Prompts
+  \item Help > Support requests
+  \item Security > Alerts
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Billing > Licenses shows active, assigned, and available license counts.
+
+\item \textbf{Which high-level action helps ensure only intended pilot users have Copilot access?}
+\begin{enumerate}[label=\Alph*.]
+  \item Periodically review Users > Active users and filter Copilot-enabled accounts
+  \item Disable all reporting to reduce noise
+  \item Assign global admin to pilot users
+  \item Avoid group membership validation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Access verification prevents unintended expansion and cost growth.
+
+\item \textbf{What is the best first step in Azure Cost Analysis before interpreting pay-as-you-go trends?}
+\begin{enumerate}[label=\Alph*.]
+  \item Confirm the correct billing scope/subscription is selected
+  \item Export to Power BI immediately without filters
+  \item Disable all tags to simplify charts
+  \item Change all granularity to yearly only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Wrong scope selection can make all subsequent analysis misleading.
+
+\item \textbf{Which filter is most useful to isolate Copilot pay-as-you-go charges in Cost Analysis?}
+\begin{enumerate}[label=\Alph*.]
+  \item Service name/Product filter for Microsoft 365 Copilot (PAYG)
+  \item Operating system filter only
+  \item Data center rack filter
+  \item Browser version filter
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Service-level filtering narrows analysis to relevant Copilot metered consumption.
+
+\item \textbf{Which granularity is best for spotting sudden usage spikes?}
+\begin{enumerate}[label=\Alph*.]
+  \item Daily
+  \item Yearly
+  \item Quarterly only
+  \item Custom static snapshot only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Daily views surface abrupt changes that monthly aggregation can hide.
+
+\item \textbf{Which granularity is best for long-term budgeting trend review?}
+\begin{enumerate}[label=\Alph*.]
+  \item Monthly
+  \item Hourly
+  \item Per-second
+  \item Transaction-level only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Monthly aggregation aligns well with budget cycles and recurring finance reporting.
+
+\item \textbf{How can admins compare cost by department in Azure cost analytics?}
+\begin{enumerate}[label=\Alph*.]
+  \item Use Group by with tags/resource group where department tagging is applied
+  \item Disable grouping for all views
+  \item Use only invoice PDF totals
+  \item Rely solely on user anecdotes
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Tag-based grouping supports practical chargeback and accountability models.
+
+\item \textbf{If tags aren’t implemented, what grouping alternative can help identify top individual Copilot consumers?}
+\begin{enumerate}[label=\Alph*.]
+  \item Group by user principal name (UPN), where available
+  \item Group by laptop model
+  \item Group by printer queue
+  \item Group by theme setting
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} UPN-based views can still reveal concentrated usage patterns for targeted action.
+
+\item \textbf{Which scenario most likely indicates misconfiguration requiring immediate review?}
+\begin{enumerate}[label=\Alph*.]
+  \item Sudden unexplained daily usage jump after group policy changes
+  \item Predictable quarterly spike in Finance during close
+  \item Stable low usage in small pilot
+  \item Flat zero usage for disabled scope
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Unexpected jumps often indicate broadened scope, unintended assignments, or policy drift.
+
+\item \textbf{If a team’s pay-as-you-go usage is consistently high, what is a reasonable optimization step?}
+\begin{enumerate}[label=\Alph*.]
+  \item Evaluate moving that group to permanent Copilot licenses
+  \item Remove all access controls to reduce admin workload
+  \item Ignore the trend until yearly close
+  \item Disable all billing alerts
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} High steady usage can make seat-based licensing more cost-effective and predictable.
+
+\item \textbf{Which export option supports richer executive reporting and trend storytelling?}
+\begin{enumerate}[label=\Alph*.]
+  \item Export to Power BI for custom dashboards
+  \item Screenshot only one daily chart
+  \item Copy invoice totals into chat manually
+  \item Disable historical data retention
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Power BI enables multi-dimensional analysis across time, departments, and policy scopes.
+
+\item \textbf{What is the best interpretation of a clean quarterly usage pattern in Finance?}
+\begin{enumerate}[label=\Alph*.]
+  \item It may validate continued pay-as-you-go for that department’s cyclical demand
+  \item It always mandates immediate full-license conversion
+  \item It indicates logging failure
+  \item It means alerts are unnecessary
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Finance department (Quarterly usage). You notice Finance’s Copilot costs spike in March, June, September, and December—exactly during reporting cycles. This usage pattern confirms pay-as-you-go is the right model for them.
+
+\item \textbf{What is the strongest reason to use both Microsoft 365 admin center and Azure Cost Management together?}
+\begin{enumerate}[label=\Alph*.]
+  \item One provides quick subscription checks, the other provides deep cost analytics
+  \item Both are redundant and should not be combined
+  \item Azure replaces all Microsoft 365 license visibility
+  \item Microsoft 365 replaces all budget controls
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Combined use delivers both operational summary and detailed financial diagnostics.
+
+\item \textbf{Which outcome shows mature pay-as-you-go operations over time?}
+\begin{enumerate}[label=\Alph*.]
+  \item Continuous data-driven tuning of policy scope, license mix, and budget controls
+  \item One-time setup with no further review
+  \item No stakeholder visibility into usage trends
+  \item Annual-only manual reconciliation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Ongoing optimization is essential because usage patterns and organizational needs change.
+
+\end{enumerate}
+
 \end{document}
