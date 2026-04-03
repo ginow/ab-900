@@ -3823,4 +3823,184 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \end{enumerate}
 
+
+\clearpage
+\section{Manage Copilot Licenses and Pay-As-You-Go Billing}
+\setcounter{subsection}{0}
+\clearpage
+\subsection{License Assignment and Billing Operations}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which approach is generally best for assigning licenses at enterprise scale?}
+\begin{enumerate}[label=\Alph*.]
+  \item One-by-one manual assignment forever
+  \item Group-based licensing with governed membership lifecycle
+  \item Shared admin account assignment scripts without review
+  \item License-by-request through email only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Group-based assignment improves consistency and reduces repetitive manual work.
+
+\item \textbf{When is individual user assignment most appropriate?}
+\begin{enumerate}[label=\Alph*.]
+  \item Pilot users, executive urgency, or targeted one-off enablement
+  \item Every user in a 10,000-person tenant
+  \item Only when Entra groups are unavailable by policy
+  \item As a permanent replacement for all automation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Individual assignment provides precision for small or urgent scenarios.
+
+\item \textbf{Which lifecycle practice is essential for effective group-based licensing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Periodic group membership audits and provisioning hygiene
+  \item Disabling all onboarding workflows
+  \item Keeping former users in groups for historical reasons
+  \item Avoiding directory governance tools
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Accurate membership prevents wasted licenses and entitlement drift.
+
+\item \textbf{In Copilot pay-as-you-go operations, what is the purpose of billing policies?}
+\begin{enumerate}[label=\Alph*.]
+  \item Define user scope, Azure billing linkage, and budget guardrails
+  \item Replace license assignment for all Copilot plans permanently
+  \item Disable usage reporting to reduce overhead
+  \item Bypass Terms of service acceptance
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Billing policies establish who can consume usage and how that consumption is financially governed.
+
+\item \textbf{How many billing policies can be configured per tenant?}
+\begin{enumerate}[label=\Alph*.]
+  \item Up to 10 billing policies
+  \item Exactly 1 policy only
+  \item Unlimited policies with no cap
+  \item Up to 100 policies by default
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} You can create multiple policies for different departments or groups, up to 10 per tenant. For each billing policy that you create, you must then connect it to a Copilot service for pay-as-you-go usage.
+
+\item \textbf{What is the critical two-step pattern for enabling pay-as-you-go Copilot services?}
+\begin{enumerate}[label=\Alph*.]
+  \item Create billing policy, then connect it to a Copilot service on Pay-as-you-go services tab
+  \item Connect service first, then optionally add policy later
+  \item Assign global admin role to end users, then enable billing
+  \item Create group only; no billing policy is needed
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Policy creation alone does not activate service consumption; service connection is required.
+
+\item \textbf{What happens if step 2 (Connect the billing policy to a Copilot service) is skipped after policy creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Pay-as-you-go stays disabled for that Copilot service
+  \item Service is enabled automatically after 24 hours
+  \item Users are billed immediately regardless of usage
+  \item Tenant-wide Copilot licensing is revoked
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Activation occurs only when the billing policy is explicitly linked to a specific service.
+
+\item \textbf{Which admin roles are typically suitable for configuring billing policy?}
+\begin{enumerate}[label=\Alph*.]
+  \item Global Administrator, Billing Administrator, or AI Administrator (with required Azure rights)
+  \item Any guest user with Teams access
+  \item Exchange mailbox owner only
+  \item SharePoint site visitor
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Billing setup combines Microsoft 365 admin privileges with Azure subscription/resource permissions.
+
+\item \textbf{What budget control capability is directly recommended in billing policy setup?}
+\begin{enumerate}[label=\Alph*.]
+  \item Define budget limits, reset cadence, and threshold-based alert recipients
+  \item Disable budget tracking for pilot phases
+  \item Limit reports to annual invoices only
+  \item Force all departments into one undifferentiated budget
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Budget thresholds and alerting are core controls for preventing billing surprises.
+
+\item \textbf{Which user scope option is explicitly part of billing policy configuration?}
+\begin{enumerate}[label=\Alph*.]
+  \item All users or specific group
+  \item Region only, no user targeting
+  \item Device model and OS version only
+  \item Mailbox size tiers only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Scope selection determines whose activity can consume pay-as-you-go resources.
+
+\item \textbf{How can admins segment pay-as-you-go by department?}
+\begin{enumerate}[label=\Alph*.]
+  \item Create multiple billing policies and connect them to relevant services
+  \item Use one unmanaged policy for all experimentation forever
+  \item Disable group usage to simplify billing
+  \item Avoid policy naming conventions
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Policy segmentation supports clearer cost ownership and departmental governance.
+
+\item \textbf{Which statement best reflects pay-as-you-go vs monthly licensing strategy?}
+\begin{enumerate}[label=\Alph*.]
+  \item Pay-as-you-go supports experimentation and variable demand; monthly supports stable, predictable usage
+  \item Monthly is always cheaper in every scenario
+  \item Pay-as-you-go eliminates need for monitoring
+  \item Both models ignore departmental chargeback needs
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Model choice should follow workload variability, governance maturity, and budget objectives.
+
+\item \textbf{Which scenario best justifies starting with pay-as-you-go instead of broad monthly seat assignment?}
+\begin{enumerate}[label=\Alph*.]
+  \item A seasonal legal workload with intermittent document-heavy usage
+  \item A fixed, high-volume daily usage across all knowledge workers
+  \item A tenant with no need for billing telemetry
+  \item A team requiring offline-only features
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} For example, you might set up your Legal team to use pay-as-you-go since their work involves drafting contracts and policies where Copilot is useful, but only at certain times of the year. By applying a policy, you ensure that only members of the Legal group can use Copilot on-demand.
+
+\item \textbf{What is a best-practice path after a successful pay-as-you-go pilot shows sustained heavy use?}
+\begin{enumerate}[label=\Alph*.]
+  \item Evaluate transition to permanent licensing for those stable high-usage groups
+  \item Keep all users permanently on unrestricted pay-as-you-go
+  \item Disable reporting before scale-out
+  \item Remove budget alerts to avoid noise
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Mature, predictable usage often benefits from seat-based predictability and simplified budgeting.
+
+\item \textbf{Which dashboard signal confirms pay-as-you-go activation is functioning after policy connection?}
+\begin{enumerate}[label=\Alph*.]
+  \item Service status is active and usage appears on Billing \& usage when users consume features
+  \item Tenant welcome email is sent
+  \item Office update channel changes automatically
+  \item Entra sign-in frequency policy resets
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Operational activation should be visible in service status and subsequent metered activity.
+
+\item \textbf{Which statement best captures the role of Azure configuration in pay-as-you-go setup?}
+\begin{enumerate}[label=\Alph*.]
+  \item Azure subscription/resource group context is required for billing linkage and governance
+  \item Azure is optional and never referenced
+  \item Azure integration is only for consumer plans
+  \item Azure settings replace Microsoft 365 admin center controls
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Pay-as-you-go ties usage to Azure billing constructs, making cloud cost governance essential.
+
+\item \textbf{Which statement best summarizes effective Copilot licensing and billing operations?}
+\begin{enumerate}[label=\Alph*.]
+  \item Combine precise entitlement strategy, policy guardrails, and continuous billing observability
+  \item Prioritize speed by skipping governance controls
+  \item Use one static model regardless of workload patterns
+  \item Treat billing and access as separate unrelated streams
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Sustainable operations require coordinated access management, financial controls, and monitoring discipline.
+
+\end{enumerate}
+
 \end{document}
