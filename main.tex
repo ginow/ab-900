@@ -4604,4 +4604,211 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Create a Microsoft 365 Copilot Chat Agent - Part 2}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{When should you use the Configure tab for full agent creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Only after publishing the agent
+  \item Only for image generation settings
+  \item When Describe is skipped or unavailable in your region/language
+  \item Only if using Power BI templates
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Configure can be used either to refine a Describe draft or to author the entire agent from scratch.
+
+\item \textbf{How do the Describe and Configure tabs relate to each other?}
+\begin{enumerate}[label=\Alph*.]
+  \item They are separate and do not share state
+  \item They are synchronized, so updates in one are reflected in the other
+  \item Describe always overrides Configure permanently
+  \item Configure is read-only if Describe was used
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The two-tab authoring flow is designed to be seamless, allowing users to switch between modes.
+
+\item \textbf{Which statement about agent icon customization is correct?}
+\begin{enumerate}[label=\Alph*.]
+  \item Only SVG files are supported
+  \item Any file type is supported up to 10 MB
+  \item PNG files are supported and should not exceed 1 MB
+  \item Icons can be changed only after agent creation
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Configure supports icon replacement with a PNG under the documented size limit.
+
+\item \textbf{How do instructions behave when entered in natural language on Configure tab?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio interprets and rewrites them into structured bullets
+  \item They remain raw text with no interpretation
+  \item They are ignored unless Describe was used first
+  \item They trigger the same follow-up question flow as Describe
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Configure supports natural-language input but presents interpreted instructions for review.
+
+\item \textbf{What is the maximum number of knowledge sources you can add per agent?}
+\begin{enumerate}[label=\Alph*.]
+  \item 5
+  \item 10
+  \item 20
+  \item Unlimited
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} You can add up to 20 knowledge sources per agent. These sources can be sites, document libraries, folders, or files.
+
+\item \textbf{Which of the following can be configured as a knowledge source?}
+\begin{enumerate}[label=\Alph*.]
+  \item SharePoint sites/folders/files and supported document types
+  \item Only local desktop files from user C: drive
+  \item Only SQL scripts
+  \item Only image assets
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Select folders and file types (for example, .docx, .doc, .pptx, .ppt, and .html) or add a SharePoint site
+
+\item \textbf{What can prevent the web knowledge toggle from being available?}
+\begin{enumerate}[label=\Alph*.]
+  \item Tenant policy disabling web search in Copilot
+  \item Missing Office theme package
+  \item User not pinning Copilot Chat
+  \item Lack of starter prompts
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The ability to enable or disable web content access depends on your organization's settings. If an IT admin disables the "Allow web search in Copilot" policy, the web content toggle becomes unavailable to users.
+
+\item \textbf{If Restricted SharePoint Search is enabled, what is the impact?}
+\begin{enumerate}[label=\Alph*.]
+  \item SharePoint cannot be used as a knowledge source
+  \item Web search is automatically enabled
+  \item Code interpreter is forced on
+  \item Starter prompts become read-only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Search restrictions can block SharePoint source usage in agent knowledge settings.
+
+\item \textbf{What should admins/users expect right after uploading a new SharePoint file as knowledge?}
+\begin{enumerate}[label=\Alph*.]
+  \item Immediate guaranteed availability in all responses
+  \item A preparation period before readiness for responses
+  \item Permanent exclusion from indexing
+  \item Automatic conversion into starter prompts
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} File readiness. Newly uploaded files to SharePoint might take several minutes to be ready for the agent to include in its responses. You can check the file readiness by looking in the Knowledge section in the Configure tab; the file has the word "Preparing" next to it.
+
+\item \textbf{Which capability lets the agent perform complex reasoning tasks using Python behind the scenes?}
+\begin{enumerate}[label=\Alph*.]
+  \item Code interpreter
+  \item Image generator
+  \item Prompt scheduler
+  \item Copilot pinning policy
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Users provide natural language; the capability generates and runs code internally as needed.
+
+\item \textbf{What is true about the Image generator capability?}
+\begin{enumerate}[label=\Alph*.]
+  \item It is on by default in all agents
+  \item It generates visuals from prompts and is off by default unless enabled
+  \item It can only produce one image per prompt
+  \item It replaces starter prompts
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Image generation is optional and can produce multiple outputs depending on prompt and settings.
+
+\item \textbf{What are starter prompts primarily used for?}
+\begin{enumerate}[label=\Alph*.]
+  \item Guiding users on how to begin interacting with the agent
+  \item Enforcing tenant licensing
+  \item Replacing knowledge sources
+  \item Assigning RBAC roles
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Starter prompts reduce first-use friction and improve discoverability of useful tasks.
+
+\item \textbf{If a template is selected, what often happens to starter prompts?}
+\begin{enumerate}[label=\Alph*.]
+  \item Template-related starter prompts are prepopulated
+  \item Starter prompts are disabled
+  \item Starter prompts are hidden permanently
+  \item Users cannot edit starter prompts
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Templates usually seed draft prompts aligned to common use cases.
+
+\item \textbf{How many starter prompts can be assigned to an agent in Microsoft 365 Copilot Chat?}
+\begin{enumerate}[label=\Alph*.]
+  \item Maximum 5
+  \item Maximum 20
+  \item Unlimited
+  \item None supported
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Chat agents support broad flexibility for starter prompt design.
+
+\item \textbf{Why should you test the draft agent before selecting Create?}
+\begin{enumerate}[label=\Alph*.]
+  \item To validate behavior, relevance, and edge-case handling before live activation
+  \item Because testing is mandatory for licensing
+  \item To bypass knowledge source setup
+  \item To lock configuration against edits
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Pre-create testing catches quality and scope issues early.
+
+\item \textbf{What does selecting Create do beyond making the agent live?}
+\begin{enumerate}[label=\Alph*.]
+  \item Finalizes synchronization, deploys configuration, and enables monitoring/analytics context
+  \item Deletes all draft settings
+  \item Disables sharing options
+  \item Removes knowledge sources
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Create completes activation and operationalization, not just visibility.
+
+\item \textbf{After successful creation, what two immediate post-create actions are commonly offered?}
+\begin{enumerate}[label=\Alph*.]
+  \item Go to agent and change sharing settings
+  \item Export billing invoice and rotate keys
+  \item Enable tenant-wide global admin mode
+  \item Delete starter prompts and reset template
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The dialog supports immediate usage and collaboration configuration workflows.
+
+\item \textbf{Which scenario best indicates you should stay in Configure after Describe draft creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item You need to add specific SharePoint sources and fine-tune capabilities before go-live
+  \item You already published and cannot edit
+  \item You want to remove all instructions permanently
+  \item You only need to change tenant billing
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Configure is the right place for precision tuning and source grounding.
+
+\item \textbf{Which knowledge-source statement is most accurate?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot connectors can extend knowledge to external systems like incidents/accounts/articles
+  \item External sources are never supported
+  \item Only local files can be used
+  \item Knowledge sources are fixed after Describe
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Connector-backed sources broaden agent coverage beyond native repositories.
+
+\item \textbf{A creator cannot use Describe due to locale restrictions but needs a departmental agent today. Best action?}
+\begin{enumerate}[label=\Alph*.]
+  \item Build in Configure with natural-language instructions, then review interpreted bullets and test thoroughly
+  \item Wait until regional rollout and do nothing
+  \item Assign Global Admin and retry
+  \item Publish without knowledge sources
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Configure supports complete authoring and remains viable even when Describe is unavailable.
+
+\end{enumerate}
+
 \end{document}
