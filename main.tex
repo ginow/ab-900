@@ -4434,4 +4434,174 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 
 \end{enumerate}
 
+
+\clearpage
+\section{Perform basic administrative tasks for Microsoft 365 Copilot agents}
+\setcounter{subsection}{0}
+\clearpage
+\subsection{Create a Microsoft 365 Copilot Chat agent - Part 1}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What is the first action to start creating an agent from Microsoft 365 Copilot Chat?}
+\begin{enumerate}[label=\Alph*.]
+  \item Select \textit{Create agent} in Copilot Chat, which opens Copilot Studio
+  \item Open Excel and run a macro
+  \item Assign Global Administrator to all users
+  \item Enable all connectors tenant-wide
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Agent creation starts from Copilot Chat and launches Copilot Studio for authoring.
+
+\item \textbf{Which Copilot Studio experience is intended for users without programming background?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio full experience
+  \item Copilot Studio lite experience
+  \item Power BI semantic model editor
+  \item Azure DevOps pipeline editor
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The lite experience focuses on guided, low-friction creation for nontechnical users.
+
+\item \textbf{Which Copilot Studio experience is best for advanced enterprise customization and integrations?}
+\begin{enumerate}[label=\Alph*.]
+  \item Lite experience only
+  \item Describe tab only
+  \item Full experience
+  \item Prompt library only
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} The full experience supports advanced workflows, connectors, governance, and lifecycle management.
+
+\item \textbf{What best describes how the Describe and Configure tabs work together?}
+\begin{enumerate}[label=\Alph*.]
+  \item They are unrelated and cannot be combined
+  \item Describe creates final production agent with no edits
+  \item Configure is mandatory before any description is allowed
+  \item Describe can draft from natural language, then Configure refines details step-by-step
+\end{enumerate}
+\textbf{Answer: D}\\
+\textbf{Explanation:} A common flow is drafting via Describe, then refining behaviors, prompts, and sources in Configure.
+
+\item \textbf{What should users do if the Describe tab is unavailable in their region or language?}
+\begin{enumerate}[label=\Alph*.]
+  \item Build manually through the Configure tab
+  \item Wait for a tenant-wide reboot
+  \item Disable Copilot licensing
+  \item Create only SharePoint agents
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Geographic/language availability affects Describe; Configure remains the fallback authoring path.
+
+\item \textbf{If you include an agent name in your Describe request, what typically happens?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio ignores it and assigns a random name
+  \item Copilot Studio usually applies that name to the draft
+  \item Agent creation fails unless name is omitted
+  \item Name is set only after publishing
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The Describe flow can infer and set the agent name directly from user instructions.
+
+\item \textbf{What additional artifact does Copilot Studio often generate from your description?}
+\begin{enumerate}[label=\Alph*.]
+  \item Starter prompts for the agent
+  \item Azure subscription invoices
+  \item Device compliance policies
+  \item Exchange transport rules
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Draft agents often include system-generated starter prompts that can be edited later.
+
+\item \textbf{Which instruction components are emphasized for defining agent behavior quality?}
+\begin{enumerate}[label=\Alph*.]
+  \item Purpose, guidelines, and skills
+  \item BIOS version, storage tier, and VLAN
+  \item Theme, font, and icon style
+  \item DNS, DHCP, and subnet mask
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Clear purpose, response rules, and capabilities improve consistency and usefulness.
+
+\item \textbf{Why does Copilot Studio ask follow-up questions after initial instructions?}
+\begin{enumerate}[label=\Alph*.]
+  \item To progressively clarify scope, audience, tone, and edge behaviors
+  \item To upsell extra licenses automatically
+  \item To force developers into full experience
+  \item To remove instruction customization
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Conversational refinement helps translate ambiguous natural language into practical behavior rules.
+
+\item \textbf{Which follow-up question category is most likely during agent drafting?}
+\begin{enumerate}[label=\Alph*.]
+  \item Clarifying target audience and response style
+  \item Choosing laptop wallpaper
+  \item Setting printer queue defaults
+  \item Selecting mailbox archive quota
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Audience and tone strongly influence how an agent should respond and escalate.
+
+\item \textbf{What is the value of testing an initial draft agent on the Describe tab?}
+\begin{enumerate}[label=\Alph*.]
+  \item Validate instruction quality early before deep configuration
+  \item Replace all need for Configure tab
+  \item Guarantee production-grade factual precision immediately
+  \item Disable future knowledge source setup
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Early tests check whether the natural-language design intent is captured correctly.
+
+\item \textbf{Why might Describe-tab test responses still feel generic before Configure work?}
+\begin{enumerate}[label=\Alph*.]
+  \item Specific knowledge sources may not yet be connected
+  \item Copilot Studio does not support testing
+  \item Starter prompts disable responses
+  \item Templates block data retrieval permanently
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Without scoped sources (for example, SharePoint/docs), responses rely more on built-in knowledge.
+
+\item \textbf{Which action most improves answer relevance after initial Describe testing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Add and test targeted knowledge sources in Configure
+  \item Increase prompt length only
+  \item Rename the agent repeatedly
+  \item Disable follow-up questions
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Source grounding is key to organization-specific and context-accurate outputs.
+
+\item \textbf{What is a key benefit of natural-language authoring in Describe?}
+\begin{enumerate}[label=\Alph*.]
+  \item Faster translation of business intent into a draft agent without technical syntax
+  \item Mandatory coding for all fields
+  \item Elimination of any need for review
+  \item Permanent lock-in to defaults
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Describe lowers creation friction by letting users express goals conversationally.
+
+\item \textbf{Which describe-tab warning should admins communicate to users?}
+\begin{enumerate}[label=\Alph*.]
+  \item Describe availability depends on region and language support
+  \item Describe always works in every locale
+  \item Describe is only for Global Admins
+  \item Describe requires offline mode
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} User expectations should include known feature-availability constraints.
+
+\item \textbf{Which statement best reflects agent drafting refinement behavior?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio progressively refines draft behavior over conversation turns and saves updates
+  \item Only final message is used; earlier turns are discarded
+  \item Drafting requires restarting after every question
+  \item Updates are not persisted until publish
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Iterative turn-based refinement is central to the guided Describe authoring experience.
+
+\end{enumerate}
+
 \end{document}
