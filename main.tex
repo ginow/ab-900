@@ -2828,7 +2828,7 @@
 \textbf{Answer: A}\\
 \textbf{Explanation:} SharePoint permission levels influence who can create and manage custom site agents.
 
-\item
+\item 
 \textbf{Case study of an agent in SharePoint}
 
  A sales manager at Contoso Camera wants to use Copilot to generate a sales pitch for the company's latest video camera, the Digital Mega-300. The manager wants Copilot to use the product proposals and performance reviews from the marketing team’s Mega-300 SharePoint document library. The sales manager navigates to the marketing team's Mega-300 SharePoint site and enters the following prompt in Copilot, which uses the site's ready-made, default agent:
@@ -2855,7 +2855,7 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
 
 \item \textbf{Which statement best captures tool differences between Copilot Studio and SharePoint agent tool?}
 \begin{enumerate}[label=\Alph*.]
-  \item Copilot Studio allows users to enable some features for Copilot Chat agents that aren’t applicable to SharePoint agents.
+  \item Copilot Studio allows users to enable some features for Copilot Chat agents that aren’t applicable to SharePoint agents. 
   \item They are identical in all features and scopes
   \item SharePoint tool supports more advanced developer connectors than Copilot Studio
   \item Copilot Studio cannot be used by everyday business users
@@ -3769,7 +3769,7 @@ This agent allowed Copilot to access the three SharePoint sites and aggregate th
   \item Neither can summarize findings
 \end{enumerate}
 \textbf{Answer: A}\\
-\textbf{Explanation:} Where the Researcher agent handles unstructured data, the Analyst agent in Microsoft 365 Copilot focuses on structured information such as tables, spreadsheets, and dashboards.
+\textbf{Explanation:} Where the Researcher agent handles unstructured data, the Analyst agent in Microsoft 365 Copilot focuses on structured information such as tables, spreadsheets, and dashboards. 
 
 \item \textbf{What is a key organizational benefit of standardized analyst-generated narratives?}
 \begin{enumerate}[label=\Alph*.]
@@ -5025,6 +5025,115 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 \end{enumerate}
 \textbf{Answer: B}\\
 \textbf{Explanation:} Agent responses are grounded in included sources and existing permissions; additional access requires permission updates.
+
+\end{enumerate}
+
+\clearpage
+\subsection{Test and edit your agents}
+\begin{enumerate}[leftmargin=*]
+
+
+\item \textbf{Which example best represents edge-case testing for instructions?}
+\begin{enumerate}[label=\Alph*.]
+  \item Asking the agent its name
+  \item Asking for troubleshooting steps for a specific error code such as 0x80070005
+  \item Changing the site logo
+  \item Opening the Agent Store
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Unusual or complex requests, such as troubleshooting a specific error code, help test behavior under edge conditions.
+
+
+\item \textbf{If a SharePoint hub site is included as a source, what should you specifically verify during testing?}
+\begin{enumerate}[label=\Alph*.]
+  \item That the agent uses only the hub site's homepage
+  \item That the agent includes information from the hub site and its associated sites
+  \item That associated sites are automatically hidden from users
+  \item That the hub site disables cross-reference behavior
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} When a hub site is a source, testing should confirm the agent can draw from both the hub and its associated sites.
+
+
+\item \textbf{If a Copilot Chat agent isn't visible in the pinned or unpinned list, where should you go to edit it?}
+\begin{enumerate}[label=\Alph*.]
+  \item Message center
+  \item All agents in the navigation pane
+  \item SharePoint Site Assets
+  \item Viva Insights dashboard
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Selecting All agents opens the Agent Store, where you can find Your Agents and choose Edit from the menu.
+
+\item \textbf{How is a SharePoint agent stored after creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item As a .json file in OneDrive
+  \item As a .agent file
+  \item As a .ps1 script in Site Pages
+  \item As a .zip archive in Teams
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Each SharePoint agent is stored as a .agent file, which can later be located and edited.
+
+\item \textbf{Where is a SharePoint agent stored if it was created from the homepage of a site?}
+\begin{enumerate}[label=\Alph*.]
+  \item Site contents $>$ Site Assets $>$ Copilots
+  \item Site contents $>$ Recycle Bin
+  \item Documents $>$ Forms
+  \item Microsoft 365 Admin Center $>$ Agents
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Site-homepage-created agents are automatically stored in Site contents, under Site Assets, in the Copilots location.
+
+\item \textbf{Where is a SharePoint agent stored if it was created from another location, such as a document library folder?}
+\begin{enumerate}[label=\Alph*.]
+  \item In the current document library folder where it was created
+  \item Always in the tenant root site
+  \item In the user's Outlook mailbox
+  \item In the Purview solutions catalog
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} SharePoint agents created outside the homepage flow are saved in the current library folder where they were originally created.
+
+\item \textbf{What important sharing behavior should you remember after editing an agent?}
+\begin{enumerate}[label=\Alph*.]
+  \item Shared users immediately see all edits with no further action
+  \item Shared users can't see the latest changes until the agent is reshared with them
+  \item Editing automatically grants everyone tenant-wide access
+  \item Editing permanently removes all knowledge sources
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} After an edit, shared users don't see the latest changes until the agent is reshared.
+
+\item \textbf{Why does Microsoft recommend resharing a SharePoint agent with the same users after updates when SharePoint files or folders are sources?}
+\begin{enumerate}[label=\Alph*.]
+  \item To automatically share the files and folders again for a consistent experience
+  \item To convert the agent into a Copilot Chat agent
+  \item To remove the need for SharePoint permissions
+  \item To enable template-based creation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Resharing with the same group helps ensure the underlying files and folders are shared again so users have a consistent experience.
+
+\item \textbf{What timing consideration should admins and creators expect after updating an agent?}
+\begin{enumerate}[label=\Alph*.]
+  \item Changes always appear instantly for all users
+  \item Changes can take several minutes to become available to end users
+  \item Changes appear only after a full tenant restart
+  \item Changes are delayed until the next monthly update cycle
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Agent updates might not appear immediately; availability for end users can take several minutes.
+
+\item \textbf{Which SharePoint agent cannot be edited?}
+\begin{enumerate}[label=\Alph*.]
+  \item Any agent stored as a .agent file
+  \item Any agent created from a document library
+  \item The ready-made SharePoint site agent created automatically with the site
+  \item Any agent with more than three starter prompts
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} The default ready-made site agent that Copilot creates automatically for a SharePoint site can't be edited.
 
 \end{enumerate}
 \end{document}
