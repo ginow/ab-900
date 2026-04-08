@@ -5136,4 +5136,180 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 \textbf{Explanation:} The default ready-made site agent that Copilot creates automatically for a SharePoint site can't be edited.
 
 \end{enumerate}
+
+\clearpage
+\subsection{Manage user access and permissions for agents}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which statement best explains the difference between Copilot Chat access and agent access?}
+\begin{enumerate}[label=\Alph*.]
+  \item They are always granted by the same entitlement
+  \item Copilot Chat access automatically includes agent publishing rights
+  \item Copilot Chat access and agent creation/management rights are separate and can require different licensing and roles
+  \item Agent access is controlled only by SharePoint permissions
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} A user might be able to use Copilot Chat but still lack the separate Copilot Studio license or environment role needed to create, test, or publish agents.
+
+\item \textbf{Which subscription category best fits free Copilot Chat plus many public or declarative agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Consumption-billed only
+  \item Free
+  \item Premium Dynamics-only
+  \item Environment Admin-only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The free bucket includes Copilot Chat for eligible Microsoft 365 subscribers and many public or declarative agents.
+
+\item \textbf{Which subscription category best describes tenant-specific or customized agents built in Copilot Studio?}
+\begin{enumerate}[label=\Alph*.]
+  \item Licensed
+  \item Anonymous
+  \item Read-only
+  \item Archive-only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Tenant-specific and customized agents built in Copilot Studio typically require separate Copilot Studio licensing and setup.
+
+\item \textbf{Which scenario most likely requires message packs or pay-as-you-go billing?}
+\begin{enumerate}[label=\Alph*.]
+  \item A user reading a public web-grounded FAQ agent occasionally
+  \item A high-volume call center agent integrated with premium systems
+  \item A user opening the Microsoft 365 home page
+  \item A site owner renaming a SharePoint library
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} High-volume or premium agents often require message packs or a pay-as-you-go Azure billing setup.
+
+\item \textbf{What is true about declarative or public web-grounded agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item They always require Copilot Studio per-user licensing to use
+  \item They rely on public web content or instructions and are often usable without extra fees for eligible users
+  \item They can exist only in private Power Platform environments
+  \item They bypass tenant store settings completely
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Many declarative and public web-grounded agents are available to eligible Copilot Chat users without extra licensing or fees.
+
+\item \textbf{Which admin center is used first to assign the baseline Copilot license for agent access?}
+\begin{enumerate}[label=\Alph*.]
+  \item SharePoint admin center
+  \item Microsoft 365 admin center
+  \item Teams admin center
+  \item Exchange admin center
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Baseline Copilot product licensing is assigned through the Microsoft 365 admin center.
+
+\item \textbf{Which admin center is used to assign environment roles such as Basic User or Environment Maker?}
+\begin{enumerate}[label=\Alph*.]
+  \item Power Platform admin center
+  \item Security and Compliance center only
+  \item Windows Admin Center
+  \item Azure DevOps portal
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Environment-level permissions for Copilot Studio agents are managed in the Power Platform admin center.
+
+\item \textbf{What does a Power Platform environment represent in the context of Copilot agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item A mailbox that stores audit logs only
+  \item A secure workspace where agents, data, and related resources live and run
+  \item A SharePoint page template gallery
+  \item A billing-only construct with no security impact
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Environments are containers for apps, data, and agents, providing organizational separation and access control.
+
+\item \textbf{Which role is typically used for users who need to create and edit agents in an environment?}
+\begin{enumerate}[label=\Alph*.]
+  \item Basic User
+  \item Environment Maker
+  \item Exchange Recipient Admin
+  \item SharePoint Visitor
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Environment Maker is the standard environment role that allows users to create and edit agents in that environment.
+
+\item \textbf{Which role provides full control over environment resources and users, including agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Environment Admin
+  \item Basic User
+  \item Site Member
+  \item Global Reader only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Environment Admin has broad control over the environment, including its resources, access, and agents.
+
+\item \textbf{What does the Basic User role allow in relation to agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item It allows users only to interact with agents shared with them, not create or modify them
+  \item It grants tenant-wide publishing rights
+  \item It automatically enables pay-as-you-go billing
+  \item It replaces the need for a license
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Basic User is for consumption, not authoring or administrative control.
+
+\item \textbf{According to the guidance, what extra role might need to be verified alongside Environment Maker for reliable authoring in some environments?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio Author
+  \item Site Collection Administrator
+  \item Billing Reader
+  \item Security Operator
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Some environments may also require the Copilot Studio Author role in addition to Environment Maker for full functionality.
+
+\item \textbf{Where should an admin check whether a tenant has prepaid message packs or pay-as-you-go configured for agent usage?}
+\begin{enumerate}[label=\Alph*.]
+  \item Power Platform admin center under Billing > Capacity
+  \item SharePoint admin center under Active sites
+  \item Teams admin center under Voice
+  \item Exchange admin center under Mail flow
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Billing and capacity for consumption-based agent scenarios are checked in the Power Platform admin center under Billing and Capacity.
+
+\item \textbf{What is the Copilot Control System in the Microsoft 365 admin center used for?}
+\begin{enumerate}[label=\Alph*.]
+  \item It is the centralized interface to manage Copilot agents, scenarios, licenses, and policies
+  \item It is a SharePoint-only page for editing .agent files
+  \item It is a code interpreter dashboard for Python notebooks
+  \item It is a replacement for Power Platform environments
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Copilot Control System centralizes management controls, security and governance, and measurement/reporting for Copilot scenarios.
+
+\item \textbf{Which statement about users of published agents is most accurate according to the guidance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They always need Environment Maker and Copilot Studio licenses
+  \item They can interact with published agents if they have access to the published endpoint, without needing authoring roles
+  \item They must be Environment Admins in every environment
+  \item They cannot use agents in Teams or SharePoint
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Users of published agents don’t need a Copilot Studio license or environment role. They can interact with agents as long as they have access to the published endpoint (for example, Teams, SharePoint, and so on).
+
+\item \textbf{Which navigation path is used in the Microsoft 365 admin center to assign a license to a specific user?}
+\begin{enumerate}[label=\Alph*.]
+  \item Users > Active users > user profile > Licenses and apps
+  \item Health > Service health > Incidents
+  \item Billing > Your products > Renewal settings
+  \item Setup > Migration > Data import
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Licensing a specific user is done through the Active users list, then the user's Licenses and apps pane.
+
+\item \textbf{Which navigation path is used in the Power Platform admin center to assign environment roles?}
+\begin{enumerate}[label=\Alph*.]
+  \item Environments > select environment > Settings > Users + permissions > Users
+  \item Solutions > Imports > Customizations
+  \item Analytics > Capacity > Trends
+  \item Connectors > Custom connectors > Policies
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Environment-level user permissions are configured by selecting the environment and then navigating to Settings and Users + permissions.
+
+\end{enumerate}
 \end{document}
