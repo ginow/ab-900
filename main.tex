@@ -4811,4 +4811,220 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 
 \end{enumerate}
 
+
+\clearpage
+\subsection{Create a SharePoint agent}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{What minimum permission is required to create a SharePoint agent for a site or document library?}
+\begin{enumerate}[label=\Alph*.]
+  \item Read
+  \item View Only
+  \item Edit (or higher)
+  \item Site Visitor only
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} A user must have Edit permissions or higher on the target SharePoint site or document library to create the agent.
+
+\item \textbf{Which tool is used to create SharePoint agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot Studio only
+  \item Copilot agent tool in SharePoint
+  \item Microsoft Entra admin center
+  \item SharePoint term store
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} SharePoint agents are created with the Copilot agent tool in SharePoint, while Copilot Studio is used for Copilot Chat agents.
+
+\item \textbf{Which set lists all four places where you can initiate SharePoint agent creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Site homepage, document library command bar, selected-file context menu, and agent chat pane
+  \item Site pages library, Viva Engage, Exchange admin center, and Planner
+  \item SharePoint mobile app only, Teams only, Outlook only, and OneDrive only
+  \item Purview portal, Defender portal, Entra portal, and Power Platform admin center
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} SharePoint supports creation entry points from homepage, library command bar, selected-file context menu, and the agent chat pane.
+
+\item \textbf{What happens immediately after you choose to create a new SharePoint agent from any entry point?}
+\begin{enumerate}[label=\Alph*.]
+  \item The agent is queued for admin approval only
+  \item The agent is immediately ready and scoped to your selection
+  \item The agent remains unavailable until overnight indexing finishes
+  \item The agent can only be used after exporting settings
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Regardless of launch point, creation starts with an immediately ready agent scoped to the selected site/library/files context.
+
+\item \textbf{From a SharePoint site homepage, which path starts agent creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Settings $>$ Site permissions
+  \item +New $>$ Agent
+  \item Recycle bin $>$ Restore
+  \item Site contents $>$ Workflows
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} On the site home page, creation is initiated from the +New menu by selecting Agent.
+
+\item \textbf{What is the command-bar scenario for creating a SharePoint agent in a document library?}
+\begin{enumerate}[label=\Alph*.]
+  \item Create an agent for all supported files in this library
+  \item Create an agent only for checked-out files
+  \item Create an agent only for PDFs
+  \item Create an agent after deleting version history
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The library command bar provides an option to create an agent using all supported files in that library.
+
+\item \textbf{When should you use the selected-file context menu to create a SharePoint agent?}
+\begin{enumerate}[label=\Alph*.]
+  \item When you want all files in every library included automatically
+  \item When you want only specific selected files included initially
+  \item When you need to convert the site to a hub site first
+  \item When creating an agent without any sources
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The context menu path is used to scope the agent to a subset of selected files instead of the full library.
+
+\item \textbf{How do you initiate agent creation from the agent chat pane?}
+\begin{enumerate}[label=\Alph*.]
+  \item Open Copilot, select the drop-down next to current agent, then select Create an agent
+  \item Open SharePoint alerts and select Generate assistant
+  \item Open file details pane and select Publish as agent
+  \item Open Site usage and select New chatbot
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} In the chat pane flow, users open Copilot, use the agent drop-down, and choose Create an agent.
+
+\item \textbf{Which three tabs are in the Create your new agent form in SharePoint?}
+\begin{enumerate}[label=\Alph*.]
+  \item Overview, Sources, Behavior
+  \item Describe, Configure, Publish
+  \item Identity, Permissions, Auditing
+  \item Branding, Workflows, Analytics
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The SharePoint creation form uses three tabs: Overview first, then Sources and Behavior.
+
+\item \textbf{What is true about the agent icon requirement on the Overview tab?}
+\begin{enumerate}[label=\Alph*.]
+  \item Icon must be SVG and up to 10 MB
+  \item Icon must be JPG and up to 5 MB
+  \item Icon must be PNG and not exceed 1 MB
+  \item Icon type and size are unrestricted
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} SharePoint agent icon customization requires a .png file with a maximum size of 1 MB.
+
+\item \textbf{Which statement best describes draft versus live behavior during SharePoint agent creation?}
+\begin{enumerate}[label=\Alph*.]
+  \item Changes are always live, even before Create
+  \item Before Create, edits apply to draft; after Create, edits apply to live agent
+  \item You cannot edit after Create
+  \item Draft mode supports only the Overview tab
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The form starts in draft mode; selecting Create makes it live, and subsequent edits modify the live version.
+
+\item \textbf{What is the default source scope when a SharePoint agent is first created?}
+\begin{enumerate}[label=\Alph*.]
+  \item Current document only
+  \item Entire SharePoint site
+  \item Tenant-wide SharePoint content
+  \item OneDrive files only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The Sources tab starts with a default source of the entire SharePoint site.
+
+\item \textbf{Which alternate source mode can you choose instead of entire-site sourcing?}
+\begin{enumerate}[label=\Alph*.]
+  \item Sourced from archived versions only
+  \item Sourced from document libraries, folders, or files
+  \item Sourced from Purview labels only
+  \item Sourced from Teams chats only
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The source selector supports narrowing scope to specific document libraries, folders, or files.
+
+\item \textbf{What does the +Add document libraries, folders, or files action open?}
+\begin{enumerate}[label=\Alph*.]
+  \item The Compliance center
+  \item The Pick items window
+  \item The Conditional Access policy wizard
+  \item The site navigation editor
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Selecting +Add document libraries, folders, or files launches the Pick items dialog to choose content.
+
+\item \textbf{How many sources can a single SharePoint agent include?}
+\begin{enumerate}[label=\Alph*.]
+  \item 3
+  \item 10
+  \item 20
+  \item Unlimited
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} SharePoint agents can include up to 20 sources, similar to source limits seen in Copilot Chat agents.
+
+\item \textbf{Which behavior-setting capability exists in SharePoint agents but not in Copilot Chat agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Welcome message
+  \item Conditional Access rules
+  \item Graph connector indexing
+  \item Cross-tenant billing controls
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Behavior tab in SharePoint agents supports a Welcome message, which isn't available in Copilot Chat agents.
+
+\item \textbf{What is the starter-prompt limit for SharePoint agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item 1
+  \item 3
+  \item 10
+  \item Unlimited
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} SharePoint agents support up to three starter prompts, unlike Copilot Chat agents which can support unlimited prompts.
+
+\item \textbf{How does instruction refinement differ between Copilot Studio and the SharePoint Copilot agent tool?}
+\begin{enumerate}[label=\Alph*.]
+  \item Both tools ask identical follow-up refinement questions
+  \item SharePoint tool asks more follow-up questions than Copilot Studio
+  \item Copilot Studio may prompt refinement questions; SharePoint tool requires manual refinement without conversational prompting
+  \item Neither tool allows instruction edits after initial save
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Copilot Studio commonly asks clarifying questions, while SharePoint agent tool does not run that conversational refinement flow.
+
+\item \textbf{Which capability pair is unavailable in the Copilot agent tool in SharePoint?}
+\begin{enumerate}[label=\Alph*.]
+  \item Code Interpreter and Image Generator
+  \item Welcome message and starter prompts
+  \item Site and file source selection
+  \item Name and description editing
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} SharePoint-focused agents do not provide Code Interpreter or Image Generator capabilities available in Copilot Studio for Copilot Chat agents.
+
+\item \textbf{Which statement correctly describes testing support for SharePoint agents and Copilot Chat agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Only Copilot Chat agents can be tested
+  \item Only SharePoint agents can be tested
+  \item Both tools support testing in draft mode and after the agent is live
+  \item Testing is available only after global admin approval
+\end{enumerate}
+\textbf{Answer: C}\\
+\textbf{Explanation:} Both creation experiences include a testing capability before and after go-live.
+
+\item \textbf{Which access-governance statement is most accurate for SharePoint agents?}
+\begin{enumerate}[label=\Alph*.]
+  \item Agents can answer from any tenant site regardless of access
+  \item Agents answer only from included sources that the user already has permission to access
+  \item Agents automatically elevate user permissions to read missing sources
+  \item Agents ignore source scoping once shared with others
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Agent responses are grounded in included sources and existing permissions; additional access requires permission updates.
+
+\end{enumerate}
 \end{document}
