@@ -5312,4 +5312,476 @@ Create a small group of enthusiastic, early-adopter users who are proficient wit
 \textbf{Explanation:} Environment-level user permissions are configured by selecting the environment and then navigating to Settings and Users + permissions.
 
 \end{enumerate}
+
+\clearpage
+\subsection{Examine agent approval and governance}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which type of agent is built with predefined instructions and actions for structured, predictable tasks?}
+\begin{enumerate}[label=\Alph*.]
+  \item Frontier agent
+  \item Custom agent
+  \item First-party agent
+  \item External agent
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Custom agents use predefined instructions and actions and are well suited to rule-based scenarios.
+
+\item \textbf{Which agent type is developed by Microsoft and integrated with Microsoft 365 services?}
+\begin{enumerate}[label=\Alph*.]
+  \item First-party agent
+  \item Shared agent
+  \item External agent
+  \item Custom connector agent
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} First-party agents are Microsoft-developed experiences integrated into Microsoft 365.
+
+\item \textbf{Which agent type may require extra oversight because it uses experimental or advanced capabilities?}
+\begin{enumerate}[label=\Alph*.]
+  \item Shared agent
+  \item Frontier agent
+  \item Basic agent
+  \item Read-only agent
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Frontier agents may be early-stage or experimental and can require limited rollout and additional review.
+
+\item \textbf{Which role can manage agents in the Microsoft 365 admin center with view-only permissions and no edit capability?}
+\begin{enumerate}[label=\Alph*.]
+  \item AI Administrator
+  \item Global Reader
+  \item Environment Maker
+  \item Security Operator
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Global Reader can view relevant information but does not have edit capability in the admin center.
+
+\item \textbf{Which highly privileged role should be limited to emergency scenarios when possible?}
+\begin{enumerate}[label=\Alph*.]
+  \item Global Administrator
+  \item Global Reader
+  \item Basic User
+  \item SharePoint Visitor
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The guidance recommends using the fewest permissions necessary and limiting Global Administrator use because of its broad power.
+
+\item \textbf{Which stage of the approval process includes the agent's purpose, intended audience, and requested permissions?}
+\begin{enumerate}[label=\Alph*.]
+  \item Rollback
+  \item Submission
+  \item Monitoring
+  \item Retirement
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Submission is where the request is filed with the core details needed for evaluation.
+
+\item \textbf{Which stage of the approval process involves technical and organizational assessment by admins and other reviewers?}
+\begin{enumerate}[label=\Alph*.]
+  \item Review
+  \item Publication
+  \item Discovery
+  \item Archival
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Review is the evaluation stage where administrators and stakeholders assess the agent request.
+
+\item \textbf{Which option is part of the decision stage in a typical approval workflow?}
+\begin{enumerate}[label=\Alph*.]
+  \item Approve, reject, or return for revision
+  \item Automatically assign Global Admin
+  \item Enable tenant-wide publishing without review
+  \item Convert the agent into a first-party agent
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The decision stage ends with approval, rejection, or a request for revisions.
+
+\item \textbf{Where do administrators go in the Microsoft 365 admin center to view pending agent submissions?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot > Agents > Requested agents
+  \item Billing > Capacity > Requests
+  \item Users > Active users > Pending
+  \item Settings > Org settings > Agents
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Pending agent submissions are surfaced on the Requested agents tab under Copilot and Agents.
+
+\item \textbf{What kind of information is shown in an agent request review pane?}
+\begin{enumerate}[label=\Alph*.]
+  \item Only the agent icon and theme color
+  \item The agent overview and its data access requirements
+  \item Only the maker's department name
+  \item Only billing invoice details
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} The review pane helps technical vetting by showing what the agent does and what data it needs.
+
+\item \textbf{What is a recommended practice for documenting approval decisions?}
+\begin{enumerate}[label=\Alph*.]
+  \item Record requests, reviewers, and decisions in a tracking system such as a SharePoint list
+  \item Keep all decisions in personal notes only
+  \item Delete rejected requests immediately without a record
+  \item Store approval history only in local spreadsheets on one PC
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Documenting reviews and outcomes improves transparency and provides a reference for future questions or audits.
+
+\item \textbf{Which tab provides detailed information about an already known agent, including version history and availability?}
+\begin{enumerate}[label=\Alph*.]
+  \item Agent inventory
+  \item Requested agents
+  \item Message center
+  \item Service health
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Agent inventory tab provides operational and governance details for agents already in the environment.
+
+\item \textbf{Which of the following is listed as an agent availability option in the detail pane?}
+\begin{enumerate}[label=\Alph*.]
+  \item Only guest users can install and use this app
+  \item All users in the organization can install and use this app
+  \item Only Global Admins can install this app
+  \item The app is available only through email
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Agent detail panes can show availability choices such as no users, all users, or only selected users.
+
+\item \textbf{Which certification status can appear in the agent detail pane?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 certified
+  \item Legacy SMTP approved
+  \item SharePoint classic validated
+  \item Windows Server trusted
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The detail pane can display certification indicators such as Publisher attested and Microsoft 365 certified.
+
+\item \textbf{Which policy area defines which data sources agents may connect to and which are restricted?}
+\begin{enumerate}[label=\Alph*.]
+  \item Data access boundaries
+  \item Icon theming
+  \item Mail routing
+  \item Device wallpaper policy
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Data access boundaries establish which sources are permitted and which sensitive systems remain off-limits.
+
+\item \textbf{Which policy area defines who must review an agent request before approval?}
+\begin{enumerate}[label=\Alph*.]
+  \item Approval workflows
+  \item Animation settings
+  \item License animations
+  \item Document retention labels only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Approval workflows specify required reviewers, such as IT, compliance, or business owners.
+
+\item \textbf{Which policy area covers active users, data usage, and error frequency after deployment?}
+\begin{enumerate}[label=\Alph*.]
+  \item Usage monitoring
+  \item Theme selection
+  \item Mailbox quota tuning
+  \item Agent icon design
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Usage monitoring defines how agent activity is tracked after deployment.
+
+\item \textbf{What is the Copilot Control System within the Microsoft 365 admin center described as?}
+\begin{enumerate}[label=\Alph*.]
+  \item The central hub for Copilot agent governance
+  \item A SharePoint-only design surface
+  \item A replacement for Microsoft Purview
+  \item A code execution tool for analysts
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Copilot Control System centralizes governance actions such as allow/block decisions, assignment, extensibility, and billing settings.
+
+\item \textbf{Which action can administrators perform from the Copilot Control System?}
+\begin{enumerate}[label=\Alph*.]
+  \item Block or allow agents across the organization
+  \item Edit Windows registry settings for maker devices
+  \item Replace all Power Platform environments
+  \item Change Exchange transport rules directly
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Copilot Control System supports governance tasks such as blocking or allowing agents and controlling usage settings.
+
+\item \textbf{Which governance capability in Power Platform helps admins permit or restrict specific connectors?}
+\begin{enumerate}[label=\Alph*.]
+  \item Data policies
+  \item Site designs
+  \item Viva goals
+  \item Search bookmarks
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Data policies help control which Power Platform connectors can be used, reducing unauthorized data-source access.
+
+\item \textbf{Which governance control can stop makers from publishing to certain channels or before IT certification?}
+\begin{enumerate}[label=\Alph*.]
+  \item Data policies that block anonymous access or publishing scenarios
+  \item Starter prompts
+  \item Message center advisories
+  \item SharePoint page approvals only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Power Platform governance can block anonymous access, restrict publishing channels, and require certification before publishing.
+
+\item \textbf{What are sharing limits used for in governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item To prevent non-certified solutions from being shared too broadly
+  \item To force all makers into one environment
+  \item To remove all role assignments
+  \item To bypass store settings
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Sharing limits help contain exposure until solutions are reviewed and certified according to organizational guidelines.
+
+\item \textbf{Why are environment rules, groups, and routing useful for enterprise governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They support advanced environment strategies such as routing makers to personal development environments
+  \item They disable all maker activity automatically
+  \item They replace need for licensing
+  \item They are only for external vendors
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} These controls help enterprises organize maker activity and keep development separated appropriately.
+
+\item \textbf{What is the purpose of maker onboarding in governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item To give new makers custom guidance, resources, and company-specific onboarding content
+  \item To grant Global Admin privileges automatically
+  \item To hide all governance controls from users
+  \item To disable templates and catalogs
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Maker onboarding can replace default help content with organization-specific guidance and resources.
+
+\item \textbf{What does Advisor provide to administrators?}
+\begin{enumerate}[label=\Alph*.]
+  \item Out-of-the-box recommendations and actions for gaps needing IT attention
+  \item A replacement for all approval workflows
+  \item A mandatory billing engine for every agent
+  \item A public store for third-party apps only
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Advisor scans the environment and surfaces recommendations and concrete actions to support governance and adoption.
+
+\item \textbf{What is the primary purpose of Catalog in governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item To provide a centralized repository for certified reusable controls, templates, and connectors
+  \item To store only end-user chat transcripts
+  \item To replace Microsoft Entra groups
+  \item To publish all agents to the web automatically
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Catalog helps IT and enablement teams manage reusable certified assets that makers can safely consume.
+
+\item \textbf{How do Microsoft Information Protection labels strengthen agent governance?}
+\begin{enumerate}[label=\Alph*.]
+  \item They help ensure sensitive content is labeled and managed according to policy
+  \item They eliminate the need for Microsoft Purview
+  \item They allow all connectors by default
+  \item They disable environment separation
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Integrating sensitivity labels helps maintain proper classification and handling of sensitive content in Copilot scenarios.
+
+\item \textbf{What does Copilot audit logging to Microsoft Purview capture?}
+\begin{enumerate}[label=\Alph*.]
+  \item User commands, generated responses, and administrative actions
+  \item Only agent icon changes
+  \item Only tenant billing exports
+  \item Only Teams meeting attendance
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Purview audit logging provides transparency and accountability by capturing interactions and administrative actions.
+
+\item \textbf{What is the purpose of the Copilot Security checker?}
+\begin{enumerate}[label=\Alph*.]
+  \item To assess security settings and warn makers of concerns before publishing
+  \item To replace authentication with anonymous access
+  \item To certify every agent automatically without review
+  \item To disable version history
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The security checker helps surface potential risks so makers and admins can address them before an agent is published.
+
+\item \textbf{What does the Security page in the Power Platform admin center provide?}
+\begin{enumerate}[label=\Alph*.]
+  \item A consolidated enterprise-scale experience for managing Power Platform and Copilot security
+  \item A public gallery of agent prompts only
+  \item A billing dashboard for Exchange Online
+  \item A replacement for Conditional Access
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Security page helps admins navigate security management across Power Platform workloads, including Copilots and Copilot agents.
+
+\item \textbf{How should admins monitor agent compliance activity in Microsoft 365?}
+\begin{enumerate}[label=\Alph*.]
+  \item Use Microsoft Purview Audit and filter for Copilot-related activities
+  \item Review only SharePoint recycle bin entries
+  \item Check only local browser history on maker devices
+  \item Use Exchange message trace exclusively
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Purview Audit lets admins search Copilot-related events and review whether activities align with policy.
+
+\item \textbf{Which navigation path is used to review Copilot compliance events?}
+\begin{enumerate}[label=\Alph*.]
+  \item Microsoft 365 admin center > Admin centers > Microsoft Purview > Solutions > Audit
+  \item Teams admin center > Voice > Call queues
+  \item SharePoint admin center > Active sites > Policies
+  \item Power Platform admin center > Billing > Capacity
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot compliance monitoring is performed in Microsoft Purview by navigating to Solutions and then Audit.
+
+\end{enumerate}
+
+\clearpage
+\subsection{Monitor and manage the agent lifecycle}
+\begin{enumerate}[leftmargin=*]
+
+\item \textbf{Which navigation path is used to monitor agent usage in the Microsoft 365 admin center?}
+\begin{enumerate}[label=\Alph*.]
+  \item Reports > Usage > Microsoft 365 Copilot > Copilot > Agents tab
+  \item Billing > Capacity > Message packs
+  \item Users > Active users > Licenses and apps
+  \item Settings > Org settings > Services
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Agent usage reporting is accessed from Reports and Usage, then through Microsoft 365 Copilot reporting and the Agents tab.
+
+\item \textbf{Which filters are specifically called out as useful when narrowing agent-usage analysis?}
+\begin{enumerate}[label=\Alph*.]
+  \item Date range, department, or user group
+  \item Screen orientation and battery level
+  \item Printer type and paper size
+  \item Theme variant and icon format
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} These filters help admins compare usage trends across audiences and periods.
+
+\item \textbf{What do cross-service dependency insights help administrators understand?}
+\begin{enumerate}[label=\Alph*.]
+  \item Which backend services the agent relies on and where slowdowns might affect the experience
+  \item Which logo file format was uploaded
+  \item Which users changed browser themes
+  \item Which print drivers are installed
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Dependencies across services such as SharePoint, Outlook, and Power Automate can influence end-to-end agent performance.
+
+\item \textbf{Which lifecycle stage requires communication so users know how to find and use the published agent?}
+\begin{enumerate}[label=\Alph*.]
+  \item Approval and deployment
+  \item Retirement only
+  \item Log export
+  \item Icon replacement
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Even a well-built agent can fail to deliver value if users are not informed how and where to access it.
+
+\item \textbf{What is the difference between blocking an agent and removing it from inventory?}
+\begin{enumerate}[label=\Alph*.]
+  \item Blocking prevents use, while removal deletes it only from Power Platform environments
+  \item Blocking prevents tenant use, while removal takes the agent out of inventory and may require reacquiring it from the store later
+  \item They are identical actions with different names
+  \item Removal is only temporary, while blocking is permanent
+\end{enumerate}
+\textbf{Answer: B}\\
+\textbf{Explanation:} Blocking stops access; removal takes the agent out of inventory entirely for applicable agent types, with re-addition possible from the store.
+
+\item \textbf{Which action is described as applying to first-party or external agents and can be reversed by acquiring the agent from the store again?}
+\begin{enumerate}[label=\Alph*.]
+  \item Removal
+  \item Draft save
+  \item License reassignment
+  \item Service health reset
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Removing an agent from inventory can later be reversed by reacquiring it from the store if appropriate.
+
+\item \textbf{Which path is used to block or remove an agent in the Microsoft 365 admin center?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot > Agents > select agent > detail pane > Remove or Block
+  \item Users > Active users > Password reset
+  \item Billing > Capacity > Purchase
+  \item Reports > Usage > Export
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Lifecycle actions such as Block or Remove are taken from the agent's detail pane under Copilot and Agents.
+
+\item \textbf{What is the purpose of dashboards in Microsoft 365 admin center and Power Platform admin center?}
+\begin{enumerate}[label=\Alph*.]
+  \item To provide a centralized view of health, adoption, and performance
+  \item To replace approval workflows entirely
+  \item To remove the need for audit logs
+  \item To assign licenses automatically
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Dashboards consolidate operational signals so admins can monitor the state and value of deployed agents.
+
+\item \textbf{Which role can view reports with no user details?}
+\begin{enumerate}[label=\Alph*.]
+  \item Global reader
+  \item Environment Maker
+  \item Basic User
+  \item Copilot Studio Author
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Global reader is listed as a reporting role with no user details shown.
+
+\item \textbf{Which additional role is specifically listed as being able to see reports in Microsoft 365?}
+\begin{enumerate}[label=\Alph*.]
+  \item Reports reader
+  \item Site visitor
+  \item Billing reader only
+  \item Guest user
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Reports reader is one of the roles explicitly called out as able to view reporting dashboards.
+
+\item \textbf{Which Microsoft 365 admin center path is used to access Copilot reporting dashboards?}
+\begin{enumerate}[label=\Alph*.]
+  \item Reports > Usage > Microsoft 365 Copilot
+  \item Copilot > Agents > Requested agents
+  \item Users > Active users > Licenses and apps
+  \item Billing > Capacity > Message packs
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Copilot dashboards are accessed through the Reports and Usage section in the Microsoft 365 admin center.
+
+\item \textbf{Where in the Power Platform admin center can you review detailed agent performance data such as average response time and abandonment rate?}
+\begin{enumerate}[label=\Alph*.]
+  \item Copilot > Copilot Studio > Agents section > select an agent
+  \item Billing > Capacity > Pay-as-you-go
+  \item Solutions > Imports > History
+  \item Connectors > Data policies > Review
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The Power Platform admin center exposes detailed performance data for Copilot Studio agents through the Copilot and Copilot Studio pages.
+
+\item \textbf{Where should admins manage permissions if a user reports that an agent can't access required data?}
+\begin{enumerate}[label=\Alph*.]
+  \item Settings > Integrated apps > Copilot agents > Manage permissions
+  \item Reports > Usage > Export to Excel
+  \item Users > Guest users > Reset redemption
+  \item Billing > Invoices > Download PDF
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} Permission issues can be reviewed and adjusted in the Copilot agents permissions area.
+
+\item \textbf{If a procurement agent fails while pulling purchase order data, what should an admin check first?}
+\begin{enumerate}[label=\Alph*.]
+  \item The service health dashboard for Dynamics 365
+  \item The SharePoint site logo dimensions
+  \item The user's Teams background effect
+  \item The document margins in Word
+\end{enumerate}
+\textbf{Answer: A}\\
+\textbf{Explanation:} The example troubleshooting flow begins by checking whether the dependency system itself is experiencing issues.
+
+\end{enumerate}
 \end{document}
