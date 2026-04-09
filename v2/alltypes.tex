@@ -1,0 +1,669 @@
+\documentclass[10pt]{article}
+\usepackage[top=0.75in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{booktabs}
+
+\title{AB-900: Copilot and Agent Administration Fundamentals}
+\author{}
+\date{}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\titleformat{\section}[display]{\normalfont\Huge\bfseries\centering}{\thesection}{0.5em}{\vspace*{\fill}}[\vspace*{\fill}]
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titleformat{\subsection}[display]{\normalfont\LARGE\bfseries\centering}{\thesubsection}{0.5em}{\vspace*{1.25cm}}[\vspace{0.6em}\titlerule]
+\titlespacing*{\subsection}{0pt}{0pt}{1.5em}
+
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+{\LARGE\bfseries AB-900: Copilot and Agent Administration Fundamentals\par}
+\end{center}
+\vspace*{\fill}
+\end{titlepage}
+\tableofcontents
+\newpage
+
+\setcounter{section}{0}
+\section{Microsoft 365 Security Foundations}
+\setcounter{subsection}{0}
+\clearpage
+\subsection{Analyze the Zero Trust Security Model}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+PIM & Privileged Identity Management \\
+BYOD & Bring-your-own-device \\
+DLP & Data Loss Prevention \\
+NIST & National Institute of Standards and Technology \\
+ISO & International Organization for Standardization \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item In Microsoft 365, the Zero Trust model is best described as:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A single product
+\item A comprehensive strategy that spans identity, endpoints, data, applications, infrastructure, and networks
+\item A replacement for all compliance programs
+\item A feature available only in Microsoft Defender for Endpoint
+\end{enumerate}
+\textbf{Answer:} b. A comprehensive strategy that spans identity, endpoints, data, applications, infrastructure, and networks.
+
+\textbf{Explanation:} The documentation explicitly says the model isn't a single product but a comprehensive strategy across six domains.
+
+\item Which native Microsoft tools are specifically named as part of implementing Zero Trust in Microsoft 365? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Entra ID
+\item Microsoft Defender
+\item Intune
+\item Purview
+\item Windows Server Update Services
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} The documentation says implementing Zero Trust requires a layered approach combining native tools like Microsoft Entra ID, Microsoft Defender, Intune, and Purview.
+
+\item According to the documentation, why are organizations having a Zero Trust conversation? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item IT security is complex
+\item Trusted network security strategy accepted lower security within the network
+\item Assets increasingly leave the network
+\item Attackers shift to identity attacks
+\item Passwords are no longer used anywhere
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} The documentation lists these four reasons in the Zero Trust conversation diagram.
+
+\item The three core principles of the Zero Trust security model are Verify explicitly, Least privilege access, and Assume breach. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These are the three principles introduced in the documentation under Core Principles of Zero Trust.
+
+\item Which principle is described as the cornerstone of the Zero Trust model?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Least privilege access
+\item Assume breach
+\item Verify explicitly
+\item Endpoint compliance
+\end{enumerate}
+\textbf{Answer:} c. Verify explicitly.
+
+\textbf{Explanation:} The documentation says the Verify explicitly principle is the cornerstone of the Zero Trust model.
+
+\item Verify explicitly requires that every access request is authenticated and authorized using all available contextual signals. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation explains that every request from a user, device, or application must be evaluated using contextual signals.
+
+\item Which contextual signals are named in the documentation? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Identity attributes
+\item Device health
+\item Location
+\item User behavior
+\item Risk level
+\end{enumerate}
+\textbf{Answer:} a, b, c, d, e.
+
+\textbf{Explanation:} All five are explicitly listed as contextual signals under Verify explicitly.
+
+\item Microsoft 365 enforces Verify explicitly through which combination of mechanisms? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Conditional Access policies
+\item Real-time risk evaluation
+\item Multifactor authentication
+\item Static credentials only
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} The documentation says these mechanisms work together to make access decisions dynamic and based on current context rather than static credentials.
+
+\item Conditional Access in Microsoft Entra ID enables administrators to define:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Granular access rules based on multiple signals
+\item Only password reset workflows
+\item Only firewall rules
+\item Data labeling templates
+\end{enumerate}
+\textbf{Answer:} a. Granular access rules based on multiple signals.
+
+\textbf{Explanation:} Conditional Access evaluates user identity, device compliance, location, application sensitivity, and real-time risk before granting access.
+
+\item Which scenario is specifically mentioned in the documentation as a Conditional Access example?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Require MFA for users accessing SharePoint Online from outside the corporate network
+\item Allow all personal devices to download sensitive documents
+\item Disable compliance requirements for contractors
+\item Remove access controls for trusted locations permanently
+\end{enumerate}
+\textbf{Answer:} a. Require MFA for users accessing SharePoint Online from outside the corporate network.
+
+\textbf{Explanation:} This is one of the exact examples given in the Conditional Access section.
+
+\item Conditional Access also supports which session controls? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Limiting access to read-only mode
+\item Preventing downloads
+\item Enforcing data watermarking in every app
+\item Blocking all sign-ins from corporate devices
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Explanation:} The documentation specifically lists read-only mode and preventing downloads as session controls.
+
+\item Policies can be combined using logical operators to create complex rules that reflect organizational requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation explains that logical operators can combine multiple conditions such as device compliance, trusted location, and low risk score.
+
+\item Secure Score integrates with Conditional Access to do what?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Highlight gaps and suggest improvements
+\item Replace Identity Protection
+\item Create DLP labels automatically
+\item Disable policy simulations
+\end{enumerate}
+\textbf{Answer:} a. Highlight gaps and suggest improvements.
+
+\textbf{Explanation:} The documentation says Secure Score helps organizations implement Conditional Access effectively by surfacing gaps and recommendations.
+
+\item Administrators can simulate policy impact before deployment to avoid unintended disruptions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation highlights simulation as a way to keep verification rigorous and user-friendly.
+
+\item Microsoft Entra Identity Protection evaluates sign-in risk using:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Machine learning and global threat intelligence
+\item Hardware inventory only
+\item Local group policy only
+\item Bandwidth monitoring only
+\end{enumerate}
+\textbf{Answer:} a. Machine learning and global threat intelligence.
+
+\textbf{Explanation:} The documentation explicitly says sign-in risk is evaluated using machine learning and global threat intelligence.
+
+\item Which anomalies are specifically named under risk-based authentication? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Impossible travel
+\item Unfamiliar sign-in properties
+\item Known compromised credentials
+\item Missing document labels
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the specific anomalies listed under Microsoft Entra Identity Protection.
+
+\item Based on risk level, access can be:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Blocked
+\item Challenged with MFA
+\item Allowed with restrictions
+\item All of the above
+\end{enumerate}
+\textbf{Answer:} d. All of the above.
+
+\textbf{Explanation:} The documentation says access can be blocked, challenged with MFA, or allowed with restrictions depending on the risk level.
+
+\item MFA adds a critical layer of security by requiring users to verify their identity using a second factor. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation describes a second factor such as a mobile app notification, biometric scan, or hardware token.
+
+\item Which MFA methods or passwordless options are specifically mentioned? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Mobile app notification
+\item Biometric scan
+\item Hardware token
+\item Windows Hello
+\item FIDO2 keys
+\end{enumerate}
+\textbf{Answer:} a, b, c, d, e.
+
+\textbf{Explanation:} All five are named in the documentation as supported verification methods or passwordless options.
+
+\item Risk-based MFA can be configured to trigger only when necessary, minimizing user friction. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation explains this design as a balance between security and usability.
+
+\item Scenario: A user signs in from a known device and location. Based on the documentation, what might happen?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item The user might not be prompted for MFA
+\item The user must always be blocked
+\item The user must always be prompted for hardware token verification
+\item The sign-in is automatically marked high risk
+\end{enumerate}
+\textbf{Answer:} a. The user might not be prompted for MFA.
+
+\textbf{Explanation:} The documentation says a sign-in from a known device and location might not trigger MFA, while a new device in a high-risk location can require it.
+
+\item Scenario: A user accesses sensitive data from a corporate laptop in a trusted location. What outcome best matches the documentation?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Seamless access might be allowed
+\item Access must always be denied
+\item Global administrator access must be granted
+\item Device health is ignored
+\end{enumerate}
+\textbf{Answer:} a. Seamless access might be allowed.
+
+\textbf{Explanation:} The documentation uses this as a lower-risk scenario compared to access from a personal device in a foreign location.
+
+\item What does the Least privilege access principle dictate?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Users, applications, and services should be granted only the minimum level of access necessary to perform their tasks
+\item All administrators should have permanent privileged access
+\item Every compliant device should receive full access
+\item Access should be based only on job seniority
+\end{enumerate}
+\textbf{Answer:} a. Users, applications, and services should be granted only the minimum level of access necessary to perform their tasks.
+
+\textbf{Explanation:} The documentation states this principle reduces the attack surface and contains damage if an account is compromised.
+
+\item Implementing least privilege requires a thorough understanding of what? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item User roles
+\item Workflows
+\item Resource sensitivity
+\item Wallpaper settings
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} The documentation says organizations must map out users, workflows, and resource sensitivity to avoid overprovisioning.
+
+\item Which capabilities support least privilege in Microsoft 365? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item RBAC
+\item PIM
+\item Defender for Cloud Apps only
+\item Azure Firewall only
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Explanation:} RBAC provides predefined permission roles, and PIM adds just-in-time access to sensitive functions.
+
+\item Which example is used to explain RBAC?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A helpdesk technician granted the Password Administrator role
+\item A contractor granted Global Administrator permanently
+\item A guest user granted mailbox access for all employees
+\item A mobile phone granted domain admin rights
+\end{enumerate}
+\textbf{Answer:} a. A helpdesk technician granted the Password Administrator role.
+
+\textbf{Explanation:} The documentation uses Password Administrator as an example of a narrowly defined role that avoids privilege creep.
+
+\item Match each control or product with its described purpose.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Column A} & \textbf{Column B} \\
+\midrule
+1. RBAC & a. Aggregates logs and correlates events across domains \\
+2. PIM & b. Provides just-in-time access to sensitive functions \\
+3. Microsoft Sentinel & c. Defines roles with specific permissions \\
+4. Microsoft Purview Information Protection & d. Classifies, labels, and encrypts sensitive data \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} 1-c, 2-b, 3-a, 4-d.
+
+\textbf{Explanation:} Each product or control is mapped directly to the role described in the documentation.
+
+\item In PIM, a global administrator can request temporary elevation for a specific task, such as configuring a new Conditional Access policy. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation gives this exact example when explaining PIM and just-in-time elevation.
+
+\item Once a privileged task is complete, the elevated privileges are automatically revoked. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Automatic revocation is one of the reasons PIM reduces the risk of persistent high-level access.
+
+\item The Assume breach principle reflects a shift in mindset from prevention to containment. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation says Assume breach operates under the assumption that attackers are already inside or might eventually get in.
+
+\item What does the Assume breach principle emphasize? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Segmentation
+\item Continuous monitoring
+\item Rapid response
+\item Permanent trust for internal systems
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These three actions are explicitly named as the focus areas for minimizing breach impact.
+
+\item Which tools are specifically named under the Assume breach principle? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Defender for Endpoint
+\item Microsoft Sentinel
+\item Microsoft Defender for Identity
+\item Azure Policy
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the three security tools listed as providing visibility across endpoints, identities, and network traffic.
+
+\item Microsoft Defender for Endpoint uses behavioral analytics to detect which anomalies? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Lateral movement
+\item Privilege escalation
+\item Ransomware activity
+\item SharePoint site creation
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the exact behaviors named in the Defender for Endpoint section.
+
+\item If a device exhibits suspicious behavior, Microsoft Defender for Endpoint can automatically isolate it from the network. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation says isolation helps prevent further spread of suspicious activity.
+
+\item What is Microsoft Sentinel described as doing?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Aggregating logs and alerts from across Microsoft 365 and non-Microsoft sources
+\item Managing only local firewalls
+\item Enforcing app protection policies on mobile phones
+\item Replacing Conditional Access
+\end{enumerate}
+\textbf{Answer:} a. Aggregating logs and alerts from across Microsoft 365 and non-Microsoft sources.
+
+\textbf{Explanation:} The documentation says Sentinel uses machine learning to correlate events and identify threats spanning multiple domains.
+
+\item Which scenario is used to explain Microsoft Sentinel correlation?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A phishing email detected by Defender for Office 365 linked to a compromised account in Microsoft Entra ID and a malicious file in SharePoint
+\item A printer jam linked to a failed password reset
+\item A Teams status message linked to a VM resize request
+\item A DLP label linked to a device wallpaper change
+\end{enumerate}
+\textbf{Answer:} a. A phishing email detected by Defender for Office 365 linked to a compromised account in Microsoft Entra ID and a malicious file in SharePoint.
+
+\textbf{Explanation:} This is the exact cross-domain example used to describe Sentinel’s correlation capabilities.
+
+\item Which techniques can Microsoft Defender for Identity detect? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Pass-the-Hash
+\item Golden Ticket attacks
+\item Domain enumeration
+\item Browser theme changes
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These identity attack techniques are explicitly listed in the documentation.
+
+\item Assume breach also supports proactive threat hunting and incident response. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation says security teams can use telemetry data to trace attack paths, identify compromised assets, and contain threats.
+
+\item What are the six interdependent Zero Trust pillars in Microsoft 365?
+
+\textbf{Answer:} Identity, Endpoints, Data, Applications, Infrastructure, and Network.
+
+\textbf{Explanation:} The documentation names these six pillars as the domains where Zero Trust principles must be applied.
+
+\item Which pillar is described as the cornerstone of Zero Trust?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Identity
+\item Applications
+\item Data
+\item Infrastructure
+\end{enumerate}
+\textbf{Answer:} a. Identity.
+
+\textbf{Explanation:} The documentation explicitly states that identity is the cornerstone of Zero Trust.
+
+\item Microsoft Entra ID provides which core identity capabilities? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Centralized identity management
+\item Authentication
+\item Authorization
+\item Remote imaging
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These three are named in the Identity section as core capabilities of Microsoft Entra ID.
+
+\item Which passwordless sign-in examples are specifically listed? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Windows Hello for Business
+\item FIDO2 security keys
+\item Microsoft Authenticator
+\item FTP shared passwords
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the exact passwordless examples used in the Identity section.
+
+\item Microsoft Entra ID supports identity federation, allowing users to sign in with credentials from external providers like Google or Facebook while still enforcing corporate policies. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This sentence closely follows the wording used in the documentation.
+
+\item In the context of the Zero Trust model, endpoints refers to what?
+
+\textbf{Answer:} Any device that connects to enterprise resources, including desktops, laptops, mobile phones, tablets, and even IoT devices.
+
+\textbf{Explanation:} The documentation defines endpoints broadly and notes that they are often the first target in cyberattacks.
+
+\item Which tools are specifically highlighted for endpoint management and protection? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Intune
+\item Microsoft Defender for Endpoint
+\item Microsoft Purview Information Protection
+\item Azure Policy
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Explanation:} The Endpoints section specifically names Intune and Defender for Endpoint.
+
+\item Microsoft Intune enables administrators to define and enforce compliance policies that can require what? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Encryption
+\item Antivirus protection
+\item Minimum OS versions
+\item Other security configurations
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} All four are listed as examples of compliance policy requirements.
+
+\item Scenario: A user attempts to access Microsoft Teams from a jailbroken iPhone. Based on the documentation, what is the likely result?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item The user might be blocked due to noncompliance
+\item The user is automatically granted access
+\item Device compliance checks are skipped
+\item The device is trusted because it is mobile
+\end{enumerate}
+\textbf{Answer:} a. The user might be blocked due to noncompliance.
+
+\textbf{Explanation:} This is the specific example used in the Intune section.
+
+\item What does Endpoint Analytics provide?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Insights into device performance, user behavior, and configuration risks
+\item Email encryption only
+\item Passwordless sign-in only
+\item A replacement for Conditional Access
+\end{enumerate}
+\textbf{Answer:} a. Insights into device performance, user behavior, and configuration risks.
+
+\textbf{Explanation:} Endpoint Analytics is described as helping identify crashes, outdated software, and insecure settings.
+
+\item Which Microsoft tool provides visibility into sanctioned and unsanctioned applications, also known as shadow IT?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Defender for Cloud Apps
+\item Microsoft Defender for Cloud
+\item Microsoft Intune
+\item Microsoft Purview Information Protection
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Defender for Cloud Apps.
+
+\textbf{Explanation:} The Applications section explicitly identifies Defender for Cloud Apps as the tool for shadow IT visibility and control.
+
+\item Microsoft Entra ID’s App Proxy enables secure remote access to on-premises applications without exposing them to the internet. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation states that App Proxy uses reverse proxy architecture and integrates with Conditional Access.
+
+\item Microsoft Purview Information Protection allows organizations to do what?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Classify, label, and encrypt sensitive data
+\item Restrict outbound traffic to known safe destinations
+\item Assign helpdesk roles
+\item Create VM size restrictions
+\end{enumerate}
+\textbf{Answer:} a. Classify, label, and encrypt sensitive data.
+
+\textbf{Explanation:} This is the primary function described in the Data pillar.
+
+\item A document containing credit card numbers can be automatically labeled as ``Confidential'' and encrypted. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation uses this exact example to explain automatic labeling and encryption.
+
+\item DLP policies prevent unauthorized sharing of sensitive information. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The documentation defines DLP as a control to block, warn, or allow with justification when sensitive information is shared.
+
+\item DLP integrates with which Microsoft 365 services? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exchange
+\item SharePoint
+\item OneDrive
+\item Teams
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} These are the exact services listed in the documentation.
+
+\item Microsoft Defender for Cloud supports multicloud environments, including which platforms?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Amazon Web Services and Google Cloud
+\item Only Microsoft Azure
+\item Only on-premises datacenters
+\item Only Microsoft 365 workloads
+\end{enumerate}
+\textbf{Answer:} a. Amazon Web Services and Google Cloud.
+
+\textbf{Explanation:} The Infrastructure section explicitly says Defender for Cloud supports multicloud environments including AWS and Google Cloud.
+
+\item Which compliance standards are specifically mentioned in the Infrastructure section? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item ISO 27001
+\item National Institute of Standards and Technology (NIST)
+\item PCI DSS
+\item CIS Controls
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Explanation:} The documentation specifically mentions ISO 27001 and NIST.
+
+\item What is Azure Policy described as?
+
+\textbf{Answer:} A powerful governance tool that enables organizations to create, assign, and manage policies that enforce rules and effects across cloud resources.
+
+\textbf{Explanation:} The Infrastructure section introduces Azure Policy as the tool used to enforce consistent governance and prevent misconfigurations.
+
+\item Which examples are given for Azure Policy enforcement? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Restrict VM sizes
+\item Enforce tagging
+\item Require encryption
+\item Automatically isolate suspicious endpoints
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the exact governance examples listed under Azure Policy.
+
+\item Network segmentation and access control are essential in Zero Trust. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The Network section begins by stating this directly.
+
+\item Which technologies are explicitly mentioned in the Network pillar? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Azure Firewall
+\item VPN Gateway
+\item Microsoft Defender for Identity
+\item Microsoft Authenticator
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These are the named technologies used to monitor and control network traffic and detect lateral movement.
+
+\item Scenario: An organization wants to restrict outbound traffic to known safe destinations to prevent data exfiltration. Which control best matches the documentation?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Azure Firewall
+\item Endpoint Analytics
+\item Password Administrator role
+\item App Proxy
+\end{enumerate}
+\textbf{Answer:} a. Azure Firewall.
+
+\textbf{Explanation:} The documentation specifically says Azure Firewall can restrict outbound traffic to known safe destinations.
+
+\item Defender for Identity monitors network traffic for signs of lateral movement, such as credential theft or unauthorized access. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This statement closely follows the wording used in the Network section.
+
+\item Put the three core Zero Trust principles in the order presented in the documentation.
+
+\textbf{Answer:} Verify explicitly, Least privilege access, Assume breach.
+
+\textbf{Explanation:} The documentation introduces the principles in this exact order.
+
+\item Scenario: A phishing email leads to credential theft. Which response best matches the layered defense strategy described in the documentation?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Defender for Identity detects lateral movement, while Microsoft Sentinel correlates the event with other indicators of compromise
+\item Intune automatically changes all document labels to Confidential
+\item Azure Policy revokes all sign-in sessions for every user
+\item Endpoint Analytics creates a new Conditional Access policy automatically
+\end{enumerate}
+\textbf{Answer:} a. Defender for Identity detects lateral movement, while Microsoft Sentinel correlates the event with other indicators of compromise.
+
+\textbf{Explanation:} The documentation uses this example to show how Assume breach supports proactive threat hunting and incident response through layered defenses.
+
+\end{enumerate}
+
+\end{document}
