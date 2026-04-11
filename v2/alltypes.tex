@@ -5448,4 +5448,812 @@ SharePoint admin center & Manage site collections and storage quotas \\
 
 \end{enumerate}
 
+\subsection{Examine Microsoft Exchange, Teams, and SharePoint}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+DLP & Data Loss Prevention \\
+EAC & Exchange admin center \\
+RBAC & Role-Based Access Control \\
+MFA & Multifactor Authentication \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365’s core collaboration services that form the backbone of modern workplace communication, collaboration, and content management are:
+
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exchange Online, Teams, and SharePoint Online
+\item Only Exchange Online and OneDrive
+\item Only Teams and Power BI
+\item Only SharePoint Online and Yammer
+\end{enumerate}
+\textbf{Answer:} a. Exchange Online, Teams, and SharePoint Online.
+
+\textbf{Explanation:} These three services form the backbone of modern workplace communication, collaboration, and content management.
+
+\item Configuring Microsoft 365’s core collaboration services is essential for enabling which outcomes? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Secure operations
+\item Efficient operations
+\item Seamless communication and teamwork
+\item Scalable operations
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} Their initial setup lays the groundwork for secure, efficient, and scalable operations while enforcing organizational policies, compliance requirements, and user experience standards.
+
+\item Which service handles email, calendaring, and mail flow for the organization?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item SharePoint Online
+\item Microsoft Teams
+\item Exchange Online
+\item Microsoft Purview
+\end{enumerate}
+\textbf{Answer:} c. Exchange Online.
+
+\textbf{Explanation:} Exchange Online handles email, calendaring, and mail flow. Administrators must provision mailboxes, set up mail routing, and apply security policies.
+
+\item Which service provides the platform for document management, team collaboration, and intranet portals?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exchange Online
+\item Microsoft Teams
+\item SharePoint Online
+\item Microsoft Entra ID
+\end{enumerate}
+\textbf{Answer:} c. SharePoint Online.
+
+\textbf{Explanation:} SharePoint Online configuration involves site provisioning, library setup, and permission management to ensure users can access and share content securely.
+
+\item Which service brings together chat, meetings, calls, and app integrations?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exchange Online
+\item Microsoft Teams
+\item SharePoint Online
+\item OneDrive
+\end{enumerate}
+\textbf{Answer:} b. Microsoft Teams.
+
+\textbf{Explanation:} Microsoft Teams setup requires careful planning of team structures, channel organization, and policy enforcement.
+
+\item To update Exchange Online settings, admins must be assigned which roles? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Global administrator
+\item Exchange administrator
+\item Organization Management role group
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Global administrator provides full access but should be used sparingly. Exchange administrator manages mailboxes, mail flow, and anti-spam policies. Organization Management grants access to most Exchange Online features through the EAC or PowerShell.
+
+\item Exchange Online uses RBAC roles such as Role Management and View-Only Organization Management. \textbf{(True/False)}
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Role Management allows creation and modification of role groups. View-Only Organization Management provides helpdesk-style access.
+
+\item End-user roles in Exchange Online are assigned through:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Direct assignment to users
+\item Role assignment policies
+\item SharePoint groups only
+\item Teams policies only
+\end{enumerate}
+\textbf{Answer:} b. Role assignment policies.
+
+\textbf{Explanation:} These roles aren’t assigned directly to users. Instead, they are bundled into role assignment policies managed by admins in the EAC.
+
+\item Mailbox creation is the first and most fundamental step in configuring Exchange Online. \textbf{(True/False)}
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Every user who needs email access must have a mailbox, which is automatically provisioned when a user is assigned an Exchange Online license.
+
+\item Which mailbox type is automatically provisioned when a user is assigned an Exchange Online license in the Microsoft 365 admin center?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Shared mailbox
+\item Resource mailbox
+\item User mailbox
+\item Equipment mailbox only
+\end{enumerate}
+\textbf{Answer:} c. User mailbox.
+
+\textbf{Explanation:} Assigning an Exchange Online license triggers automatic mailbox provisioning with a default quota such as 50 GB or 100 GB.
+
+\item Shared mailboxes are designed for scenarios where multiple users need access to a common email address. \textbf{(True/False)}
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Examples include support@contoso.com or info@contoso.com. These mailboxes don’t require a separate license unless accessed with mobile devices.
+
+\item Resource mailboxes are used to manage:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Rooms and equipment
+\item Group email addresses
+\item Personal user email only
+\item Archive storage
+\end{enumerate}
+\textbf{Answer:} a. Rooms and equipment.
+
+\textbf{Explanation:} Resource mailboxes can be configured to automatically accept or decline meeting requests based on availability and enforce booking policies.
+
+\item Transport rules are also known as:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Retention policies
+\item Mail flow rules
+\item Sensitivity labels
+\item Site templates
+\end{enumerate}
+\textbf{Answer:} b. Mail flow rules.
+
+\textbf{Explanation:} Transport rules allow administrators to inspect email content, headers, and attachments to enforce organizational policies.
+
+\item Accepted domains define:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item The email domains that Exchange Online can handle for an organization
+\item Only on-premises server names
+\item Teams channel types
+\item SharePoint site templates
+\end{enumerate}
+\textbf{Answer:} a. The email domains that Exchange Online can handle for an organization.
+
+\textbf{Explanation:} Administrators add domains in the EAC and verify ownership to enable mail flow.
+
+\item Retention policies help organizations manage the lifecycle of email data by specifying:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item How long messages are retained before deletion
+\item Only mailbox quotas
+\item External sharing settings
+\item Team creation permissions
+\end{enumerate}
+\textbf{Answer:} a. How long messages are retained before deletion.
+
+\textbf{Explanation:} Administrators create retention tags and policies in the EAC and assign them to mailboxes.
+
+\item Litigation hold preserves all email content in a mailbox, including deleted items and original versions, for legal discovery purposes. \textbf{(True/False)}
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Administrators enable litigation hold in the EAC and specify hold duration.
+
+\item SharePoint Online configuration involves which key activities? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Site provisioning
+\item Library setup
+\item Permission management
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These ensure users can access and share content securely while supporting advanced features such as versioning, metadata tagging, and real-time co-authoring.
+
+\item To configure SharePoint Online, admins must be assigned which roles? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Global administrator
+\item SharePoint administrator
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Answer:} Global administrator provides full access but should be used sparingly. SharePoint administrator manages site collections, permissions, and sharing policies.
+
+\item Team sites in SharePoint are automatically linked to:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft 365 Groups
+\item Only communication sites
+\item Exchange transport rules
+\item Resource mailboxes
+\end{enumerate}
+\textbf{Answer:} a. Microsoft 365 Groups.
+
+\textbf{Explanation:} When a team site is created, it provisions a shared document library, group mailbox, and calendar.
+
+\item Communication sites are intended for:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Broadcasting information to a wide audience
+\item Private team collaboration only
+\item Equipment booking only
+\item Personal OneDrive storage
+\end{enumerate}
+\textbf{Answer:} a. Broadcasting information to a wide audience.
+
+\textbf{Explanation:} These sites feature visually rich layouts for company news, policies, or training materials.
+
+\item Document libraries in SharePoint support which features? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Versioning
+\item Metadata tagging
+\item Real-time co-authoring
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Administrators configure libraries to enable version history, set metadata fields, and define content types.
+
+\item Permission inheritance in SharePoint means objects inherit permissions from their parent container unless inheritance is broken. \textbf{(True/False)}
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Administrators can break inheritance to apply unique permissions at any level.
+
+\item Microsoft Teams is built on Microsoft 365 Groups and integrates deeply with:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item SharePoint, Exchange, and OneDrive
+\item Only Exchange Online
+\item Only SharePoint lists
+\item Only Power Automate
+\end{enumerate}
+\textbf{Answer:} a. SharePoint, Exchange, and OneDrive.
+
+\textbf{Explanation:} This integration provides a seamless experience for chat, meetings, calls, and app integrations.
+
+\item To update Teams settings and policies, admins require which roles? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Global administrator
+\item Teams administrator
+\end{enumerate}
+\textbf{Answer:} a, b.
+
+\textbf{Explanation:} Global administrator provides full access but should be used sparingly. Teams administrator manages team creation, policies, and app integrations.
+
+\item Channels in Teams can be which types? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Standard
+\item Private
+\item Shared
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Channels organize conversations, files, and apps. Standard channels are open to all team members, private are restricted, and shared are across multiple teams.
+
+\item Meeting policies in Teams define features available during meetings such as:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Recording and transcription
+\item Only channel creation
+\item Only external sharing
+\item Only storage quotas
+\end{enumerate}
+\textbf{Answer:} a. Recording and transcription.
+
+\textbf{Explanation:} Administrators create policies in the Teams Admin Center and assign them to users or groups.
+
+\item Tabs and connectors in Teams allow users to:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Pin apps like SharePoint and Power BI within channels
+\item Only create private channels
+\item Only manage mailboxes
+\item Only configure retention policies
+\end{enumerate}
+\textbf{Answer:} a. Pin apps like SharePoint and Power BI within channels.
+
+\textbf{Explanation:} This provides quick access to resources and dashboards while connectors pull updates from external services.
+
+\item Match each service with its primary configuration focus.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Service} & \textbf{Primary Focus} \\
+\midrule
+Exchange Online & Mailbox provisioning, mail flow rules, retention policies \\
+SharePoint Online & Site provisioning, document libraries, permissions \\
+Microsoft Teams & Team and channel management, meeting and messaging policies \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Exchange Online \textrightarrow{} Mailbox provisioning, mail flow rules, retention policies; SharePoint Online \textrightarrow{} Site provisioning, document libraries, permissions; Microsoft Teams \textrightarrow{} Team and channel management, meeting and messaging policies.
+
+\textbf{Explanation:} Each service has unique configuration requirements and best practices.
+
+\item Scenario: A new employee joins the organization and is assigned an Exchange Online Plan 2 license. What happens to their mailbox?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A mailbox with a 100-GB quota is automatically provisioned with advanced features like archiving and retention
+\item Only a shared mailbox is created
+\item No mailbox is created until manually provisioned in EAC
+\item Only a resource mailbox for equipment is created
+\end{enumerate}
+\textbf{Answer:} a. A mailbox with a 100-GB quota is automatically provisioned with advanced features like archiving and retention.
+
+\textbf{Explanation:} Assigning the license triggers automatic mailbox provisioning with the described quota and features.
+
+\item Scenario: The helpdesk team needs to manage incoming support requests through a common email address. Which mailbox type should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Shared mailbox
+\item User mailbox
+\item Resource mailbox
+\item Archive mailbox only
+\end{enumerate}
+\textbf{Answer:} a. Shared mailbox.
+
+\textbf{Explanation:} Shared mailboxes allow multiple users to access and manage email from a common address such as support@contoso.com.
+
+\item Scenario: An organization wants to automatically accept booking requests for Conference Room A. Which mailbox type and configuration should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Resource mailbox with automatic accept/decline based on availability
+\item Shared mailbox with manual approval only
+\item User mailbox assigned to the room owner
+\item Communication site with calendar web part
+\end{enumerate}
+\textbf{Answer:} a. Resource mailbox with automatic accept/decline based on availability.
+
+\textbf{Explanation:} Resource mailboxes are configured to automatically accept or decline meeting requests and enforce booking policies.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Establish security, identity, and compliance foundations}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+BYOD & Bring-your-own-device \\
+MFA & Multifactor authentication \\
+DLP & Data Loss Prevention \\
+CA & Conditional Access \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Securing Microsoft 365 environments begins with establishing strong identity controls, access policies, and compliance configurations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These foundational elements ensure that users, devices, and data are protected against unauthorized access and misuse.
+
+\item The primary tools that Microsoft 365 admins use to configure baseline policies for device access, conditional access, and content protection include:
+
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Entra, Microsoft Purview, and Microsoft Intune
+\item Only Microsoft Entra ID
+\item Only Microsoft Purview
+\item Only Microsoft Defender for Endpoint
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Entra, Microsoft Purview, and Microsoft Intune.
+
+\textbf{Explanation:} These tools enable administrators to define and enforce security and compliance policies across Exchange Online, SharePoint Online, and Microsoft Teams.
+
+\item Device access policies ensure that only trusted, compliant devices that meet the organization’s security standards can connect to services like Exchange Online, SharePoint Online, and Teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These policies are typically enforced using Microsoft Intune, which integrates with Microsoft Entra ID to evaluate device health and compliance status in real time.
+
+\item Device compliance policies are configured in which service?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Purview
+\item Microsoft Intune
+\item Microsoft Entra admin center only
+\item Exchange admin center
+\end{enumerate}
+\textbf{Answer:} b. Microsoft Intune.
+
+\textbf{Explanation:} These policies define the minimum security standards a device must meet to be considered trustworthy.
+
+\item Common requirements in device compliance policies include which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Encryption
+\item Antivirus protection
+\item Minimum OS version
+\item Password complexity
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} These settings ensure that only devices with a secure posture can access corporate resources.
+
+\item Once a device meets all the defined criteria in Intune, it is marked as:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Compliant
+\item Noncompliant
+\item Blocked
+\item Rooted
+\end{enumerate}
+\textbf{Answer:} a. Compliant.
+
+\textbf{Explanation:} This compliance status can then be used as a condition in Microsoft Entra ID conditional access policies.
+
+\item Conditional access policies based on device state are configured in:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Intune
+\item Microsoft Entra ID
+\item Microsoft Purview
+\item SharePoint admin center
+\end{enumerate}
+\textbf{Answer:} b. Microsoft Entra ID.
+
+\textbf{Explanation:} These policies evaluate whether a device is compliant, hybrid Azure AD joined, or managed by Intune.
+
+\item App protection policies operate at the app level and do not require full device enrollment. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They are especially useful for unmanaged or bring-your-own-device scenarios.
+
+\item A rooted device is a smartphone or tablet that was modified to gain privileged control over the operating system. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Rooting allows users to bypass manufacturer and carrier restrictions but also disables many built-in security features.
+
+\item A jailbroken device is a smartphone or tablet that was modified to remove manufacturer-imposed restrictions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Jailbreaking enables users to install unauthorized apps and bypass security controls.
+
+\item Conditional access is a dynamic access control engine built into Microsoft Entra ID. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It evaluates signals such as user identity, device compliance, location, and risk level to determine whether access should be granted, blocked, or limited.
+
+\item In conditional access policies, administrators can target:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Specific users or groups
+\item Cloud apps such as Exchange Online or Teams
+\item Conditions like sign-in risk or device platform
+\item All of the above
+\end{enumerate}
+\textbf{Answer:} d. All of the above.
+
+\textbf{Explanation:} Actions can include requiring MFA, blocking access, or applying session controls.
+
+\item User and group targeting in conditional access policies allows administrators to apply different levels of access control based on roles, departments, or risk profiles. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This granularity is essential for tailoring security policies to the needs of different user groups.
+
+\item Sign-in risk evaluation uses signals from Microsoft Defender for Identity to detect anomalies such as:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Unfamiliar locations
+\item Impossible travel
+\item Leaked credentials
+\item Malware indicators
+\end{enumerate}
+\textbf{Answer:} a, b, c, d. \textbf{(Select all that apply)}
+
+\textbf{Explanation:} Based on the assessed risk level, conditional access policies can enforce actions such as requiring MFA, blocking access, or prompting a password reset.
+
+\item Session controls are enforced through:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Defender for Cloud Apps
+\item Microsoft Intune only
+\item Exchange transport rules
+\item SharePoint site permissions
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Defender for Cloud Apps.
+
+\textbf{Explanation:} They can restrict activities such as downloading files, copying data, or printing documents.
+
+\item Sensitivity labels are a core feature of:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Purview Information Protection
+\item Microsoft Intune
+\item Microsoft Entra ID
+\item Exchange Online
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Purview Information Protection.
+
+\textbf{Explanation:} They allow organizations to classify and protect data across Microsoft 365 services by applying encryption, restricting access, and adding visual markings.
+
+\item Data loss prevention (DLP) policies monitor and control the sharing of sensitive information using content inspection. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can block actions, notify users, or generate alerts for administrators across Outlook, SharePoint, and Teams.
+
+\item Retention policies help organizations manage the lifecycle of their data by ensuring that content is preserved or deleted according to business and regulatory requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These policies can be applied to emails, documents, Teams messages, and more.
+
+\item Which tool offers insights into DLP alerts, audit logs, and policy matches?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Purview portal
+\item Microsoft Entra admin center
+\item Intune reporting dashboards
+\item Exchange admin center
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Purview portal.
+
+\textbf{Explanation:} Admins can investigate incidents, view user activity, and generate reports for compliance audits.
+
+\item Match each tool with its primary monitoring capability.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Tool} & \textbf{Monitoring Capability} \\
+\midrule
+Microsoft Purview portal & DLP alerts, audit logs, and policy matches \\
+Microsoft Entra admin center & Conditional access sign-ins and policy application \\
+Intune reporting dashboards & Device compliance status and app protection enforcement \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Microsoft Purview portal \textrightarrow{} DLP alerts, audit logs, and policy matches; Microsoft Entra admin center \textrightarrow{} Conditional access sign-ins and policy application; Intune reporting dashboards \textrightarrow{} Device compliance status and app protection enforcement.
+
+\textbf{Explanation:} These tools provide visibility into policy effectiveness and potential violations.
+
+\item A best practice when implementing security and compliance policies is to start with:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A pilot group
+\item Organization-wide rollout immediately
+\item Disabling all policies
+\item Only using PowerShell
+\end{enumerate}
+\textbf{Answer:} a. A pilot group.
+
+\textbf{Explanation:} Testing in a controlled environment with a small, representative pilot group helps identify unintended consequences before full deployment.
+
+\item Using built-in templates for DLP and conditional access helps accelerate deployment and reduce complexity. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These templates provide tested configurations that align with industry standards.
+
+\item Scenario: An organization wants to allow access to SharePoint Online from personal devices but prevent downloading or printing of documents. Which control should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Session controls through Microsoft Defender for Cloud Apps
+\item Device compliance policies only
+\item Retention policies
+\item Sensitivity labels only
+\end{enumerate}
+\textbf{Answer:} a. Session controls through Microsoft Defender for Cloud Apps.
+
+\textbf{Explanation:} This enables users to view content securely without risking data leakage.
+
+\item Scenario: A user attempts to send an email containing a Social Security number to an external recipient. What happens if a DLP policy is active?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item The message is blocked and the user receives a notification
+\item The email is sent without restriction
+\item The message is automatically encrypted
+\item The policy only logs the attempt
+\end{enumerate}
+\textbf{Answer:} a. The message is blocked and the user receives a notification.
+
+\textbf{Explanation:} The incident is also logged in the Microsoft Purview portal for further review.
+
+\item Scenario: An administrator notices repeated attempts to share sensitive HR documents through Teams from unmanaged devices. What action should be taken?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Tighten conditional access policies
+\item Disable all DLP policies
+\item Increase storage quotas
+\item Remove sensitivity labels
+\end{enumerate}
+\textbf{Answer:} a. Tighten conditional access policies.
+
+\textbf{Explanation:} Proactive monitoring using audit logs helps maintain a secure and compliant environment.
+
+\item Educating users on how policies work and why they matter is a critical component of successful policy implementation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} When users understand sensitivity labels, DLP triggers, and access restrictions, they are more likely to comply.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Assign admin roles using Role-Based Access Control}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+RBAC & Role-Based Access Control \\
+IT & Information Technology \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item In Microsoft 365, Role-Based Access Control provides a structured approach to distributing administrative responsibilities. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} RBAC ensures that each administrator only has the permissions necessary to perform their specific tasks while supporting operational efficiency and risk management.
+
+\item RBAC in Microsoft 365 is built around the principle of least privilege. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Least privilege means users and admins are granted only the access they need—nothing more, nothing less. This minimizes the risk of accidental or malicious changes and helps meet compliance requirements.
+
+\item Role-Based Access Control restricts system access to authorized users based on their organizational role. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} In Microsoft 365, RBAC is implemented through a combination of built-in and custom admin roles, each with a defined set of permissions.
+
+\item RBAC supports the separation of duties, which prevents any one individual from having unchecked power. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, the person who approves financial transactions should not be the same person who processes them.
+
+\item Which predefined admin role grants access to all Exchange-related settings without broader permissions over SharePoint or Teams?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Global Administrator
+\item Teams Admin
+\item Exchange Admin
+\item Compliance Administrator
+\end{enumerate}
+\textbf{Answer:} c. Exchange Admin.
+
+\textbf{Explanation:} This role allows management of Exchange settings while preventing privilege creep into other services.
+
+\item A Teams Admin can manage Teams policies and settings but cannot access:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exchange mailboxes or compliance features
+\item Only user accounts
+\item Only device management
+\item Only billing settings
+\end{enumerate}
+\textbf{Answer:} a. Exchange mailboxes or compliance features.
+
+\textbf{Explanation:} This targeted approach helps prevent unnecessary permissions.
+
+\item Assigning predefined admin roles is the most common way to delegate administrative tasks in Microsoft 365. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Microsoft provides a comprehensive set of built-in roles tailored to specific administrative functions.
+
+\item Custom roles are especially useful when built-in roles are too broad or do not perfectly align with operational requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They allow organizations to define specific permissions tailored to unique business needs.
+
+\item Key steps for creating and assigning custom roles include which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Define permissions for the custom role
+\item Assign scope to the custom role
+\item Assign users or groups to the custom role
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These steps support the principle of least privilege and help comply with regulatory requirements.
+
+\item When defining permissions for a custom role, administrators should:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Carefully review each permission to avoid granting unnecessary access
+\item Always include all write permissions
+\item Grant full Global Administrator rights
+\item Skip scoping
+\end{enumerate}
+\textbf{Answer:} a. Carefully review each permission to avoid granting unnecessary access.
+
+\textbf{Explanation:} For example, a role might allow viewing audit logs but exclude all write or modify permissions.
+
+\item Assigning scope to a custom role limits the role’s permissions to:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Specific groups, departments, or resources
+\item The entire tenant only
+\item Only Exchange Online
+\item Only SharePoint sites
+\end{enumerate}
+\textbf{Answer:} a. Specific groups, departments, or resources.
+
+\textbf{Explanation:} This is especially important in large organizations where different teams have distinct responsibilities.
+
+\item Using groups for role assignment rather than individuals:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Streamlines management and reduces the risk of orphaned permissions
+\item Increases manual effort
+\item Prevents automatic updates when users leave
+\item Is not recommended
+\end{enumerate}
+\textbf{Answer:} a. Streamlines management and reduces the risk of orphaned permissions.
+
+\textbf{Explanation:} When a user joins or leaves a group, their role assignments are automatically updated.
+
+\item Regularly reviewing role assignments helps identify and remove:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Unnecessary or outdated permissions
+\item Only Global Administrator roles
+\item Only custom roles
+\item All user accounts
+\end{enumerate}
+\textbf{Answer:} a. Unnecessary or outdated permissions.
+
+\textbf{Explanation:} This proactive approach reduces the risk of privilege creep.
+
+\item Documenting role definitions and assignments supports:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Transparency and compliance
+\item Only faster role creation
+\item Only PowerShell scripting
+\item Removing all monitoring
+\end{enumerate}
+\textbf{Answer:} a. Transparency and compliance.
+
+\textbf{Explanation:} Documentation should include the purpose of the role, assigned users or groups, and any relevant policies.
+
+\item Which tool provides comprehensive audit logs of role changes and admin activities?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Purview portal
+\item Exchange admin center only
+\item Teams admin center only
+\item SharePoint admin center
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Purview portal.
+
+\textbf{Explanation:} Regularly reviewing these logs helps detect unauthorized changes and demonstrate compliance during audits.
+
+\item The Microsoft Entra Admin Center is used to:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Track current role assignments and access patterns
+\item Only create mailboxes
+\item Only manage SharePoint sites
+\item Only configure DLP policies
+\end{enumerate}
+\textbf{Answer:} a. Track current role assignments and access patterns.
+
+\textbf{Explanation:} It offers detailed views of who has admin roles and when assignments were made.
+
+\item Setting up automated alerts for critical role changes enables:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Rapid response to potential security threats
+\item Automatic deletion of all roles
+\item Disabling of audit logs
+\item Removal of least privilege principle
+\end{enumerate}
+\textbf{Answer:} a. Rapid response to potential security threats.
+
+\textbf{Explanation:} Alerts can be configured for assignments or removals of high-risk roles such as Global Admin or Compliance Admin.
+
+\item Match each best practice with its primary benefit.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.4\textwidth} >{\raggedright\arraybackslash}p{0.5\textwidth}}
+\toprule
+\textbf{Best Practice} & \textbf{Primary Benefit} \\
+\midrule
+Use groups for role assignment & Automatic updates when users join or leave \\
+Regularly review role assignments & Reduces privilege creep \\
+Document role definitions & Supports transparency and compliance \\
+Start with a pilot group & Identifies issues before full deployment \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Use groups for role assignment \textrightarrow{} Automatic updates when users join or leave; Regularly review role assignments \textrightarrow{} Reduces privilege creep; Document role definitions \textrightarrow{} Supports transparency and compliance; Start with a pilot group \textrightarrow{} Identifies issues before full deployment.
+
+\textbf{Explanation:} These practices ensure secure and effective RBAC implementation.
+
+\item Scenario: A contractor needs read-only access to user profiles but should not modify any settings. What should be created?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A custom role in Microsoft Entra ID
+\item The Global Administrator role
+\item The Exchange Admin role
+\item A Teams Admin role
+\end{enumerate}
+\textbf{Answer:} a. A custom role in Microsoft Entra ID.
+
+\textbf{Explanation:} Custom roles allow selection of only the exact permissions required for the contractor’s tasks.
+
+\item Scenario: After a critical issue is resolved, a helpdesk admin’s elevated permissions should be:
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Revoked as soon as the task is complete
+\item Left active for 30 days
+\item Converted to Global Administrator
+\item Assigned to all users
+\end{enumerate}
+\textbf{Answer:} a. Revoked as soon as the task is complete.
+
+\textbf{Explanation:} Secure delegation requires that permissions granted thoughtfully are monitored and revoked when no longer needed.
+
+\item Educating users on role management and the importance of least privilege fosters a culture of security and compliance. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Training helps admins and users understand how to request, assign, and remove roles while emphasizing the risks of over-privileging.
+
+\end{enumerate}
+\clearpage
+
 \end{document}
