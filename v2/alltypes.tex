@@ -6256,4 +6256,192 @@ Start with a pilot group & Identifies issues before full deployment \\
 \end{enumerate}
 \clearpage
 
+\section{Protect and govern Microsoft 365 data}
+\clearpage
+\subsection{Introduction to Microsoft Purview and data governance}
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+GDPR & General Data Protection Regulation \\
+HIPAA & Health Insurance Portability and Accountability Act \\
+SOX & Sarbanes-Oxley Act \\
+DLP & Data Loss Prevention \\
+DSPM & Data Security Posture Management \\
+DLM & Data Lifecycle Management \\
+EDM & Exact Data Match \\
+SIT & Sensitive Information Type \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft Purview is Microsoft’s unified solution for data governance, information protection, and compliance management across Microsoft 365 and beyond. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Purview helps administrators automatically discover sensitive data, classify it based on risk or compliance needs, apply labels and protection settings, and control the entire lifecycle of data.
+
+\item Microsoft Purview’s features fall into three primary categories. What are they?
+
+\textbf{Answer:} Data security, data governance, and risk and compliance.
+
+\textbf{Explanation:} These three areas address visibility, control, and accountability over sensitive and regulated data.
+
+\item Which capability in Microsoft Purview empowers organizations to classify, label, and encrypt sensitive data across emails, documents, and collaboration platforms?
+
+\textbf{Answer:} Information Protection.
+
+\textbf{Explanation:} Sensitivity labels, applied manually or automatically, ensure that confidential information is consistently protected, with controls that travel with the data.
+
+\item Data Loss Prevention in Purview helps prevent the accidental or intentional sharing of sensitive information by scanning content for predefined patterns. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} DLP policies can block risky actions, notify users, and alert administrators across Microsoft 365 workloads.
+
+\item Insider Risk Management in Purview uses behavioral analytics to detect and mitigate internal threats. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It monitors user activities for unusual or risky behavior and supports collaboration between IT, HR, and legal teams.
+
+\item Communications Compliance in Purview monitors and manages communications across email, Teams, and Yammer. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It scans messages for inappropriate language, sensitive topics, or policy violations to maintain a safe, compliant, and respectful workplace.
+
+\item DSPM for AI in Purview provides visibility and control over sensitive data used by artificial intelligence systems. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It helps organizations discover, classify, and secure data flows in AI workloads while enforcing policies for responsible AI development.
+
+\item Data Lifecycle Management automates the retention, archiving, and deletion of data based on business, legal, or regulatory requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Through retention labels and policies, Purview ensures that information is kept only as long as necessary, reducing risk and storage costs.
+
+\item Data discovery and classification are foundational capabilities that enable administrators to understand what kind of data exists, where it resides, and how sensitive it is. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Without visibility into the data landscape, it is impossible to apply meaningful protection or retention policies.
+
+\item Purview uses a combination of pattern recognition, AI-based machine learning, and metadata inspection to classify data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Classification can happen manually by user selection, automatically based on policy rules, or through trainable classifiers.
+
+\item Which of the following is a predefined sensitive information type in Purview? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Credit card numbers
+\item Social Security numbers
+\item Health Insurance Claim Numbers
+\item U.S. or international passport numbers
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} These information types are recognized using regex patterns, checksums, keyword evidence, and confidence scoring.
+
+\item Trainable classifiers are machine learning-based models that you train with examples of documents that fall into a specific category. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Microsoft includes built-in classifiers such as Resumes, Source code, and Healthcare templates. Custom classifiers can be built by uploading at least 50 sample documents.
+
+\item Exact Data Match (EDM) checks if the data exactly matches entries in a secure list that your organization provides. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} EDM offers greater precision than pattern-based tools and reduces false positives by matching against a secure, predefined dataset.
+
+\item Sensitivity labels allow you to classify and protect data based on its sensitivity level. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Once applied, they can enforce encryption, restrict access, add visual markings, and control external sharing. The protection travels with the data.
+
+\item Sensitivity labels can be applied in which ways? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Manually by users
+\item Automatically based on content detection
+\item As recommended suggestions to users
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Administrators can also enforce mandatory labeling.
+
+\item Which components can be included in sensitivity labels? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Encryption settings
+\item Content markings
+\item Access restrictions and sharing controls
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Encryption restricts who can open, read, edit, print, or copy. Content markings include headers, footers, and watermarks. Access restrictions control external sharing and unmanaged devices.
+
+\item Label policies determine which labels are available to which users or groups and whether labeling is mandatory. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Policies can require justification for changing labels from more restrictive to less restrictive ones.
+
+\item Data Lifecycle Management ensures that information is retained for as long as it is needed and no longer. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It is vital for compliance, reducing data risk, saving storage costs, and simplifying eDiscovery processes.
+
+\item Retention labels define the retention behavior for specific content. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} A retention label might retain content for a fixed period, delete it after a specified number of days, or retain and then delete.
+
+\item Retention policies are broader than labels and are typically used to apply rules across locations or content types. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They are location-based and useful for uniform rules across users or unlabeled content.
+
+\item Auto-apply rules for retention labels use which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Keywords or phrases
+\item Sensitive information types
+\item Trainable classifiers
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These rules remove reliance on users to apply the correct label, improving consistency and compliance.
+
+\item Scenario: A document containing employee Social Security numbers is uploaded to OneDrive. What feature in Purview would detect this using exact values from an uploaded list?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Exact Data Match (EDM)
+\item Trainable classifier only
+\item Regex pattern only
+\item Manual labeling only
+\end{enumerate}
+\textbf{Answer:} a. Exact Data Match (EDM).
+
+\textbf{Explanation:} EDM checks for exact matches against a secure list provided by the organization, reducing false positives.
+
+\item Scenario: An organization wants to automatically retain all contracts for 7 years and then delete them. Which Purview feature should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Retention label with auto-apply rule
+\item Only sensitivity label
+\item Only DLP policy
+\item Manual deletion by users
+\end{enumerate}
+\textbf{Answer:} a. Retention label with auto-apply rule.
+
+\textbf{Explanation:} The label can be automatically applied based on content conditions such as keywords or sensitive information types.
+
+\end{enumerate}
+\clearpage
 \end{document}
