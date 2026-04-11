@@ -6444,4 +6444,636 @@ SIT & Sensitive Information Type \\
 
 \end{enumerate}
 \clearpage
+
+\subsection{Identify and respond to data risks with Microsoft Purview}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+DLP & Data Loss Prevention \\
+AI & Artificial Intelligence \\
+FINRA & Financial Industry Regulatory Authority \\
+HIPAA & Health Insurance Portability and Accountability Act \\
+MNPI & Material Nonpublic Information \\
+SIEM & Security Information and Event Management \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Modern IT environments require tools that deliver real-time, contextual insights into how data is used, moved, and shared across cloud, endpoint, and user interaction layers. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Traditional security controls such as firewalls and static access policies are no longer sufficient to address evolving data risks.
+
+\item Microsoft Purview provides a unified platform for managing compliance, data protection, and insider risk through tools such as Insider Risk Management, Data Loss Prevention, Communication Compliance, and Activity Explorer. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These tools work together to provide visibility and control across Microsoft 365 workloads, devices, and AI services like Copilot.
+
+\item Governance risks emerge when sensitive information is accessed, shared, or used in ways that contradict company policy or regulatory obligations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Microsoft Purview detects these risks by analyzing signals across Microsoft 365 apps including SharePoint, OneDrive, Teams, and Copilot.
+
+\item Monitoring risk signals in Microsoft Purview includes which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Policy violations
+\item Suspicious user behavior
+\item Unauthorized data access or movement
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These risk signals are presented in the Microsoft Purview portal to help administrators detect early signs of misbehavior or misconfiguration.
+
+\item Data exfiltration refers to the unauthorized movement of sensitive data from within an organization to external locations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Purview surfaces these activities through behavioral analytics such as detecting mass downloads from SharePoint or OneDrive.
+
+\item Microsoft Purview can restrict Copilot from processing or displaying certain labeled documents through Data Loss Prevention policies. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} If a user tries to use Copilot in a way that violates these policies, Purview logs the activity and can issue warnings or block the action entirely.
+
+\item Detecting sudden spikes in sensitive data access can be early indicators of account compromise or insider threats. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Purview continuously monitors baseline user behavior and flags deviations that exceed expected norms.
+
+\item Insider Risk Management analyzes user activity in the context of defined thresholds, HR signals, and behavioral baselines. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It combines machine learning, user activity data, and security signals to flag anomalies that could indicate potential misuse.
+
+\item Which behavior can Insider Risk Management detect as a potential indicator of data theft? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Mass file downloads of sensitive content
+\item Sharing data to personal email accounts
+\item Abnormal access during non-working hours or unusual travel locations
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Policies can watch for downloading more than a defined number of confidential files, sending to personal domains, or access outside normal patterns.
+
+\item Integrating HR signals such as resignation notices or role changes with behavioral thresholds makes Insider Risk Management more effective. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The combination of HR context and data activity elevates risk scores and justifies further investigation during high-risk periods.
+
+\item Data Loss Prevention policies in Purview can be configured to block uploading of Confidential documents to non-Microsoft cloud services. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users might be permitted to proceed after providing a business justification, which is then logged for audit purposes.
+
+\item Purview DLP integrates with Microsoft Defender for Endpoint to enforce policies at the device level. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It can block or log actions such as copying files to USB drives, printing sensitive documents, or using clipboard tools on onboarded devices.
+
+\item When a DLP rule is triggered, Purview generates an alert containing details such as who triggered it, when, what data was involved, and which rule was violated. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These alerts can be routed to Microsoft Defender XDR, Microsoft Sentinel, or other SIEM tools and can trigger automated workflows.
+
+\item Communication Compliance helps monitor user communications across email, Teams messages, Yammer posts, and Copilot chat prompts. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It detects content that violates corporate policies or regulatory requirements using pattern-based detection and machine learning classifiers.
+
+\item The Communication Compliance reviewer dashboard allows analysts to assess flagged messages, dismiss events, send notifications, or escalate to HR or legal. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This human-in-the-loop process supports context-aware decisions and policy tuning.
+
+\item Activity Explorer in Microsoft Purview provides a consolidated view of user activity across Microsoft 365 including labeling, sharing, downloads, and DLP matches. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It serves as a forensic timeline that helps correlate actions and investigate incidents efficiently.
+
+\item Activity Explorer supports powerful filters by which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item User
+\item Policy
+\item Date
+\item File type
+\item Sensitivity label
+\end{enumerate}
+\textbf{Answer:} a, b, c, d, e.
+
+\textbf{Explanation:} These filters allow investigators to drill into specific activity types and examine relevant subsets of actions.
+
+\item Scenario: A user suddenly downloads 75 confidential documents in a single day during off-hours. Which Purview feature would most likely flag this behavior?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Insider Risk Management
+\item Only Communication Compliance
+\item Only Activity Explorer without policies
+\item Manual audit only
+\end{enumerate}
+\textbf{Answer:} a. Insider Risk Management.
+
+\textbf{Explanation:} Policies can detect mass downloads of sensitive files and generate alerts based on defined thresholds.
+
+\item Scenario: An employee sends a document labeled Confidential to a personal Gmail address. What combination of Purview tools would best detect and respond to this?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item DLP policy combined with Insider Risk Management
+\item Only sensitivity labels
+\item Only Activity Explorer
+\item Communication Compliance alone
+\end{enumerate}
+\textbf{Answer:} a. DLP policy combined with Insider Risk Management.
+
+\textbf{Explanation:} DLP can block or alert on sharing to personal domains while Insider Risk Management provides behavioral context.
+
+\item Scenario: A compliance analyst needs to reconstruct the full sequence of events for a document that was labeled, downloaded, and then shared externally. Which tool provides the best timeline view?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Activity Explorer
+\item Insider Risk Management dashboard only
+\item DLP alert list
+\item Communication Compliance reviewer
+\end{enumerate}
+\textbf{Answer:} a. Activity Explorer.
+
+\textbf{Explanation:} It organizes actions into linked timelines with deep context including timestamps, user identity, device info, and label history.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Examine compliance, AI data discovery, and eDiscovery}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+GDPR & General Data Protection Regulation \\
+HIPAA & Health Insurance Portability and Accountability Act \\
+ISO 27001 & International Organization for Standardization 27001 \\
+DLP & Data Loss Prevention \\
+DSPM & Data Security Posture Management \\
+KQL & Keyword Query Language \\
+GUI & Graphical User Interface \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft Purview offers a unified platform for managing compliance, discovering sensitive and AI-impacted data, and executing legal holds and investigations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins use Purview’s advanced capabilities to assess compliance posture, gain visibility into data usage, and support governance as AI-driven workflows become more prevalent.
+
+\item Compliance Manager acts as a risk assessment and recommendations engine for navigating complex regulatory landscapes. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It helps organizations evaluate their current compliance status, identify gaps, and implement targeted improvements for regulations such as GDPR, HIPAA, and ISO 27001.
+
+\item The Compliance Score in Compliance Manager quantifies how well an organization meets regulatory requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This score is a strategic tool for prioritizing remediation efforts and demonstrating progress to stakeholders.
+
+\item Assessments in Compliance Manager are composed of controls that are either Microsoft-managed or customer-managed. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Microsoft-managed controls are automatically monitored, while customer-managed controls require manual verification and evidence upload.
+
+\item Improvement actions in Compliance Manager are specific steps recommended to close compliance gaps. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These actions might include enabling auditing, assigning sensitivity labels, or updating privacy notices, and can be assigned to owners for tracking.
+
+\item Data Explorer helps admins discover where sensitive data resides across emails, documents, chats, and cloud storage. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides powerful tools to visualize, filter, and analyze sensitive information across SharePoint, Teams, OneDrive, and other locations.
+
+\item Data Explorer allows filtering by which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Location
+\item Sensitivity label
+\item Content type
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These filters help admins quickly pinpoint areas of concern and assess data exposure risks.
+
+\item DSPM for AI enables admins to discover, monitor, and control how AI interacts with sensitive data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It tracks AI-generated content, detects interactions with sensitive data, and identifies shadow AI usage.
+
+\item Shadow AI usage refers to the unsanctioned or unauthorized use of AI tools by employees without formal approval or oversight. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It creates risks for security, compliance, and operational efficiency similar to shadow IT.
+
+\item DSPM for AI can detect AI interactions such as Copilot summarizing legal contracts or generating reports based on regulated information. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins can define rules to prevent AI from accessing certain content types and mitigate risks through encryption or access controls.
+
+\item Reporting features within DSPM for AI include Activity Explorer views, audit logs, oversharing assessments, and data risk assessment reports. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These tools provide centralized visibility into how sensitive data is accessed, processed, and exposed across AI-driven workflows.
+
+\item Content Search in Microsoft Purview enables admins to search across mailboxes, SharePoint sites, OneDrive, and Teams using keywords, sender information, dates, and sensitivity labels. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It supports both Keyword Query Language and graphical user interface filters for locating relevant information.
+
+\item eDiscovery in Microsoft Purview is available in which two editions?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Standard and Premium
+\item Basic and Advanced
+\item Cloud and On-premises
+\item Free and Enterprise
+\end{enumerate}
+\textbf{Answer:} a. Standard and Premium.
+
+\textbf{Explanation:} eDiscovery (Standard) offers basic search, export, and legal hold features, while eDiscovery (Premium) adds advanced capabilities such as case management, review sets, analytics, and redaction.
+
+\item Legal hold prevents data from being altered or deleted during an investigation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It ensures that all relevant communications and files remain available for review in legal cases.
+
+\item Match each Microsoft Purview tool with its primary function.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Tool} & \textbf{Primary Function} \\
+\midrule
+Compliance Manager & Risk assessment, Compliance Score, and improvement actions \\
+Data Explorer & Discover and visualize sensitive data locations \\
+DSPM for AI & Monitor AI interactions and shadow AI usage \\
+eDiscovery (Premium) & Advanced case management, analytics, and redaction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Compliance Manager \textrightarrow{} Risk assessment, Compliance Score, and improvement actions; Data Explorer \textrightarrow{} Discover and visualize sensitive data locations; DSPM for AI \textrightarrow{} Monitor AI interactions and shadow AI usage; eDiscovery (Premium) \textrightarrow{} Advanced case management, analytics, and redaction.
+
+\textbf{Explanation:} Each tool addresses specific aspects of compliance, data discovery, AI governance, and legal investigations.
+
+\item Scenario: An organization needs to evaluate gaps in GDPR compliance and track remediation actions. Which tool should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Compliance Manager
+\item Data Explorer only
+\item DSPM for AI only
+\item Content Search
+\end{enumerate}
+\textbf{Answer:} a. Compliance Manager.
+
+\textbf{Explanation:} It provides prebuilt assessments, controls, improvement actions, and a Compliance Score tailored to regulations like GDPR.
+
+\item Scenario: An admin wants to locate all documents containing credit card numbers that are shared externally. Which tool provides the best visibility?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Data Explorer
+\item Compliance Manager
+\item eDiscovery (Standard)
+\item Communication Compliance
+\end{enumerate}
+\textbf{Answer:} a. Data Explorer.
+
+\textbf{Explanation:} It scans for sensitive information types, applies filters by sensitivity label and sharing status, and shows owners and exposure risks.
+
+\item Scenario: A legal team requires advanced analytics, review sets, and redaction capabilities for a complex investigation. Which eDiscovery edition should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item eDiscovery (Premium)
+\item eDiscovery (Standard)
+\item Content Search only
+\item Compliance Manager
+\end{enumerate}
+\textbf{Answer:} a. eDiscovery (Premium).
+
+\textbf{Explanation:} Premium adds case management, analytics such as near-duplicate identification, and redaction features.
+\end{enumerate}
+\clearpage
+
+\subsection{Examine compliance, AI data discovery, and eDiscovery}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+GDPR & General Data Protection Regulation \\
+HIPAA & Health Insurance Portability and Accountability Act \\
+ISO 27001 & International Organization for Standardization 27001 \\
+DLP & Data Loss Prevention \\
+DSPM & Data Security Posture Management \\
+KQL & Keyword Query Language \\
+GUI & Graphical User Interface \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft Purview offers a unified platform for managing compliance, discovering sensitive and AI-impacted data, and executing legal holds and investigations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins use Purview’s advanced capabilities to assess their organization’s compliance posture and gain visibility into how data is used, shared, and accessed, especially as AI-driven workflows become more prevalent.
+
+\item Compliance Manager is the cornerstone of Microsoft Purview’s compliance capabilities. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It acts as a risk assessment and recommendations engine, helping organizations navigate complex regulatory landscapes such as GDPR, HIPAA, and ISO 27001.
+
+\item Compliance Manager provides structured assessments tailored to specific regulations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Each assessment is composed of controls—some managed by Microsoft, others by the customer—that define the requirements for compliance.
+
+\item The Compliance Score quantifies how well an organization meets regulatory requirements. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This score is a strategic tool for prioritizing remediation efforts and demonstrating progress to stakeholders.
+
+\item Improvement actions in Compliance Manager are specific steps recommended to close compliance gaps. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These actions might include enabling auditing, assigning sensitivity labels, or updating privacy notices, and can be assigned to owners for tracking.
+
+\item Data Explorer helps admins discover where sensitive data resides across the organization. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides powerful tools to visualize, filter, and analyze sensitive information across emails, documents, chats, and cloud storage.
+
+\item Data Explorer supports filtering by which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Location
+\item Sensitivity label
+\item Content type
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These filters help admins quickly pinpoint areas of concern and assess data exposure risks before implementing new security policies.
+
+\item DSPM for AI is a critical capability that enables admins to discover, monitor, and control how AI interacts with sensitive data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It tracks where AI-generated content is stored, how it’s labeled, and who can access it.
+
+\item Shadow AI usage refers to the unsanctioned or unauthorized use of AI tools, applications, or models by employees without formal approval or oversight. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It creates risks for security, compliance, and operational efficiency similar to shadow IT.
+
+\item DSPM for AI can detect AI interactions such as Copilot summarizing legal contracts containing regulated information. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins can define rules to prevent AI from accessing certain content types and mitigate risks through encryption or restricted access.
+
+\item Reporting features within DSPM for AI include Activity Explorer views, audit logs, oversharing assessments, and data risk assessment reports. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These tools provide centralized visibility into how sensitive data is accessed, processed, and exposed across AI-driven workflows.
+
+\item Content Search enables admins to search across mailboxes, SharePoint sites, OneDrive, and Teams using keywords, sender information, dates, and sensitivity labels. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The platform supports both Keyword Query Language and graphical user interface filters.
+
+\item eDiscovery in Microsoft Purview is available in Standard and Premium editions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} eDiscovery (Standard) offers basic search, export, and legal hold features. eDiscovery (Premium) adds advanced capabilities such as case management, review sets, analytics, and redaction.
+
+\item Legal hold prevents data from being altered or deleted during an investigation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Review sets allow admins to organize and analyze collected content to identify key evidence.
+
+\item Match each tool with its primary purpose.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Tool} & \textbf{Primary Purpose} \\
+\midrule
+Compliance Manager & Risk assessment and compliance improvement tracking \\
+Data Explorer & Discover and visualize sensitive data locations \\
+DSPM for AI & Monitor and manage AI interactions with sensitive data \\
+eDiscovery (Premium) & Advanced case management, analytics, and redaction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Compliance Manager \textrightarrow{} Risk assessment and compliance improvement tracking; Data Explorer \textrightarrow{} Discover and visualize sensitive data locations; DSPM for AI \textrightarrow{} Monitor and manage AI interactions with sensitive data; eDiscovery (Premium) \textrightarrow{} Advanced case management, analytics, and redaction.
+
+\textbf{Explanation:} Each tool addresses a specific aspect of compliance, data discovery, AI governance, and legal investigations within Microsoft Purview.
+
+\item Scenario: An organization must evaluate gaps for GDPR compliance and track remediation steps. Which tool should be used?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Compliance Manager
+\item Data Explorer
+\item DSPM for AI
+\item Content Search
+\end{enumerate}
+\textbf{Answer:} a. Compliance Manager.
+
+\textbf{Explanation:} It offers prebuilt assessments, controls, improvement actions, and a Compliance Score tailored to regulations like GDPR.
+
+\item Scenario: An admin needs to locate all documents containing Social Security Numbers that are shared externally. Which tool is most suitable?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Data Explorer
+\item Compliance Manager
+\item eDiscovery (Standard)
+\item Communication Compliance
+\end{enumerate}
+\textbf{Answer:} a. Data Explorer.
+
+\textbf{Explanation:} It scans for sensitive information types, applies filters, and shows ownership and sharing status.
+
+\item Scenario: A legal team requires case management, analytics, and redaction for a complex investigation. Which edition of eDiscovery should be selected?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item eDiscovery (Premium)
+\item eDiscovery (Standard)
+\item Content Search only
+\item Compliance Manager
+\end{enumerate}
+\textbf{Answer:} a. eDiscovery (Premium).
+
+\textbf{Explanation:} Premium adds advanced features such as case management, review sets, analytics, and redaction.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Explore data protection in Microsoft 365 Copilot}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+DLP & Data Loss Prevention \\
+AI & Artificial Intelligence \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365 Copilot helps users work more efficiently with content stored across Microsoft 365 services. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It introduces generative AI features across Word, Excel, Outlook, Teams, SharePoint, and OneDrive.
+
+\item Copilot inherits the same access controls and restrictions as the authenticated user. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} One of the most common misconceptions that Copilot sees everything or can leak information between users is not true.
+
+\item Copilot accesses data through Microsoft Graph using the identity and permissions of the currently signed-in user. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It operates entirely within Microsoft Purview compliance boundaries and does not transmit data outside the tenant.
+
+\item Copilot can only access information that the user already has permission to see. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} If a user cannot open a document manually, Copilot cannot interact with that content on their behalf.
+
+\item Which Microsoft 365 services does Copilot access data from? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Outlook
+\item Word, Excel, and PowerPoint
+\item Teams
+\item OneDrive and SharePoint
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} Copilot can summarize emails, generate content in Office apps, summarize meetings in Teams, and retrieve content from cloud storage repositories the user has permission to access.
+
+\item Microsoft Graph is the centralized data access layer for the entire Microsoft 365 ecosystem. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Everything from reading calendars to retrieving SharePoint documents is done through Graph APIs, and it is the only way Copilot accesses and interprets user data.
+
+\item Microsoft Graph uses semantic understanding to interpret the meaning behind words, phrases, and data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It builds a semantic index using embeddings to recognize similar ideas, understand organizational jargon, and retrieve contextually relevant results.
+
+\item Copilot’s security model respects which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Sensitivity Labels
+\item Data Loss Prevention policies
+\item Conditional Access policies
+\item Information Protection policies
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} Copilot does not bypass or circumvent any existing security models and obeys these policies during data retrieval and response generation.
+
+\item If a document is labeled “Highly Confidential” and restricted to a specific group, Copilot excludes it from analysis unless the user has permission. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Copilot respects sensitivity labels and does not surface or use labeled content in responses if policy rules prevent it.
+
+\item Link-based sharing in Copilot follows the same rules as manual access. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} If a sharing link expires or is revoked, Copilot access to that content disappears as well.
+
+\item Responsible AI principles in Copilot include data minimization, transparency, content filtering, and auditability. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These principles ensure safe, ethical, and auditable use of AI.
+
+\item Data minimization in Copilot means it retrieves only the data necessary to fulfill a specific user request. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It does not indiscriminately crawl through user mailboxes or file systems.
+
+\item When Copilot generates a response, it provides links to the source files used. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This transparency enables users to verify the response and ensures accountability.
+
+\item All Copilot interactions are logged for auditing. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins can view these logs using Microsoft Purview and Microsoft 365 audit logs.
+
+\item Scenario: A user in the Marketing department asks Copilot to summarize a finance report stored in a SharePoint folder restricted to the Finance team. What should happen?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Copilot indicates that no such file can be found
+\item Copilot summarizes the report anyway
+\item Copilot asks for Finance team permission
+\item Copilot creates a new summary from memory
+\end{enumerate}
+\textbf{Answer:} a. Copilot indicates that no such file can be found.
+
+\textbf{Explanation:} Copilot can only access information that the user already has permission to see.
+
+\item Scenario: An admin wants to ensure Copilot cannot process Highly Confidential documents. Which controls should be configured?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Sensitivity Labels and DLP policies in Microsoft Purview
+\item Only Conditional Access
+\item Only Microsoft Graph settings
+\item Only audit logging
+\end{enumerate}
+\textbf{Answer:} a. Sensitivity Labels and DLP policies in Microsoft Purview.
+
+\textbf{Explanation:} Copilot respects these policies and will not surface or use labeled content if rules prevent it.
+
+\end{enumerate}
+\clearpage
+
 \end{document}
