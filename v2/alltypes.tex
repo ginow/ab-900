@@ -6781,164 +6781,137 @@ eDiscovery (Premium) & Advanced case management, analytics, and redaction \\
 \end{enumerate}
 \clearpage
 
-\subsection{Examine compliance, AI data discovery, and eDiscovery}
+\subsection{Explore oversharing and data access governance in SharePoint}
 
 \begin{center}
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
 \toprule
 \textbf{Abbreviation} & \textbf{Full Form} \\
 \midrule
-GDPR & General Data Protection Regulation \\
-HIPAA & Health Insurance Portability and Accountability Act \\
-ISO 27001 & International Organization for Standardization 27001 \\
-DLP & Data Loss Prevention \\
-DSPM & Data Security Posture Management \\
-KQL & Keyword Query Language \\
-GUI & Graphical User Interface \\
+SAM & SharePoint Advanced Management \\
+DAG & Data Access Governance \\
 \end{tabular}
 \end{center}
 
 \begin{enumerate}[leftmargin=*]
 
-\item Microsoft Purview offers a unified platform for managing compliance, discovering sensitive and AI-impacted data, and executing legal holds and investigations. \textbf{(True/False)}
+\item Oversharing in SharePoint Online occurs when users grant broader access to content than is appropriate or intended. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} Admins use Purview’s advanced capabilities to assess their organization’s compliance posture and gain visibility into how data is used, shared, and accessed, especially as AI-driven workflows become more prevalent.
+\textbf{Explanation:} It can happen by sharing documents with Everyone or Anyone with the link, providing edit access when view-only is sufficient, or allowing external guest users full site access.
 
-\item Compliance Manager is the cornerstone of Microsoft Purview’s compliance capabilities. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} It acts as a risk assessment and recommendations engine, helping organizations navigate complex regulatory landscapes such as GDPR, HIPAA, and ISO 27001.
-
-\item Compliance Manager provides structured assessments tailored to specific regulations. \textbf{(True/False)}
+\item The risks associated with oversharing include compliance, privacy, and security threats. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} Each assessment is composed of controls—some managed by Microsoft, others by the customer—that define the requirements for compliance.
+\textbf{Explanation:} When sensitive or regulated data is exposed to unauthorized users, organizations face these threats, which are amplified when users are unaware of the consequences.
 
-\item The Compliance Score quantifies how well an organization meets regulatory requirements. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} This score is a strategic tool for prioritizing remediation efforts and demonstrating progress to stakeholders.
-
-\item Improvement actions in Compliance Manager are specific steps recommended to close compliance gaps. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} These actions might include enabling auditing, assigning sensitivity labels, or updating privacy notices, and can be assigned to owners for tracking.
-
-\item Data Explorer helps admins discover where sensitive data resides across the organization. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} It provides powerful tools to visualize, filter, and analyze sensitive information across emails, documents, chats, and cloud storage.
-
-\item Data Explorer supports filtering by which of the following? \textbf{(Select all that apply)}
+\item Common oversharing scenarios include which of the following? \textbf{(Select all that apply)}
 \begin{enumerate}[label=\alph*., leftmargin=1.5em]
-\item Location
-\item Sensitivity label
-\item Content type
+\item Sharing with Everyone or Anyone with the link
+\item Providing Edit access instead of View-only
+\item Allowing external guest users full site access
 \end{enumerate}
 \textbf{Answer:} a, b, c.
 
-\textbf{Explanation:} These filters help admins quickly pinpoint areas of concern and assess data exposure risks before implementing new security policies.
+\textbf{Explanation:} These actions can lead to unintended disclosure of proprietary information, unauthorized changes, or exposure of all site content.
 
-\item DSPM for AI is a critical capability that enables admins to discover, monitor, and control how AI interacts with sensitive data. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} It tracks where AI-generated content is stored, how it’s labeled, and who can access it.
-
-\item Shadow AI usage refers to the unsanctioned or unauthorized use of AI tools, applications, or models by employees without formal approval or oversight. \textbf{(True/False)}
+\item Sharing reports in the Microsoft 365 Admin Center and SharePoint Admin Center give visibility into who shared what, who has access, and the status of external sharing. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} It creates risks for security, compliance, and operational efficiency similar to shadow IT.
+\textbf{Explanation:} These reports can be filtered by site, folder, or file to pinpoint risky sharing events.
 
-\item DSPM for AI can detect AI interactions such as Copilot summarizing legal contracts containing regulated information. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} Admins can define rules to prevent AI from accessing certain content types and mitigate risks through encryption or restricted access.
-
-\item Reporting features within DSPM for AI include Activity Explorer views, audit logs, oversharing assessments, and data risk assessment reports. \textbf{(True/False)}
+\item PowerShell and Microsoft Graph API enable admins to audit access at scale and identify documents shared with Anyone with the link or containing sensitive labels. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} These tools provide centralized visibility into how sensitive data is accessed, processed, and exposed across AI-driven workflows.
+\textbf{Explanation:} Automated scripts and alerts help detect high-risk sharing and ensure timely intervention.
 
-\item Content Search enables admins to search across mailboxes, SharePoint sites, OneDrive, and Teams using keywords, sender information, dates, and sensitivity labels. \textbf{(True/False)}
-
-\textbf{Answer:} True.
-
-\textbf{Explanation:} The platform supports both Keyword Query Language and graphical user interface filters.
-
-\item eDiscovery in Microsoft Purview is available in Standard and Premium editions. \textbf{(True/False)}
+\item Sensitivity labels with encryption limit who can open or download shared files. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} eDiscovery (Standard) offers basic search, export, and legal hold features. eDiscovery (Premium) adds advanced capabilities such as case management, review sets, analytics, and redaction.
+\textbf{Explanation:} A confidential HR report labeled with encryption can only be opened by members of the HR team even if the link is shared externally.
 
-\item Legal hold prevents data from being altered or deleted during an investigation. \textbf{(True/False)}
+\item Organization-wide sharing limits can disable anonymous links and enforce stricter sharing policies. \textbf{(True/False)}
 
 \textbf{Answer:} True.
 
-\textbf{Explanation:} Review sets allow admins to organize and analyze collected content to identify key evidence.
+\textbf{Explanation:} This prevents users from creating anonymous links or sharing content with broad audiences.
 
-\item Match each tool with its primary purpose.
+\item Data Access Governance (DAG) reports provide insights into sites with sensitive content and excessive sharing, sites where owners are inactive, and sites lacking assigned sensitivity labels. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These reports help admins identify high-risk sites and guide remediation efforts such as revoking guest access or applying sensitivity labels.
+
+\item SharePoint Advanced Management (SAM) provides advanced governance features including restricted site access, inactivity alerts, and site access reviews. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It is designed for organizations requiring granular control over site access, activity monitoring, and integration with conditional access policies.
+
+\item Restricted site access in SAM ensures that only authorized users and compliant devices can connect to sites containing sensitive data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, a finance team’s site might be configured to allow access only from devices managed by Intune.
+
+\item Inactivity alerts in SAM detect sites that have not been accessed for a defined period. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This helps prevent abandoned sites from becoming security liabilities by flagging them for review or automatic restriction.
+
+\item Site access reviews prompt site owners to periodically review and confirm permissions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This ensures that access remains appropriate over time and outdated permissions are removed.
+
+\item Match each governance feature with its primary benefit.
 
 \begin{center}
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.38\textwidth} >{\raggedright\arraybackslash}p{0.52\textwidth}}
 \toprule
-\textbf{Tool} & \textbf{Primary Purpose} \\
+\textbf{Feature} & \textbf{Primary Benefit} \\
 \midrule
-Compliance Manager & Risk assessment and compliance improvement tracking \\
-Data Explorer & Discover and visualize sensitive data locations \\
-DSPM for AI & Monitor and manage AI interactions with sensitive data \\
-eDiscovery (Premium) & Advanced case management, analytics, and redaction \\
+Sensitivity labels and encryption & Restricts access to authorized users only \\
+Organization-wide sharing limits & Prevents anonymous links and broad sharing \\
+DAG reports & Identifies high-risk sites for remediation \\
+SAM restricted site access & Limits access to authorized users and compliant devices \\
+SAM inactivity alerts & Flags unused sites to reduce security risks \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\textbf{Answer:} Compliance Manager \textrightarrow{} Risk assessment and compliance improvement tracking; Data Explorer \textrightarrow{} Discover and visualize sensitive data locations; DSPM for AI \textrightarrow{} Monitor and manage AI interactions with sensitive data; eDiscovery (Premium) \textrightarrow{} Advanced case management, analytics, and redaction.
+\textbf{Answer:} Sensitivity labels and encryption \textrightarrow{} Restricts access to authorized users only; Organization-wide sharing limits \textrightarrow{} Prevents anonymous links and broad sharing; DAG reports \textrightarrow{} Identifies high-risk sites for remediation; SAM restricted site access \textrightarrow{} Limits access to authorized users and compliant devices; SAM inactivity alerts \textrightarrow{} Flags unused sites to reduce security risks.
 
-\textbf{Explanation:} Each tool addresses a specific aspect of compliance, data discovery, AI governance, and legal investigations within Microsoft Purview.
+\textbf{Explanation:} These features work together to balance collaboration with data protection.
 
-\item Scenario: An organization must evaluate gaps for GDPR compliance and track remediation steps. Which tool should be used?
+\item Scenario: A confidential contract was shared externally with Anyone with the link. What should an admin do first?
 \begin{enumerate}[label=\alph*., leftmargin=1.5em]
-\item Compliance Manager
-\item Data Explorer
-\item DSPM for AI
-\item Content Search
+\item Use sharing reports or DAG reports to confirm and revoke access
+\item Ignore it if no one complained
+\item Disable all external sharing permanently
+\item Ask the user to delete the file
 \end{enumerate}
-\textbf{Answer:} a. Compliance Manager.
+\textbf{Answer:} a. Use sharing reports or DAG reports to confirm and revoke access.
 
-\textbf{Explanation:} It offers prebuilt assessments, controls, improvement actions, and a Compliance Score tailored to regulations like GDPR.
+\textbf{Explanation:} These tools help identify risky sharing events and enable targeted remediation such as revoking guest access.
 
-\item Scenario: An admin needs to locate all documents containing Social Security Numbers that are shared externally. Which tool is most suitable?
+\item Scenario: An organization wants to prevent users from sharing sensitive documents anonymously. Which control is most effective?
 \begin{enumerate}[label=\alph*., leftmargin=1.5em]
-\item Data Explorer
-\item Compliance Manager
-\item eDiscovery (Standard)
-\item Communication Compliance
+\item Organization-wide sharing limits to disable anonymous links
+\item Only user education
+\item Only PowerShell scripts
+\item Removing all sensitivity labels
 \end{enumerate}
-\textbf{Answer:} a. Data Explorer.
+\textbf{Answer:} a. Organization-wide sharing limits to disable anonymous links.
 
-\textbf{Explanation:} It scans for sensitive information types, applies filters, and shows ownership and sharing status.
-
-\item Scenario: A legal team requires case management, analytics, and redaction for a complex investigation. Which edition of eDiscovery should be selected?
-\begin{enumerate}[label=\alph*., leftmargin=1.5em]
-\item eDiscovery (Premium)
-\item eDiscovery (Standard)
-\item Content Search only
-\item Compliance Manager
-\end{enumerate}
-\textbf{Answer:} a. eDiscovery (Premium).
-
-\textbf{Explanation:} Premium adds advanced features such as case management, review sets, analytics, and redaction.
+\textbf{Explanation:} This enforces stricter sharing policies at the organizational level and reduces the risk of accidental exposure.
 
 \end{enumerate}
 \clearpage
@@ -7076,4 +7049,1170 @@ AI & Artificial Intelligence \\
 \end{enumerate}
 \clearpage
 
+\section{Explore Microsoft 365 Copilot and agent administration}
+\clearpage
+
+\subsection{Introduction to Microsoft 365 Copilot}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+LLM & Large Language Model \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365 Copilot is a generative AI-powered assistant embedded directly into apps like Word, Excel, PowerPoint, Outlook, and Teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It operates inside the organization’s Microsoft 365 tenant and can only use data the signed-in user already has permission to access.
+
+\item Copilot ensures its outputs are both intelligent and contextually relevant by grounding responses in real organizational data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It uses data from files, chats, emails, calendars, and other content connected through Microsoft Graph.
+
+\item Microsoft 365 Copilot combines three key components. What are they?
+
+\textbf{Answer:} Microsoft Graph for secure data connectivity, an orchestration service to manage prompts and rules, and large language models that generate natural language responses.
+
+\textbf{Explanation:} These components make Copilot a powerful productivity tool while raising important considerations for governance, security, and compliance.
+
+\item Microsoft 365 Copilot is not a single standalone app but a collection of intelligent capabilities built directly into Microsoft 365 applications. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These capabilities are powered by Microsoft Graph, an orchestration service, large language models, and Work IQ.
+
+\item Microsoft Graph acts as the backbone of Microsoft 365 Copilot’s intelligence. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It serves as a unified data layer that connects information from across Microsoft 365 services into a single, secure framework.
+
+\item Work IQ helps Copilot understand how work actually happens across an organization. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It learns patterns, relationships, workflows, and preferences to deliver personalized, relevant, and aligned responses.
+
+\item Microsoft Graph uses semantic understanding rather than just keyword matching. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It recognizes related concepts and returns contextually relevant results based on meaning.
+
+\item Relationship mapping in Microsoft Graph shows connections between people, files, and activities. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It enables Copilot to answer nuanced questions by understanding who contributed to documents and what feedback was provided.
+
+\item Large language models serve as the reasoning engine behind Copilot. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They interpret prompts and generate natural, human-like responses while operating in a tenant-isolated environment.
+
+\item Copilot’s large language models are hosted in Microsoft’s Azure OpenAI Service and are fine-tuned for enterprise use cases. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They ensure outputs are context-aware and compliant, with data never leaking into public training sets.
+
+\item Copilot is embedded directly into Microsoft 365 apps, allowing users to interact with it through tools they already know. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This native integration makes Copilot an intuitive, everyday assistant that supports cross-app orchestration.
+
+\item The orchestration service manages how user prompts, Microsoft Graph data, and the large language model interact. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It acts as a traffic controller that evaluates, enriches, and formats requests while applying compliance checks.
+
+\item The lifecycle of a Copilot prompt includes grounding with contextual data from Microsoft Graph and advanced indexing. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This ensures the large language model has the necessary context to produce meaningful and relevant results.
+
+\item Copilot respects existing security and compliance boundaries, including role-based access control, sensitivity labels, and conditional access policies. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It cannot access or expose data that the user does not already have permission to see.
+
+\item Scenario: A user without access to a confidential finance report asks Copilot to summarize it. What should happen?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Copilot indicates that no such file can be found or accessed
+\item Copilot summarizes the report using public knowledge
+\item Copilot requests elevated permissions
+\item Copilot creates a generic summary
+\end{enumerate}
+\textbf{Answer:} a. Copilot indicates that no such file can be found or accessed.
+
+\textbf{Explanation:} Copilot only uses data the signed-in user already has permission to access through Microsoft Graph.
+
+\item Scenario: An organization wants Copilot to generate a project proposal based on recent meetings and documents. Which component primarily enables this contextual retrieval?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft Graph and Work IQ
+\item Only the large language model
+\item Only the orchestration service
+\item User education modules
+\end{enumerate}
+\textbf{Answer:} a. Microsoft Graph and Work IQ.
+
+\textbf{Explanation:} Graph provides the data connectivity and relationship mapping while Work IQ adds intelligence about how work happens in the organization.
+
+\end{enumerate}
+\clearpage
+
+\subsection{What are agents?}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+AI & Artificial Intelligence \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Agents are intelligent software tools in Microsoft 365 that help users work more efficiently. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can automate routine tasks, answer questions, and provide personalized recommendations.
+
+\item Agents in Microsoft 365 use artificial intelligence and machine learning to understand user behavior and preferences. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This allows them to deliver tailored solutions that adapt to individual needs and simplify everyday work.
+
+\item What sets agents apart from a personal assistant is that they can be tailored to have a particular expertise. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, an agent can be created to know everything about a company’s product catalog so it can draft detailed responses to customer questions or automatically compile product details.
+
+\item Agents can enhance productivity in which of the following main areas? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Information retrieval
+\item Performing actions
+\item Operate independently
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} Agents can retrieve information, perform actions on behalf of users, and operate independently to handle routine or multistep tasks.
+
+\item Which of the following are types of agents supported by Microsoft 365 Copilot? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Prebuilt agents
+\item Ready-made SharePoint site agents
+\item Agents for the everyday business user
+\item Advanced agents
+\end{enumerate}
+\textbf{Answer:} a, b, c, d.
+
+\textbf{Explanation:} These four categories cover agents from Microsoft-created, site-specific, user-created simple agents, to developer-built sophisticated agents.
+
+\item A prebuilt agent is an agent that either Microsoft or a Microsoft-approved vendor created. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Non-Microsoft agents undergo a rigorous approval process to ensure they meet industry standards and best practices.
+
+\item Prompt Coach and Writing Coach are examples of prebuilt agents. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Prompt Coach helps users craft effective prompts, while Writing Coach provides detailed feedback on writing tasks.
+
+\item A ready-made agent for a SharePoint site is automatically created when certain conditions are met, including a valid Copilot license and proper permissions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This agent is scoped to the content within the site and can answer questions about documents and provide insights based on the site’s information.
+
+\item Agents for the everyday business user are designed with limited capabilities to prioritize simplicity, ease of use, and security. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They do not use advanced features like generative AI and can be created without any programming background.
+
+\item Advanced agents require programming skills and are intended for developers who need highly customized solutions. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They support features like custom connectors and generative AI and are built using tools like Copilot Studio or Visual Studio Code.
+
+\item In Microsoft 365 Copilot Chat, users can use prebuilt agents from their personal agent library and create new agents with Copilot Studio. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Agents in Copilot Chat provide real-time support, automate responses, and predict user needs based on context.
+
+\item Agents in SharePoint can be ready-made (site-specific) or custom agents created by users with Edit permissions or higher. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These agents help with workflows, projects, content discovery, and knowledge sharing based on the site’s content.
+
+\item When creating an agent, knowledge sources can include which of the following? \textbf{(Select all that apply)}
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Web content
+\item SharePoint content
+\item Copilot connectors
+\end{enumerate}
+\textbf{Answer:} a, b, c.
+
+\textbf{Explanation:} These sources allow agents to combine public information with secure internal data and external business applications while respecting security boundaries.
+
+\item Match each agent type with its key characteristic.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Agent Type} & \textbf{Key Characteristic} \\
+\midrule
+Prebuilt agents & Created by Microsoft or approved vendors, ready to use \\
+Ready-made SharePoint site agents & Automatically created for new SharePoint sites, scoped to site content \\
+Agents for everyday business users & No programming required, limited capabilities, template or custom options \\
+Advanced agents & Require programming skills, support custom connectors and generative AI \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Prebuilt agents \textrightarrow{} Created by Microsoft or approved vendors, ready to use; Ready-made SharePoint site agents \textrightarrow{} Automatically created for new SharePoint sites, scoped to site content; Agents for everyday business users \textrightarrow{} No programming required, limited capabilities, template or custom options; Advanced agents \textrightarrow{} Require programming skills, support custom connectors and generative AI.
+
+\textbf{Explanation:} Each type serves different user needs and technical skill levels within Microsoft 365 Copilot.
+
+\item Scenario: A sales manager wants an agent that knows the entire product catalog to draft customer responses. Which type of agent would best suit this need?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item An advanced agent built with Copilot Studio
+\item A ready-made SharePoint site agent
+\item A prebuilt agent only
+\item An everyday business user agent with basic options
+\end{enumerate}
+\textbf{Answer:} a. An advanced agent built with Copilot Studio.
+
+\textbf{Explanation:} Advanced agents support custom expertise, generative AI, and integration with detailed knowledge sources like product catalogs.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Compare Microsoft 365 Copilot and agents}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+AI & Artificial Intelligence \\
+SIEM & Security Information and Event Management \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365 Copilot and agents are two powerful AI-driven tools designed to enhance productivity and automate tasks. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} While they share common goals, they differ significantly in how they operate, the scope of their capabilities, and how users interact with them.
+
+\item Microsoft 365 Copilot is a generative AI assistant embedded across Microsoft 365 apps like Word, Excel, Outlook, and Teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It helps users by generating content, summarizing information, drafting communications, and analyzing data based on natural language prompts.
+
+\item Agents are intelligent software entities that can be customized to perform specific tasks or workflows. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can be prebuilt, created by developers, or built by everyday business users and can act autonomously on behalf of users.
+
+\item Copilot is reactive and assistive while agents can run automatically on a schedule or when specific events occur. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Copilot responds to user input in real time, whereas agents work behind the scenes to complete tasks without constant user input.
+
+\item How users interact with Copilot is primarily through direct, real-time interaction inside Microsoft 365 apps. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users type questions or requests and receive instant responses within the context of the app they are using.
+
+\item Agents are built to run automatically and do not require constant user input. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can complete multi-step processes and include dashboards or logs for tracking.
+
+\item Copilot only uses data that the individual user has permission to access. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It works within the user’s Microsoft 365 account and respects all existing security settings.
+
+\item Agents often use service accounts or managed identities that define broader access across teams or systems. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This allows them to work on behalf of a department or organization but requires careful permission management.
+
+\item Customization of Copilot is mainly done at the organization level through configuration and tuning. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins can adjust behavior, data usage, and features, but it does not involve building entirely new features.
+
+\item Agents follow a lifecycle similar to software development, including design, testing, deployment, and updates. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can be version-controlled, rolled back, and monitored like code.
+
+\item Copilot is ideal for short-cycle, user-driven tasks such as drafting content, summarizing meetings, and analyzing documents. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It supports productivity by reducing manual effort while keeping the user in control of the final decision.
+
+\item Agents excel at repeatable or multi-step processes that benefit from automation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They can be triggered by events or schedules and connect across applications for structured workflows.
+
+\item Match each tool with its primary strength.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Tool} & \textbf{Primary Strength} \\
+\midrule
+Microsoft 365 Copilot & Embedded assistance for real-time content generation and analysis \\
+Agents & Automation of repeatable multi-step processes and workflows \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Microsoft 365 Copilot \textrightarrow{} Embedded assistance for real-time content generation and analysis; Agents \textrightarrow{} Automation of repeatable multi-step processes and workflows.
+
+\textbf{Explanation:} Copilot boosts individual productivity within apps, while agents drive organizational efficiency through background automation.
+
+\item Scenario: A user needs help drafting an email based on a recent meeting. Which tool is most appropriate?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft 365 Copilot
+\item An agent
+\item Both equally
+\item Neither
+\end{enumerate}
+\textbf{Answer:} a. Microsoft 365 Copilot.
+
+\textbf{Explanation:} Copilot works directly in Outlook or Teams, using the context of the meeting to generate or summarize content in real time.
+
+\item Scenario: An organization wants to automate nightly invoice processing that involves multiple systems and approvals. Which tool is more suitable?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item An agent
+\item Microsoft 365 Copilot
+\item Only manual processes
+\item Compliance Manager
+\end{enumerate}
+\textbf{Answer:} a. An agent.
+
+\textbf{Explanation:} Agents are designed for repeatable, multi-step processes that integrate with enterprise systems and can run on schedules.
+
+\item Best practices for managing agents include using managed identities with least privilege, testing in non-production environments, and monitoring activity with alerts. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These practices help ensure agents run securely, reliably, and in line with company policies while reducing risk.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Compare Microsoft 365 Copilot licensing models}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+DLP & Data Loss Prevention \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365 Copilot is offered through a combination of plans and licensing models. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The Copilot plan determines what features users get, while the licensing model determines how organizations pay for those features.
+
+\item Copilot plans fall into three main categories. What are they?
+
+\textbf{Answer:} The free Copilot chat experience, the Microsoft 365 Copilot paid plan, and Copilot Studio.
+
+\textbf{Explanation:} The free plan offers basic conversational AI without organizational data access. The paid plan integrates Copilot across apps with Microsoft Graph grounding. Copilot Studio allows creation and management of custom agents.
+
+\item The free Copilot chat experience allows basic conversational AI but does not access your organization’s data in Microsoft 365. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides web-grounded responses only and does not include work-grounded Copilot capabilities.
+
+\item The Microsoft 365 Copilot paid plan integrates Copilot across Word, Excel, PowerPoint, Outlook, and Teams while grounding responses in Microsoft Graph data. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides core security and compliance features and is available as an add-on for qualifying Business and Enterprise plans.
+
+\item Copilot Studio allows everyday business users and developers to create, customize, and manage Copilot agents. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Agent usage is governed by Copilot Credits through capacity packs or pay-as-you-go, depending on extent of use.
+
+\item The two main licensing models for Microsoft 365 Copilot are monthly per-user license and pay-as-you-go consumption option. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The monthly model provides predictable costs, while pay-as-you-go aligns costs with actual usage.
+
+\item Under the monthly license model, organizations pay a fixed monthly fee per licensed user. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This approach simplifies financial planning and license assignment through the Microsoft 365 admin center or PowerShell.
+
+\item The pay-as-you-go model charges organizations based on actual usage through Azure consumption. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Every prompt or interaction is metered and billed against Azure subscription resources.
+
+\item Business plans support up to 300 users and are designed for small to mid-sized organizations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users with Business Standard or Business Premium plans are eligible for the Microsoft 365 Copilot add-on license.
+
+\item Enterprise plans scale to thousands of users and include advanced compliance tools such as Data Loss Prevention and Purview. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They provide richer enterprise-grade tools for governance and security compared to Business plans.
+
+\item SharePoint licensing decisions impact both cost and governance because SharePoint is a main data source powering Copilot. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Copilot respects SharePoint permissions, but broader licensing can increase queries against sensitive libraries if access controls are not enforced.
+
+\item In the pay-as-you-go model, heavy querying of large SharePoint libraries by project teams can generate sudden cost surges. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins must plan for these scenarios with budget alerts and workload tagging.
+
+\item Pilot testing with pay-as-you-go helps organizations collect real usage data before committing to monthly licensing. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides evidence to decide whether a monthly or hybrid model is the best long-term choice.
+
+\item Regular license audits are essential in the monthly model to remove licenses from inactive users. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This prevents unnecessary spending on users such as interns or contractors who rarely use Copilot.
+
+\item Scenario: A small consulting firm with 20 users wants Copilot grounded in their own project files. Which plan is required?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft 365 Copilot paid plan
+\item Free Copilot chat experience only
+\item Personal/Family plan
+\item No license needed
+\end{enumerate}
+\textbf{Answer:} a. Microsoft 365 Copilot paid plan.
+
+\textbf{Explanation:} The free plan does not connect to organizational Microsoft Graph data, so paid licensing is required for work-grounded capabilities.
+
+\item Scenario: An organization with fluctuating seasonal demand prefers to pay only for actual Copilot usage. Which licensing model best fits this need?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Pay-as-you-go consumption option
+\item Monthly per-user license only
+\item Free plan exclusively
+\item Enterprise plan without add-ons
+\end{enumerate}
+\textbf{Answer:} a. Pay-as-you-go consumption option.
+
+\textbf{Explanation:} This model aligns costs with actual usage and is suitable for organizations with variable or pilot-level demand.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Explore real-world use cases for Copilot and agents}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+AI & Artificial Intelligence \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Microsoft 365 Copilot integrates directly into apps like Word, Excel, Outlook, PowerPoint, and Teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It accelerates common tasks such as drafting, summarizing, analyzing, and formatting content within the apps users already work in.
+
+\item Copilot Chat provides a conversational interface to organizational data through Microsoft Graph across multiple applications. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It lets users ask broader, cross-application questions and get answers that span emails, files, chats, and more.
+
+\item The Researcher agent specializes in helping users work with unstructured information such as emails, Teams chats, Word documents, and SharePoint files. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It applies semantic search, summarization, and context-aware filtering to pull the most relevant content.
+
+\item The Analyst agent focuses on structured information such as tables, spreadsheets, and dashboards. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It turns raw numbers into visualizations, statistical insights, and recommendations using natural language queries.
+
+\item Writing Coach is a prebuilt agent that helps users improve written communication. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides detailed, constructive feedback on emails, documents, stories, or whitepapers.
+
+\item Career Coach assists users with professional development tasks such as resume feedback and interview preparation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It suggests relevant learning courses and helps draft cover letters or prepare for interviews.
+
+\item Everyday business users can create simple agents in Copilot Studio or SharePoint for department-specific QnA or guided processes. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These agents reduce repetitive questions and provide quick lookups without requiring programming skills.
+
+\item SharePoint agents help with content discovery, document lifecycle assistance, and workflow enablement within SharePoint sites. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They surface relevant documents, guide users through processes, and support site-specific knowledge sharing.
+
+\item Custom advanced agents are suitable for complex, multi-system workflows such as vendor onboarding or supply chain monitoring. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} They integrate with APIs, automate multi-step processes, and reflect organization-specific logic.
+
+\item Match each tool with its best use case.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.55\textwidth}}
+\toprule
+\textbf{Tool} & \textbf{Best Use Case} \\
+\midrule
+Microsoft 365 Copilot & Drafting emails, summarizing meetings, or analyzing data inside familiar apps \\
+Researcher agent & Knowledge discovery and summarization of unstructured content \\
+Analyst agent & Data analysis and visualization in Excel or Power BI \\
+SharePoint agents & Content discovery and governance within SharePoint sites \\
+Custom advanced agents & Complex, multi-system automation workflows \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Answer:} Microsoft 365 Copilot \textrightarrow{} Drafting emails, summarizing meetings, or analyzing data inside familiar apps; Researcher agent \textrightarrow{} Knowledge discovery and summarization of unstructured content; Analyst agent \textrightarrow{} Data analysis and visualization in Excel or Power BI; SharePoint agents \textrightarrow{} Content discovery and governance within SharePoint sites; Custom advanced agents \textrightarrow{} Complex, multi-system automation workflows.
+
+\textbf{Explanation:} Each tool addresses different levels of interactivity, data type, and automation complexity.
+
+\item Scenario: A project manager needs to quickly draft a status report based on yesterday’s meeting notes in Word. Which tool is most appropriate?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Microsoft 365 Copilot in Word
+\item A custom advanced agent
+\item The Researcher agent only
+\item SharePoint agent
+\end{enumerate}
+\textbf{Answer:} a. Microsoft 365 Copilot in Word.
+
+\textbf{Explanation:} Copilot works directly in the app context and uses the current document and recent meeting notes for drafting.
+
+\item Scenario: A compliance officer must review hundreds of contracts for a specific clause. Which agent would best help condense and summarize them?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Researcher agent
+\item Analyst agent
+\item Writing Coach
+\item SharePoint agent only
+\end{enumerate}
+\textbf{Answer:} a. Researcher agent.
+
+\textbf{Explanation:} The Researcher agent excels at summarization of long-form unstructured content and links back to original sources.
+
+\item Scenario: A finance team wants to automate nightly aggregation of meeting transcripts into a prioritized backlog of action items. Which solution fits best?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item A custom agent
+\item Microsoft 365 Copilot in Teams only
+\item Analyst agent
+\item Writing Coach
+\end{enumerate}
+\textbf{Answer:} a. A custom agent.
+
+\textbf{Explanation:} Agents are ideal for repeatable, multi-step processes that run on schedules and create structured outputs like Planner tasks.
+
+\end{enumerate}
+\clearpage
+\section{Perform basic administrative tasks for Microsoft 365 Copilot}
+\clearpage
+\subsection{Manage Copilot licenses and pay-as-you-go billing}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+IT & Information Technology \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Assigning Microsoft 365 Copilot licenses is required for users to access Copilot features in Outlook, Word, Excel, or Teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Without a license, Copilot does not appear for a user in these applications.
+
+\item Individual license assignment is best suited for small organizations or when only a handful of users need access. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It provides direct control and is useful for testing with a small pilot group or granting immediate access to specific users such as executives.
+
+\item Group-based licensing is the recommended approach for medium-to-large organizations. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It greatly reduces administrative overhead by automatically granting licenses to all members of a security group in Microsoft Entra ID.
+
+\item When a new user is added to a group that has a Copilot license assigned, they automatically receive the license. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This ensures consistency and eliminates the need to assign licenses manually for each new hire.
+
+\item You should perform the following steps to assign a Copilot license to an individual user. Put them in the correct order.
+
+\textbf{Answer:} Sign in to the Microsoft 365 admin center → Users > Active users → Select the user → Licenses and apps → Select Microsoft 365 Copilot → Save changes.
+
+\textbf{Explanation:} This targeted method allows precise control over license assignment for testing or specific requests.
+
+\item To assign group-based Copilot licensing, you first select or create a group in the Microsoft 365 admin center, then assign the license to that group. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Any new member added to the group automatically inherits the Copilot license.
+
+\item Pay-as-you-go billing allows organizations to use Copilot on-demand without committing to a fixed number of licenses. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This model is particularly useful for departments experimenting with Copilot or for seasonal/project-based workforces.
+
+\item Creating a billing policy is the first step in enabling pay-as-you-go for Copilot. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The billing policy links an Azure subscription and defines which users it covers.
+
+\item A single tenant can have up to 10 billing policies. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This allows different departments or groups to have separate pay-as-you-go arrangements.
+
+\item After creating a billing policy, you must connect it to a specific Copilot service on the Pay-as-you-go services tab. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Connecting the policy to a service such as Copilot Chat or SharePoint agents enables usage-based billing for the defined users.
+
+\item If a billing policy is created but not connected to any Copilot service, pay-as-you-go remains disabled for those users. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Both steps are required to fully enable consumption-based billing.
+
+\item Budget alerts can be configured when creating a billing policy to notify recipients when spending reaches certain thresholds. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This helps prevent unexpected cost spikes by setting limits such as 80% or 100% of the monthly budget.
+
+\item Scenario: An organization wants to test Copilot with the Legal department before committing to full licenses. Which licensing approach is most appropriate?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Create a billing policy for the Legal security group and enable pay-as-you-go for Copilot Chat
+\item Assign monthly licenses to all Legal users immediately
+\item Use only the free Copilot chat experience
+\item Disable Copilot entirely for Legal
+\end{enumerate}
+\textbf{Answer:} a. Create a billing policy for the Legal security group and enable pay-as-you-go for Copilot Chat.
+
+\textbf{Explanation:} Pay-as-you-go allows controlled experimentation without fixed monthly costs for the entire department.
+
+\item Scenario: You need to assign Copilot licenses to 450 Sales employees efficiently. Which method should you use?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Group-based licensing using a Sales Users group in Microsoft Entra ID
+\item Individual assignment to each user
+\item Free Copilot chat only
+\item Pay-as-you-go without any policy
+\end{enumerate}
+\textbf{Answer:} a. Group-based licensing using a Sales Users group in Microsoft Entra ID.
+
+\textbf{Explanation:} Group-based licensing reduces administrative effort and ensures consistent access for large groups.
+
+\item Regular license audits are essential in the monthly licensing model to remove licenses from inactive users. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This prevents unnecessary spending on users who no longer need Copilot access.
+
+\end{enumerate}
+\clearpage
+\subsection{Monitor and adjust pay-as-you-go Copilot usage}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+IT & Information Technology \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Usage monitoring and adjustment is the ongoing process of checking whether the pay-as-you-go model remains the right fit for the organization. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Unlike standard licenses with predictable monthly costs, pay-as-you-go charges fluctuate based on actual use, making regular monitoring essential.
+
+\item Monitoring Copilot usage provides real-world data about adoption patterns and helps decide whether to switch high-use groups to permanent licenses. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, consistent heavy usage by the Operations team may make full-time licenses more cost-effective than accumulating per-use charges.
+
+\item Billing dashboards are available in both the Microsoft 365 admin center and the Azure portal. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The Microsoft 365 admin center offers a high-level overview of licenses and invoices, while Azure Cost Management provides detailed analytics, budgets, and forecasting.
+
+\item In the Microsoft 365 admin center, you can view Copilot invoices under Billing > Bills and payments and check active licenses under Billing > Licenses. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These dashboards help confirm license allocation and review month-over-month trends.
+
+\item In the Azure portal, Cost analysis allows you to filter specifically for Microsoft 365 Copilot (PAYG) usage. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} You can group costs by resource, user, or department tags and export data for deeper analysis in Excel or Power BI.
+
+\item Setting up budgets and alerts in Azure Cost Management notifies administrators when spending reaches defined thresholds. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, an alert at 80% of a monthly budget gives time to investigate unexpected spikes before costs escalate.
+
+\item Scenario: A department shows consistent daily Copilot usage every week. What action should be considered?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Switch the department to permanent monthly licenses
+\item Leave them on pay-as-you-go indefinitely
+\item Disable Copilot for that department
+\item Reduce their access through policies
+\end{enumerate}
+\textbf{Answer:} a. Switch the department to permanent monthly licenses.
+
+\textbf{Explanation:} Steady, predictable usage patterns indicate that fixed licensing would be more cost-effective than ongoing pay-as-you-go charges.
+
+\item Scenario: An unexpected daily cost spike appears in Cost analysis for a pilot group. What is the recommended first step?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Investigate the cause, such as accidental unrestricted access
+\item Immediately cancel the pay-as-you-go policy
+\item Ignore it if under budget
+\item Assign permanent licenses to everyone
+\end{enumerate}
+\textbf{Answer:} a. Investigate the cause, such as accidental unrestricted access.
+
+\textbf{Explanation:} Early detection through monitoring allows quick remediation before costs balloon further.
+
+\item Weekly checks in the Microsoft 365 admin center combined with monthly deep dives in Azure Cost Management provide balanced oversight of pay-as-you-go usage. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This schedule helps catch both short-term anomalies and long-term trends for informed licensing decisions.
+
+\item If a group shows heavy, consistent usage after a pilot period, administrators should consider moving them from pay-as-you-go to permanent licenses. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This adjustment optimizes costs based on actual adoption data collected through monitoring.
+
+\end{enumerate}
+\clearpage
+\subsection{Monitor Microsoft 365 Copilot usage and adoption}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+IT & Information Technology \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Monitoring how people actually use Microsoft 365 Copilot is the operational backbone of any responsible rollout. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Usage and adoption data turn licensing and feature decisions from guesswork into evidence-based actions.
+
+\item Tracking adoption starts with two basic counters: who is enabled (has a Copilot license) and who is active (used Copilot within the reporting period). \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} The rate between enabled and active users reveals whether a deployment is actually being used.
+
+\item The Microsoft 365 admin center Reports > Usage section shows Enabled Users, Active Users, and trend charts for Microsoft 365 Copilot. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These reports provide a quick operational view of adoption and can be exported for further analysis.
+
+\item Group-based licensing and per-user last activity data help admins identify teams that need targeted training or license reallocation. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Exporting user-level details allows joining with HR data to isolate specific teams and managers for follow-up.
+
+\item Copilot Analytics, available through Viva Insights, surfaces feature-level and impact signals such as meeting summaries generated and email threads summarized. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It helps measure business impact and supports targeted enablement campaigns.
+
+\item The Copilot Dashboard in Viva Insights requires appropriate licensing and role assignments before it becomes visible. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Minimum group size, exclusion lists, and privacy settings must be configured to protect personal information.
+
+\item Trend analysis over weeks or months helps answer whether usage is growing, flattening, or declining. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} It connects adoption patterns to specific actions such as training sessions or product updates.
+
+\item Adoption funnels track users moving from being licensed, to trying Copilot once, to becoming frequent users. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This view reveals where drop-offs occur and where additional support may be needed.
+
+\item Feature diffusion refers to the uneven spread of specific Copilot capabilities across the organization. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Spotting gaps, such as low use of meeting summarization in Teams, allows targeted communications or training.
+
+\item Seasonality in Copilot usage often aligns with business cycles, such as quarterly reporting in Finance or annual reviews in HR. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Recognizing these patterns helps plan adoption support around peak demand periods.
+
+\item Microsoft 365 admin center reports are best for quick operational checks, while Viva Insights and Power BI templates support deeper impact analysis. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Combining these tools gives both summary views and detailed, leadership-ready dashboards.
+
+\item Scenario: Marketing has 150 enabled users but only 22 active users in the last 30 days. What is the recommended next step?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Export user data, identify teams, and run targeted training
+\item Immediately remove all licenses
+\item Ignore the data if under budget
+\item Disable Copilot for Marketing
+\end{enumerate}
+\textbf{Answer:} a. Export user data, identify teams, and run targeted training.
+
+\textbf{Explanation:} Low active rates often indicate communication or applicability gaps that can be addressed with focused enablement.
+
+\item Scenario: A sudden spike in Copilot usage appears from a single account. What should be investigated?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Whether it is an automated process or misconfigured account
+\item Immediate license removal for the entire organization
+\item Disabling all Copilot features
+\item Nothing, as spikes are always positive
+\end{enumerate}
+\textbf{Answer:} a. Whether it is an automated process or misconfigured account.
+
+\textbf{Explanation:} Outliers in usage patterns can indicate automation errors or policy violations that require follow-up.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Manage and govern Microsoft 365 Copilot prompts}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+IT & Information Technology \\
+KPI & Key Performance Indicator \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Prompts in Microsoft 365 Copilot can be saved and reused to streamline everyday tasks. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} A saved prompt captures a specific way of asking Copilot to perform a task, helping users achieve consistent results.
+
+\item Saving a prompt allows users to repeat the same workflow without retyping or recalling the full request. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, a Finance team member might save a prompt in Excel that generates a month-end summary with consistent formatting and commentary.
+
+\item Prompt management in Copilot currently happens at the individual level within Copilot-enabled apps. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users can create, edit, and organize their own saved prompts directly in the in-app Copilot panel.
+
+\item Admins can configure tenant-wide Copilot settings such as feature availability, data access, and compliance controls in the Microsoft 365 admin center. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} While there is no centralized prompt repository, these settings govern how Copilot operates across Microsoft 365 apps.
+
+\item To save a prompt in an app such as Word, a user selects the Save Prompt option at the bottom of the Copilot panel after typing a custom instruction. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users are then prompted to provide a name and description for the saved prompt.
+
+\item A clear naming convention such as prefixing prompts with the department or purpose makes them easy to identify later. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} For example, using names like “Finance – Monthly Summary Report” helps when scaling to dozens or hundreds of prompts.
+
+\item Saved prompts can be shared with a team or group through Microsoft 365 Groups. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Sharing ensures all members have access to a standard workflow, such as an HR prompt for drafting onboarding checklists.
+
+\item Scheduling prompts allows them to run at predefined times, which is useful for recurring tasks such as generating weekly KPI dashboards. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Users define frequency and timing in the Copilot Scheduler within supported apps.
+
+\item Old or redundant prompts should be deleted to prevent clutter and confusion. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Reviewing prompts quarterly and archiving those no longer in active use maintains a clean prompt library.
+
+\item Consistent naming conventions, detailed documentation, and prompt templates help achieve prompt standardization across teams. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} These practices reduce variation, ensure consistent outputs, and make governance easier.
+
+\item Prompt governance includes restricting who can share prompts and regularly auditing prompt usage. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Admins can restrict sharing to specific roles or groups and review usage reports to identify rarely used or high-usage prompts.
+
+\item Prompts should reference secure data sources rather than embedding sensitive information directly. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This approach ensures Microsoft 365 permissions enforce access and reduces the risk of data exposure.
+
+\item Scenario: A Finance team wants to reuse the same prompt every month to generate a standardized report. What should they do?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Save the prompt with a clear name and description
+\item Type the prompt manually each month
+\item Share it only with external partners
+\item Delete the prompt after one use
+\end{enumerate}
+\textbf{Answer:} a. Save the prompt with a clear name and description.
+
+\textbf{Explanation:} Saving the prompt allows consistent results and avoids retyping the full request each month.
+
+\item Scenario: An organization notices multiple similar prompts being used across departments, causing inconsistent outputs. What best practice should be implemented?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Establish consistent naming conventions and provide prompt templates
+\item Allow users to create prompts without any guidelines
+\item Disable prompt saving entirely
+\item Only use prebuilt Microsoft prompts
+\end{enumerate}
+\textbf{Answer:} a. Establish consistent naming conventions and provide prompt templates.
+
+\textbf{Explanation:} This reduces variation and ensures prompts align with organizational standards and policies.
+
+\end{enumerate}
+\clearpage
+
+\subsection{Apply operational best practices for Microsoft 365 Copilot}
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth}}
+\toprule
+\textbf{Abbreviation} & \textbf{Full Form} \\
+\midrule
+RBAC & Role-Based Access Control \\
+IT & Information Technology \\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[leftmargin=*]
+
+\item Running Microsoft 365 Copilot successfully requires well-defined processes for administrative roles, licensing, onboarding, troubleshooting, and communication. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Without these processes, organizations risk security, compliance, or efficiency gaps that slow adoption and frustrate users.
+
+\item Organizations should avoid relying solely on the Global Administrator role and instead adopt the principle of least privilege. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Scoped roles prevent accidental damage and reduce risk while empowering admins to perform their specific responsibilities.
+
+\item The License Administrator role allows assignment and removal of licenses without granting access to security, compliance, or directory-wide settings. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This role is appropriate for department leads who need to manage Copilot licenses for their teams.
+
+\item Group-based licensing in Microsoft Entra ID automatically applies a Copilot license to all members of a security group. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This approach reduces administrative overhead and ensures consistency when onboarding new users.
+
+\item When onboarding new users, integrating license assignment into the standard account creation process ensures no one is overlooked. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Adding new hires to a department-specific security group that has a Copilot license assigned automatically grants them access.
+
+\item Copilot does not appear in Office apps when the user lacks the correct license or the license has not yet propagated. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This is one of the most common issues and can also occur due to outdated versions of Microsoft 365 Apps.
+
+\item To confirm a user’s Copilot license assignment, an admin should check the Licenses and apps section in the user’s detail pane. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} This verification step helps identify whether a missing license is causing the issue.
+
+\item Communication with end users about Copilot rollout should include announcements before rollout, onboarding emails, and ongoing updates. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Clear communication reduces confusion, improves adoption, and prevents unnecessary support tickets.
+
+\item Email announcements for Copilot should include screenshots showing where the Copilot button appears in apps. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Visual guides help users recognize the new feature immediately and reduce predictable helpdesk queries.
+
+\item Training sessions that demonstrate everyday use cases, such as drafting emails in Outlook or summarizing reports in Word, make Copilot feel approachable. \textbf{(True/False)}
+
+\textbf{Answer:} True.
+
+\textbf{Explanation:} Recording and publishing these sessions ensures broader reach for users who cannot attend live.
+
+\item Scenario: A junior IT technician is responsible only for resetting user passwords. Which role should they be assigned?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Helpdesk Administrator
+\item Global Administrator
+\item Billing Administrator
+\item Compliance Administrator
+\end{enumerate}
+\textbf{Answer:} a. Helpdesk Administrator.
+
+\textbf{Explanation:} This role allows password resets while preventing access to sensitive billing data or tenant-wide changes.
+
+\item Scenario: A department lead wants to manage Copilot licenses for their 75 team members. What is the most efficient method?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Create a security group and assign the Copilot license to the group
+\item Assign licenses individually to each user
+\item Use the free Copilot chat experience only
+\item Disable license assignment entirely
+\end{enumerate}
+\textbf{Answer:} a. Create a security group and assign the Copilot license to the group.
+
+\textbf{Explanation:} Group-based licensing reduces manual effort and ensures consistent access for the entire team.
+
+\item Scenario: Users report that Copilot is not visible in Word and Excel. What should the admin check first?
+\begin{enumerate}[label=\alph*., leftmargin=1.5em]
+\item Whether the users have the correct Copilot license assigned and the latest version of Microsoft 365 Apps
+\item Network firewall settings only
+\item SharePoint site permissions
+\item Teams admin center policies only
+\end{enumerate}
+\textbf{Answer:} a. Whether the users have the correct Copilot license assigned and the latest version of Microsoft 365 Apps.
+
+\textbf{Explanation:} Missing licenses or outdated app versions are the most common reasons Copilot does not appear.
+
+\end{enumerate}
+\clearpage
 \end{document}
